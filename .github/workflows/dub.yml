@@ -46,6 +46,7 @@ jobs:
           mkdir -p out; id=${{ matrix.id }}; j=jobs/$id.json
           if grep -q '"typewriter": true' "$j"; then python3 typewriter.py --job "$j" < /dev/null
           elif grep -q '"clipmix": true' "$j"; then python3 clipmix.py --job "$j" < /dev/null
+          elif grep -q '"quizvid": true' "$j"; then python3 quizvid.py --job "$j" < /dev/null
           else python3 fetch_photos.py "$j" < /dev/null && { python3 render.py "$j.local" < /dev/null || python3 render.py "$j.local" < /dev/null; }; fi
           ls out/$id.mp4
           [ -f out/$id.json ] || cp $j out/

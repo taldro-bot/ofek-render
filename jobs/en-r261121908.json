@@ -1,0 +1,22 @@
+{
+ "id": "en-r261121908",
+ "lang": "en",
+ "kind": "quizvid",
+ "quizvid": true,
+ "title": "Contractor Quiz",
+ "lines": [
+  "What is the minimum age for work at height?",
+  "A. 16",
+  "B. 17",
+  "C. 18",
+  "You have 10 seconds!"
+ ],
+ "question": "What is the minimum age for work at height?",
+ "options": [
+  "A. 16",
+  "B. 17",
+  "C. 18"
+ ],
+ "answer": "C – 18, plus recognized training.",
+ "photo": "assets/cities/ai2-place-9dd035b3-7e69-458e-8a95-e2fb972b66b3.jpg"
+}

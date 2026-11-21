@@ -1,0 +1,22 @@
+{
+ "id": "en-r261121914",
+ "lang": "en",
+ "kind": "quizvid",
+ "quizvid": true,
+ "title": "Contractor Quiz",
+ "lines": [
+  "Where do you clip the harness in a crane basket?",
+  "A. To the building railing",
+  "B. To the anchor point in the basket",
+  "C. No harness needed",
+  "You have 10 seconds!"
+ ],
+ "question": "Where do you clip the harness in a crane basket?",
+ "options": [
+  "A. To the building railing",
+  "B. To the anchor point in the basket",
+  "C. No harness needed"
+ ],
+ "answer": "B – only to the anchor point inside the basket. Never to the building.",
+ "photo": "assets/cities/herzliya-marina-sculpture.jpg"
+}

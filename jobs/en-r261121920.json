@@ -1,0 +1,22 @@
+{
+ "id": "en-r261121920",
+ "lang": "en",
+ "kind": "quizvid",
+ "quizvid": true,
+ "title": "Contractor Quiz",
+ "lines": [
+  "At what angle do you set a ladder?",
+  "A. 45 degrees",
+  "B. About 75 degrees",
+  "C. 90 degrees",
+  "You have 10 seconds!"
+ ],
+ "question": "At what angle do you set a ladder?",
+ "options": [
+  "A. 45 degrees",
+  "B. About 75 degrees",
+  "C. 90 degrees"
+ ],
+ "answer": "B – about 75 degrees, extending one meter above the landing.",
+ "photo": "assets/cities/tlv-neve-tzedek.jpg"
+}

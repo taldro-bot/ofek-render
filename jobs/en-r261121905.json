@@ -1,0 +1,22 @@
+{
+ "id": "en-r261121905",
+ "lang": "en",
+ "kind": "quizvid",
+ "quizvid": true,
+ "title": "Contractor Quiz",
+ "lines": [
+  "How often is work-at-height training renewed?",
+  "A. Every year",
+  "B. Every 2 years",
+  "C. Every 5 years",
+  "You have 10 seconds!"
+ ],
+ "question": "How often is work-at-height training renewed?",
+ "options": [
+  "A. Every year",
+  "B. Every 2 years",
+  "C. Every 5 years"
+ ],
+ "answer": "B – every two years. Without renewal the permit is not valid.",
+ "photo": "assets/cities/at-mamilla-mall-d446.jpg"
+}

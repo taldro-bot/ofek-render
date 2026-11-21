@@ -1,0 +1,22 @@
+{
+ "id": "en-r261121902",
+ "lang": "en",
+ "kind": "quizvid",
+ "quizvid": true,
+ "title": "Contractor Quiz",
+ "lines": [
+  "From what height is it \"work at height\"?",
+  "A. 1 meter",
+  "B. 2 meters",
+  "C. 5 meters",
+  "You have 10 seconds!"
+ ],
+ "question": "From what height is it \"work at height\"?",
+ "options": [
+  "A. 1 meter",
+  "B. 2 meters",
+  "C. 5 meters"
+ ],
+ "answer": "B – above 2 meters. From there you need training and a permit.",
+ "photo": "assets/cities/netanya.jpg"
+}

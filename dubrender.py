@@ -12,5 +12,7 @@ for jid in pend:   # 21.11: take the first MAXN that are dubbed (not just the fi
     n += 1
     p = 'jobs/%s.json' % jid; j = json.load(open(p))
     j['audio_url'] = 'https://drive.google.com/uc?export=download&id=' + man[jid]['a']; j['dub_voice'] = man[jid]['v']
+    if man[jid].get('a2'): j['answer_url'] = 'https://drive.google.com/uc?export=download&id=' + man[jid]['a2']
+    elif j.get('quizvid'): n -= 1; continue   # quiz needs both voices
     json.dump(j, open(p, 'w'), ensure_ascii=False, indent=1)
     print(jid)

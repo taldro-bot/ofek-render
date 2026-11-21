@@ -1,0 +1,22 @@
+{
+ "id": "en-r261121917",
+ "lang": "en",
+ "kind": "quizvid",
+ "quizvid": true,
+ "title": "Contractor Quiz",
+ "lines": [
+  "Where do you measure lifting reach from?",
+  "A. The building wall",
+  "B. Where the crane stands",
+  "C. The roof",
+  "You have 10 seconds!"
+ ],
+ "question": "Where do you measure lifting reach from?",
+ "options": [
+  "A. The building wall",
+  "B. Where the crane stands",
+  "C. The roof"
+ ],
+ "answer": "B – from where the crane stands, usually the sidewalk. Plus 3–4 meters of margin.",
+ "photo": "assets/cities/holon.jpg"
+}

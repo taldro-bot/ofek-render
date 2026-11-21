@@ -1,0 +1,22 @@
+{
+ "id": "en-r261121911",
+ "lang": "en",
+ "kind": "quizvid",
+ "quizvid": true,
+ "title": "Contractor Quiz",
+ "lines": [
+  "How far from a power line up to 33 kV?",
+  "A. 1 meter",
+  "B. 3.25 meters",
+  "C. No need",
+  "You have 10 seconds!"
+ ],
+ "question": "How far from a power line up to 33 kV?",
+ "options": [
+  "A. 1 meter",
+  "B. 3.25 meters",
+  "C. No need"
+ ],
+ "answer": "B – at least 3.25 meters. For higher voltage – at least 5 meters.",
+ "photo": "assets/cities/herzliya-marina-sculpture.jpg"
+}

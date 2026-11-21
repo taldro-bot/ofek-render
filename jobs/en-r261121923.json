@@ -1,0 +1,22 @@
+{
+ "id": "en-r261121923",
+ "lang": "en",
+ "kind": "quizvid",
+ "quizvid": true,
+ "title": "Contractor Quiz",
+ "lines": [
+  "Who must be on the ground during work at height?",
+  "A. Nobody",
+  "B. A ground person",
+  "C. Only at night",
+  "You have 10 seconds!"
+ ],
+ "question": "Who must be on the ground during work at height?",
+ "options": [
+  "A. Nobody",
+  "B. A ground person",
+  "C. Only at night"
+ ],
+ "answer": "B – always a ground person: watching, communicating, calling for help.",
+ "photo": "assets/cities/jaffa-port.jpg"
+}
