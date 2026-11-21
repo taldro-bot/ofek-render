@@ -22,7 +22,7 @@ jobs:
           pip install -q edge-tts
       - name: make new jobs
         run: |
-          N="${{ github.event.inputs.count }}"; [ -z "$N" ] && N=1
+          N="${{ github.event.inputs.count }}"; [ -z "$N" ] && N=2
           : > ids.txt
           for i in $(seq 1 $N); do id=$(python3 remix.py); case "$id" in r*) echo "$id" >> state/pending.txt;; *) echo "$id" >> ids.txt;; esac; done; touch ids.txt
           cat ids.txt
