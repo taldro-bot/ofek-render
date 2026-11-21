@@ -1,0 +1,21 @@
+{
+ "id": "hi-r261121010",
+ "title": "पूरे इज़राइल में क्रेन",
+ "lines": [
+  "आज हम एक नई साइट पर हैं।",
+  "ऊँचाई और दूरी फुटपाथ से नापते हैं, दीवार से नहीं।",
+  "बिजली के तार और सपोर्ट की जगह जाँचते हैं।",
+  "सुरक्षित, तेज़ और साफ़ काम।",
+  "ओफ़ेक एट ताल क्रेन्स — हम आपके पास आते हैं।"
+ ],
+ "photos": [
+  "assets/cities/telaviv.png",
+  "https://www.tal83.com/img/sign-install.jpg",
+  "https://www.tal83.com/img/hero-boom.jpg",
+  "https://www.tal83.com/img/boom-lift-tree-pruning-safety-electrical-lines.jpg"
+ ],
+ "lang": "hi",
+ "voice": "hi-IN-MadhurNeural",
+ "rate": "+4%",
+ "presenter": true
+}
