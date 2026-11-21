@@ -1,0 +1,21 @@
+{
+ "id": "ar-r261121039",
+ "title": "من يُسمح له بالعمل في المرتفعات؟",
+ "lines": [
+  "العامل يجب أن يكون عمره ثمانية عشر عاماً على الأقل.",
+  "ويجب أن يجتاز تدريباً معترفاً به.",
+  "التصريح صالح لمدة سنتين، وبعدها تدريب تجديد.",
+  "احفظ شهادتك معك في موقع العمل."
+ ],
+ "photos": [
+  "assets/cities/tal-ta-night3.jpg",
+  "https://www.tal83.com/img/tree-lift-ramat-aviv-idan.jpg",
+  "https://www.tal83.com/img/bucket-crane-petah-tikva.jpg",
+  "https://www.tal83.com/img/aerial-lift-rental-shoham.jpg"
+ ],
+ "lang": "ar",
+ "voice": "ar-SA-HamedNeural",
+ "rate": "+4%",
+ "presenter": true,
+ "kind": "regs"
+}

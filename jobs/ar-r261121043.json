@@ -1,0 +1,21 @@
+{
+ "id": "ar-r261121043",
+ "title": "لا ترمِ شيئاً من الأعلى",
+ "lines": [
+  "ممنوع رمي الأدوات أو المواد من المرتفعات.",
+  "استعمل حبلاً أو دلواً أو الرافعة لإنزال الأغراض.",
+  "أغلق المنطقة تحت العمل.",
+  "أوفيك وطال للرافعات."
+ ],
+ "photos": [
+  "assets/cities/jaffa-old.jpg",
+  "https://www.tal83.com/img/hero-boom.jpg",
+  "https://www.tal83.com/img/working-at-height-safety-equipment-checklist.jpg",
+  "https://www.tal83.com/img/crane-hand-signals-guide.jpg"
+ ],
+ "lang": "ar",
+ "voice": "ar-SA-HamedNeural",
+ "rate": "+4%",
+ "presenter": true,
+ "kind": "regs"
+}

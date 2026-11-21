@@ -1,0 +1,21 @@
+{
+ "id": "ar-r261121044",
+ "title": "الليل والمطر والرياح",
+ "lines": [
+  "في الرياح القوية أو المطر الشديد – لا نعمل في المرتفعات.",
+  "في الليل نعمل فقط مع إضاءة كافية.",
+  "الطقس جزء من خطة العمل.",
+  "العمل الآمن يبدأ بقرار صحيح."
+ ],
+ "photos": [
+  "assets/cities/haifa-bahai.jpg",
+  "https://www.tal83.com/img/cherry-picker-crane-rental-guide.jpg",
+  "https://www.tal83.com/img/working-at-height-safety-tip-ground-inspection-before-setup.jpg",
+  "https://www.tal83.com/img/safety-tip-height-training-anchor-point.jpg"
+ ],
+ "lang": "ar",
+ "voice": "ar-SA-HamedNeural",
+ "rate": "+4%",
+ "presenter": true,
+ "kind": "regs"
+}

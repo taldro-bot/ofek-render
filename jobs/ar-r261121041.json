@@ -1,0 +1,21 @@
+{
+ "id": "ar-r261121041",
+ "title": "معدات الحماية الشخصية",
+ "lines": [
+  "خوذة مع حزام ذقن، حزام كامل، وحذاء عمل.",
+  "افحص المعدات قبل كل استعمال.",
+  "معدات تالفة – لا تستعملها.",
+  "السلامة ليست خياراً."
+ ],
+ "photos": [
+  "assets/cities/tiberias-promenade.jpg",
+  "https://www.tal83.com/img/sign-install.jpg",
+  "https://www.tal83.com/img/crane-hand-signals-guide.jpg",
+  "https://www.tal83.com/img/hero-boom.jpg"
+ ],
+ "lang": "ar",
+ "voice": "ar-SA-HamedNeural",
+ "rate": "+4%",
+ "presenter": true,
+ "kind": "regs"
+}

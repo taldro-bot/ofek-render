@@ -1,0 +1,21 @@
+{
+ "id": "ar-r261121047",
+ "title": "خطة إنقاذ قبل البدء",
+ "lines": [
+  "قبل الصعود، يجب أن تعرف كيف ننزل العامل إذا سقط وبقي معلقاً في الحزام.",
+  "التعلّق الطويل في الحزام خطير.",
+  "خطة الإنقاذ جزء من كل عمل في المرتفعات.",
+  "أوفيك وطال للرافعات – تدريب وإنقاذ."
+ ],
+ "photos": [
+  "assets/cities/telaviv.png",
+  "https://www.tal83.com/img/sign-install.jpg",
+  "https://www.tal83.com/img/palm-trim.jpg",
+  "https://www.tal83.com/img/crane-basket-safety-tip-leveling-slopes.jpg"
+ ],
+ "lang": "ar",
+ "voice": "ar-SA-HamedNeural",
+ "rate": "+4%",
+ "presenter": true,
+ "kind": "regs"
+}

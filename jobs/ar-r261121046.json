@@ -1,0 +1,21 @@
+{
+ "id": "ar-r261121046",
+ "title": "الحزام داخل السلة",
+ "lines": [
+  "في سلة الرافعة، الحزام الكامل إلزامي.",
+  "اربط الحبل بنقطة التثبيت داخل السلة فقط.",
+  "لا تربط نفسك بالمبنى أو بالعمود.",
+  "السلامة أولاً، دائماً."
+ ],
+ "photos": [
+  "assets/cities/beersheba.jpg",
+  "https://www.tal83.com/img/aerial-work-platforms-tree-trimming-field-story.jpg",
+  "https://www.tal83.com/img/manof-sal-guide-and-ordering.jpg",
+  "https://www.tal83.com/img/sign-install.jpg"
+ ],
+ "lang": "ar",
+ "voice": "ar-SA-HamedNeural",
+ "rate": "+4%",
+ "presenter": true,
+ "kind": "regs"
+}

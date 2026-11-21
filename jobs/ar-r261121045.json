@@ -1,0 +1,21 @@
+{
+ "id": "ar-r261121045",
+ "title": "خطوط الكهرباء – ابتعد!",
+ "lines": [
+  "قبل الصعود، افحص خطوط الكهرباء حولك.",
+  "حافظ على مسافة آمنة من الأسلاك، على الأقل ثلاثة أمتار ونصف، وأكثر للخطوط العالية.",
+  "إذا كان هناك شك – توقف واتصل بشركة الكهرباء.",
+  "الكهرباء لا تعطي فرصة ثانية."
+ ],
+ "photos": [
+  "assets/cities/tal-haifa-carmel.jpg",
+  "https://www.tal83.com/img/street-reach.jpg",
+  "https://www.tal83.com/img/aerial-work-platforms-tree-trimming-field-story.jpg",
+  "https://www.tal83.com/img/manof-sal-guide-and-ordering.jpg"
+ ],
+ "lang": "ar",
+ "voice": "ar-SA-HamedNeural",
+ "rate": "+4%",
+ "presenter": true,
+ "kind": "regs"
+}

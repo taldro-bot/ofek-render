@@ -1,0 +1,21 @@
+{
+ "id": "ar-r261121038",
+ "title": "شخص على الأرض دائماً",
+ "lines": [
+  "عند العمل في المرتفعات، يجب أن يكون شخص على الأرض.",
+  "هو يراقب، يتواصل، ويستدعي المساعدة عند الحاجة.",
+  "لا تعمل وحدك أبداً في المرتفعات.",
+  "أوفيك وطال للرافعات."
+ ],
+ "photos": [
+  "assets/cities/tal-jlm-old.jpg",
+  "https://www.tal83.com/img/safety-tip-height-training-anchor-point.jpg",
+  "https://www.tal83.com/img/boom-lift-rental-yehud.jpg",
+  "https://www.tal83.com/img/working-at-height-course-petah-tikva.jpg"
+ ],
+ "lang": "ar",
+ "voice": "ar-SA-HamedNeural",
+ "rate": "+4%",
+ "presenter": true,
+ "kind": "regs"
+}

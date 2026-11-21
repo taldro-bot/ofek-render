@@ -2,7 +2,7 @@
 Combines: topic template x city x photos x language x hook (render.py rotates hooks by id).
 State in state/used.json so no combination repeats. Output: jobs/<id>.json, prints the id."""
 import json, os, random, datetime, re, urllib.request
-from kinds import QUESTION, QUIZ, TIP, FOREIGN, MACHINES, FOREIGN_LANGS, REGS
+from kinds import QUESTION, QUIZ, TIP, FOREIGN, MACHINES, FOREIGN_LANGS, REGS, REGS_AR
 
 U = 'https://www.tal83.com/img/'
 FIELD = ['aerial-lift-rental-shoham', 'aerial-platform-rental-nes-ziona', 'aerial-work-platform-rental-petah-tikva',
@@ -59,6 +59,7 @@ def main():
     mach = os.environ.get('FORCE_MACH') or MACHINES[n % len(MACHINES)]   # 21.11: FORCE_MACH=regs to batch one kind
     if mach == 'foreign': lang = FOREIGN_LANGS[(n // len(MACHINES)) % len(FOREIGN_LANGS)]
     elif mach in ('question', 'quiz', 'tip', 'regs'): lang = 'he'
+    if os.environ.get('FORCE_LANG'): lang = os.environ['FORCE_LANG']   # 21.11: e.g. FORCE_MACH=regs FORCE_LANG=ar
     rnd = random.Random(n * 7919 + 17)
     day = datetime.date.today().strftime('%y%m%d')
     base = 'r%s%03d' % (day, n % 1000)
@@ -77,7 +78,7 @@ def main():
     if mach in ('question', 'quiz', 'tip', 'foreign', 'regs'):   # 21.11 content machines
         if mach == 'foreign': title, lines = FOREIGN[lang]; lines = list(lines); rnd.shuffle(lines[1:4])
         else:
-            pool = {'question': QUESTION, 'quiz': QUIZ, 'tip': TIP, 'regs': REGS}[mach]; uk = st.setdefault('k_' + mach, [])
+            pool = REGS_AR if (lang == 'ar' and mach == 'regs') else {'question': QUESTION, 'quiz': QUIZ, 'tip': TIP, 'regs': REGS}[mach]; uk = st.setdefault('k_' + mach + ('_ar' if pool is REGS_AR else ''), [])
             free = [i for i in range(len(pool)) if i not in uk] or list(range(len(pool)))
             if len(free) == len(pool): uk.clear()
             i = rnd.choice(free); uk.append(i); title, lines = pool[i]; lines = list(lines)

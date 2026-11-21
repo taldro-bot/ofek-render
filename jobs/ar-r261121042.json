@@ -1,0 +1,21 @@
+{
+ "id": "ar-r261121042",
+ "title": "السطح المستوي بلا حاجز",
+ "lines": [
+  "سطح بلا درابزين خطير جداً.",
+  "استخدم حاجزاً مؤقتاً أو حزاماً مع نقطة تثبيت.",
+  "لا تقترب من الحافة بدون حماية.",
+  "أوفيك وطال للرافعات."
+ ],
+ "photos": [
+  "assets/cities/petahtikva.jpg",
+  "https://www.tal83.com/img/quick-response-access-solutions-gedera.jpg",
+  "https://www.tal83.com/img/basket-crane-rental-price-factors.jpg",
+  "https://www.tal83.com/img/crane-basket-safety-tip-leveling-slopes.jpg"
+ ],
+ "lang": "ar",
+ "voice": "ar-SA-HamedNeural",
+ "rate": "+4%",
+ "presenter": true,
+ "kind": "regs"
+}

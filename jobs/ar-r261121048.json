@@ -1,0 +1,21 @@
+{
+ "id": "ar-r261121048",
+ "title": "متى يُعتبر العمل عملاً في المرتفعات؟",
+ "lines": [
+  "كل عمل على ارتفاع أكثر من مترين يُعتبر عملاً في المرتفعات.",
+  "حسب أنظمة السلامة في إسرائيل، يحتاج إلى تدريب وتصريح.",
+  "لا تصعد قبل أن تحصل على التدريب.",
+  "أوفيك وطال للرافعات – تدريب عمل في المرتفعات."
+ ],
+ "photos": [
+  "assets/cities/telaviv.png",
+  "https://www.tal83.com/img/working-at-height-safety-tip-ground-inspection-before-setup.jpg",
+  "https://www.tal83.com/img/crane-hand-signals-guide.jpg",
+  "https://www.tal83.com/img/crane-signalman-safety-guidelines.jpg"
+ ],
+ "lang": "ar",
+ "voice": "ar-SA-HamedNeural",
+ "rate": "+4%",
+ "presenter": true,
+ "kind": "regs"
+}

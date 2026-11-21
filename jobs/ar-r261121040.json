@@ -1,0 +1,21 @@
+{
+ "id": "ar-r261121040",
+ "title": "فحص يومي للرافعة",
+ "lines": [
+  "قبل كل يوم عمل، يفحص المشغّل الرافعة.",
+  "الأرجل الداعمة على أرض ثابتة وعلى صفائح.",
+  "فحص السلة، الأزرار، وزر الطوارئ.",
+  "رافعة مفحوصة – عمل آمن."
+ ],
+ "photos": [
+  "assets/cities/batyam.jpg",
+  "https://www.tal83.com/img/tree-lift-ramat-aviv-idan.jpg",
+  "https://www.tal83.com/img/bucket-crane-petah-tikva.jpg",
+  "https://www.tal83.com/img/working-at-height-safety-equipment-checklist.jpg"
+ ],
+ "lang": "ar",
+ "voice": "ar-SA-HamedNeural",
+ "rate": "+4%",
+ "presenter": true,
+ "kind": "regs"
+}

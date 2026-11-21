@@ -1,0 +1,21 @@
+{
+ "id": "ar-r261121037",
+ "title": "السلم – الزاوية الصحيحة",
+ "lines": [
+  "ضع السلم بزاوية صحيحة، تقريباً خمسة وسبعين درجة.",
+  "السلم يجب أن يرتفع متراً فوق نقطة الصعود.",
+  "ثلاث نقاط اتصال دائماً: يدان ورجل أو رجلان ويد.",
+  "لا تحمل أغراضاً ثقيلة بيدك على السلم."
+ ],
+ "photos": [
+  "assets/cities/rehovot.jpg",
+  "https://www.tal83.com/img/crane-signalman-safety-guidelines.jpg",
+  "https://www.tal83.com/img/boom-lift-rental-yehud.jpg",
+  "https://www.tal83.com/img/crane-hand-signals-guide.jpg"
+ ],
+ "lang": "ar",
+ "voice": "ar-SA-HamedNeural",
+ "rate": "+4%",
+ "presenter": true,
+ "kind": "regs"
+}
