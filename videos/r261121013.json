@@ -1,0 +1,24 @@
+{
+ "id": "r261121013",
+ "title": "חידון לקבלן: מאיפה מודדים?",
+ "lines": [
+  "חידון לקבלן! מאיפה מודדים מרחק להנפה?",
+  "מהקיר של הבניין, או מהמדרכה?",
+  "חשבו רגע.",
+  "נכון – מהמדרכה, איפה שהמנוף עומד.",
+  "פלוס שלושה-ארבעה מטר ביטחון. אופק את טל מנופים."
+ ],
+ "photos": [
+  "assets/cities/ramatgan.jpg",
+  "https://www.tal83.com/img/cherry-picker-crane-rental-guide.jpg",
+  "https://www.tal83.com/img/tree-lift-ramat-aviv-idan.jpg",
+  "https://www.tal83.com/img/street-reach.jpg"
+ ],
+ "lang": "he",
+ "voice": "he-IL-AvriNeural",
+ "rate": "+4%",
+ "presenter": true,
+ "kind": "quiz",
+ "audio_url": "https://drive.google.com/uc?export=download&id=1rMhLWcVBP083PAo5uJGrm1KzKYp_d_0D",
+ "dub_voice": "Shalini"
+}

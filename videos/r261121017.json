@@ -1,0 +1,24 @@
+{
+ "id": "r261121017",
+ "title": "נקודת עיגון – איפה?",
+ "lines": [
+  "איפה שמים נקודת עיגון?",
+  "גבוה ככל האפשר, ולא נמוך מהרגליים של העובד.",
+  "במקום שעומד בעומס של נפילה.",
+  "ובמיקום שלא יגרום לתנועת מטוטלת מסוכנת.",
+  "אופק את טל מנופים."
+ ],
+ "photos": [
+  "assets/cities/petahtikva.jpg",
+  "https://www.tal83.com/img/bucket-truck-services-nes-ziona.jpg",
+  "https://www.tal83.com/img/palm-trim.jpg",
+  "https://www.tal83.com/img/aerial-platform-rental-nes-ziona.jpg"
+ ],
+ "lang": "he",
+ "voice": "he-IL-AvriNeural",
+ "rate": "+4%",
+ "presenter": true,
+ "kind": "regs",
+ "audio_url": "https://drive.google.com/uc?export=download&id=149rNZzpg49N8Ve1fwbMhkH_9aor7eUJ7",
+ "dub_voice": "Madhura"
+}

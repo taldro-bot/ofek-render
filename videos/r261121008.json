@@ -1,0 +1,24 @@
+{
+ "id": "r261121008",
+ "title": "טיפ יומי: לא עומדים מתחת למטען",
+ "lines": [
+  "טיפ יומי מאופק את טל.",
+  "לעולם לא עומדים מתחת למטען תלוי.",
+  "גם לא לשנייה, גם לא \"רק להחזיק\".",
+  "מרחיקים, ומכוונים עם חבל הכוונה.",
+  "טיפ ביום – שומר עליכם. אופק את טל מנופים."
+ ],
+ "photos": [
+  "assets/cities/rehovot.jpg",
+  "https://www.tal83.com/img/aerial-platform-rental-nes-ziona.jpg",
+  "https://www.tal83.com/img/working-at-height-safety-equipment-checklist.jpg",
+  "https://www.tal83.com/img/crane-basket-safety-tip-leveling-slopes.jpg"
+ ],
+ "lang": "he",
+ "voice": "he-IL-AvriNeural",
+ "rate": "+4%",
+ "presenter": true,
+ "kind": "tip",
+ "audio_url": "https://drive.google.com/uc?export=download&id=18nMiJOOJdc9nRzwRNY52Xk6FW0ebJVRi",
+ "dub_voice": "Nora"
+}

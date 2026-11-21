@@ -1,0 +1,23 @@
+{
+ "id": "r261121007",
+ "title": "קורס עבודה בגובה למתקיני פרקטים",
+ "lines": [
+  "מי שמתקין פרקטים ודקים חושב לפעמים \"מה כבר גובה, אני על הרצפה\".",
+  "נשמה, דק על גג או מרפסת זה עבודה בגובה לכל דבר.",
+  "עברנו על הרתמה, על נקודת עיגון, על מה בודקים לפני שעולים – ורק אחרי שהכל ישב טוב בראש, קיבל אישור.",
+  "אחי, תעודה זה לא נייר למגירה.",
+  "המאמר המלא באתר טל שמונים ושלוש."
+ ],
+ "photos": [
+  "assets/cities/beitshemesh.jpg",
+  "https://www.tal83.com/img/crane-signalman-safety-guidelines.jpg",
+  "https://www.tal83.com/img/crane-basket-safety-tip-leveling-slopes.jpg",
+  "https://www.tal83.com/img/bucket-truck-services-nes-ziona.jpg"
+ ],
+ "lang": "he",
+ "voice": "he-IL-AvriNeural",
+ "rate": "+4%",
+ "presenter": true,
+ "audio_url": "https://drive.google.com/uc?export=download&id=1ztCKxzN3mVJhKgHQ4CdM8lrrpNqJk9Za",
+ "dub_voice": "Brooke"
+}

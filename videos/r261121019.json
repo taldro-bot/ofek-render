@@ -1,0 +1,24 @@
+{
+ "id": "r261121019",
+ "title": "קבלן, איפה המשגיח שלך?",
+ "lines": [
+  "קבלן, מי עומד למטה בזמן ההנפה?",
+  "צריך משגיח קרקע שמרחיק אנשים.",
+  "אף אחד לא עומד מתחת למטען.",
+  "זה החוק, וזה גם השכל הישר.",
+  "בטיחות קודם. אופק את טל מנופים."
+ ],
+ "photos": [
+  "assets/cities/tal-haifa-carmel.jpg",
+  "https://www.tal83.com/img/crane-signalman-safety-guidelines.jpg",
+  "https://www.tal83.com/img/quick-response-access-solutions-gedera.jpg",
+  "https://www.tal83.com/img/bucket-truck-crane-hadera.jpg"
+ ],
+ "lang": "he",
+ "voice": "he-IL-AvriNeural",
+ "rate": "+4%",
+ "presenter": true,
+ "kind": "question",
+ "audio_url": "https://drive.google.com/uc?export=download&id=1XL9jYGdLeqhzJLo07gXkKzfu9oPL6ss0",
+ "dub_voice": "Camila"
+}
