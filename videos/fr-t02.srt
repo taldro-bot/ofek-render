@@ -1,0 +1,19 @@
+1
+00:00:00,600 --> 00:00:05,910
+Lisez l'étiquette : numéro de norme, année de fabrication et numéro de série.
+
+2
+00:00:06,010 --> 00:00:12,832
+Le marquage CE seul ne suffit pas. Il faut à côté un numéro à quatre chiffres d'un organisme notifié.
+
+3
+00:00:12,932 --> 00:00:19,514
+Vérifiez coutures, sangles et boucles. Coupure, brûlure ou rouille : le harnais est réformé.
+
+4
+00:00:19,614 --> 00:00:24,132
+Un harnais qui a arrêté une chute est retiré, même s'il paraît intact.
+
+5
+00:00:24,232 --> 00:00:28,198
+Et une personne compétente signe la vérification périodique.

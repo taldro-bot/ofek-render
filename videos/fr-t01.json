@@ -1,0 +1,20 @@
+{
+ "id": "fr-t01",
+ "title": "Harnais chinois ou européen : la vraie différence",
+ "lines": [
+  "On dit que la norme chinoise autorise huit cents kilos de force d'arrêt, et l'européenne une tonne deux ? On a vérifié.",
+  "Dans les deux normes, et dans l'américaine aussi, l'absorbeur limite le choc sur le corps à environ six kilonewtons.",
+  "C'est environ six cents kilos, pas plus, pour protéger le dos et les organes.",
+  "La vraie différence n'est donc pas la norme. Ce sont les contrefaçons.",
+  "Un harnais avec une vraie norme, chinois ou européen, fonctionne. Un faux, non."
+ ],
+ "photos": [
+  "https://www.tal83.com/img/teken-eropi-sini-american-ratma.jpg",
+  "https://www.tal83.com/img/safety-tip-working-at-height-basket-harness.jpg",
+  "https://www.tal83.com/img/safety-tip-height-training-anchor-point.jpg"
+ ],
+ "lang": "fr",
+ "voice": "fr-FR-HenriNeural",
+ "rate": "+4%",
+ "presenter": true
+}

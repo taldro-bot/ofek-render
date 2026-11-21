@@ -1,0 +1,20 @@
+{
+ "id": "fr-t03",
+ "title": "Quelle résistance pour un harnais ?",
+ "lines": [
+  "En Europe et en Chine, le harnais doit tenir quinze kilonewtons, environ une tonne et demie.",
+  "La norme américaine exige plus des sangles : vingt-deux kilonewtons à neuf.",
+  "Mais le choc sur le corps est limité partout à environ six cents kilos.",
+  "En Israël, on accepte l'équipement certifié aux normes européennes, américaines ou internationales.",
+  "Des questions sur l'équipement ou la formation au travail en hauteur ? Parlez à Tal."
+ ],
+ "photos": [
+  "https://www.tal83.com/img/safety-tip-working-at-height-basket-harness.jpg",
+  "https://www.tal83.com/img/risk-assessment-safety-tip-height-work.jpg",
+  "https://www.tal83.com/img/teken-eropi-sini-american-ratma.jpg"
+ ],
+ "lang": "fr",
+ "voice": "fr-FR-HenriNeural",
+ "rate": "+4%",
+ "presenter": true
+}

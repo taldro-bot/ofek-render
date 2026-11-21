@@ -1,0 +1,19 @@
+1
+00:00:00,600 --> 00:00:05,598
+Read the label: standard number, year of manufacture and serial number.
+
+2
+00:00:05,698 --> 00:00:12,520
+A CE mark alone is not enough. Next to it you need a four-digit number of a notified body.
+
+3
+00:00:12,620 --> 00:00:18,866
+Check stitching, webbing and buckles. A cut, burn or rust means the harness is out.
+
+4
+00:00:18,966 --> 00:00:23,700
+A harness that has arrested a fall is retired, even if it looks fine.
+
+5
+00:00:23,800 --> 00:00:27,814
+And a competent person signs the periodic inspection.

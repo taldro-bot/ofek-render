@@ -1,0 +1,20 @@
+{
+ "id": "t03",
+ "title": "כמה חזקה רתמה צריכה להיות?",
+ "lines": [
+  "באירופה ובסין, הרתמה צריכה להחזיק חמישה עשר קילו-ניוטון, בערך טון וחצי.",
+  "בתקן האמריקאי הרצועות חזקות יותר: עשרים ושניים קילו-ניוטון בחדשה.",
+  "אבל המכה על הגוף מוגבלת בכולם לבערך שש מאות קילו.",
+  "בישראל מקבלים ציוד לפי תקן אירופאי, אמריקאי או בינלאומי.",
+  "שאלות על ציוד או על הדרכת עבודה בגובה? דברו עם טל."
+ ],
+ "photos": [
+  "https://www.tal83.com/img/safety-tip-working-at-height-basket-harness.jpg",
+  "https://www.tal83.com/img/risk-assessment-safety-tip-height-work.jpg",
+  "https://www.tal83.com/img/teken-eropi-sini-american-ratma.jpg"
+ ],
+ "lang": "he",
+ "voice": "he-IL-AvriNeural",
+ "rate": "+4%",
+ "presenter": true
+}
