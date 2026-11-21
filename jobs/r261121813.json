@@ -1,0 +1,21 @@
+{
+ "id": "r261121813",
+ "title": "צריכים מנוף סל בחדרה? מחר בבוקר אנחנו שם",
+ "lines": [
+  "צריכים מנוף סל בחדרה? מדהים!",
+  "מחר אנחנו שם עבורך, בבוקר.",
+  "חמש בבוקר – שם עבורך, ראשונים בזריחה!",
+  "לבצע את המשימה – בטוח, מהר ונקי.",
+  "אופק את טל מנופים – 050-9081114, tal83.com."
+ ],
+ "photos": [
+  "assets/cities/tal-ta-beach-sunset.jpg",
+  "assets/cities/tal-street-day.jpg",
+  "assets/cities/at-caesarea-harbour-fe84.jpg"
+ ],
+ "lang": "he",
+ "voice": "he-IL-AvriNeural",
+ "rate": "+4%",
+ "presenter": true,
+ "kind": "city"
+}
