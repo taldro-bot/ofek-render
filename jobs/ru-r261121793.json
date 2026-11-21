@@ -1,0 +1,21 @@
+{
+ "id": "ru-r261121793",
+ "title": "Автовышка в городе Зихрон-Яаков",
+ "lines": [
+  "Нужна автовышка в Зихрон-Яаков?",
+  "Мы там работаем и знаем район.",
+  "Меряем высоту и вылет, проверяем провода и место для опор.",
+  "Безопасно, быстро и аккуратно.",
+  "Офек и Таль — приедем к вам."
+ ],
+ "photos": [
+  "assets/cities/in-zichron-yaakov-10f9.jpg",
+  "assets/cities/tal-jlm-old.jpg",
+  "assets/cities/tal-ta-beach-sunset.jpg"
+ ],
+ "lang": "ru",
+ "voice": "he-IL-AvriNeural",
+ "rate": "+4%",
+ "presenter": true,
+ "kind": "city"
+}

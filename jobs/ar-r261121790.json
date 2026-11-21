@@ -1,0 +1,21 @@
+{
+ "id": "ar-r261121790",
+ "title": "رافعة سلة في حيفا",
+ "lines": [
+  "تبحثون عن رافعة سلة في حيفا؟",
+  "نحن نعمل هناك ونعرف المنطقة.",
+  "نقيس الارتفاع والمسافة، ونفحص الكهرباء ومكان الأرجل الداعمة.",
+  "عمل آمن، سريع ونظيف.",
+  "أوفيك وطال للرافعات – نصل إليكم."
+ ],
+ "photos": [
+  "assets/cities/in-wadi-nisnas-f91f.jpg",
+  "assets/cities/tal-ta-night3.jpg",
+  "assets/cities/tal-haifa-carmel.jpg"
+ ],
+ "lang": "ar",
+ "voice": "he-IL-AvriNeural",
+ "rate": "+4%",
+ "presenter": true,
+ "kind": "city"
+}

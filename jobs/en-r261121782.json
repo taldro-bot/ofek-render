@@ -1,0 +1,21 @@
+{
+ "id": "en-r261121782",
+ "title": "Boom lift crane in Jerusalem",
+ "lines": [
+  "Need a boom lift in Jerusalem?",
+  "We work there and know the area.",
+  "We measure height and reach, and check power lines and outrigger space.",
+  "Safe, fast and clean work.",
+  "Ofek et Tal Cranes – we come to you."
+ ],
+ "photos": [
+  "assets/cities/at-jaffa-gate-a3eb.jpg",
+  "assets/cities/tal-jlm-night4.jpg",
+  "assets/cities/tal-bneibrak-night.jpg"
+ ],
+ "lang": "en",
+ "voice": "he-IL-AvriNeural",
+ "rate": "+4%",
+ "presenter": true,
+ "kind": "city"
+}

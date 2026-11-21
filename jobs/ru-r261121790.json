@@ -1,0 +1,21 @@
+{
+ "id": "ru-r261121790",
+ "title": "Автовышка в городе Хайфа",
+ "lines": [
+  "Нужна автовышка в Хайфа?",
+  "Мы там работаем и знаем район.",
+  "Меряем высоту и вылет, проверяем провода и место для опор.",
+  "Безопасно, быстро и аккуратно.",
+  "Офек и Таль — приедем к вам."
+ ],
+ "photos": [
+  "assets/cities/in-wadi-nisnas-f91f.jpg",
+  "assets/cities/tal-ta-night3.jpg",
+  "assets/cities/tal-haifa-carmel.jpg"
+ ],
+ "lang": "ru",
+ "voice": "he-IL-AvriNeural",
+ "rate": "+4%",
+ "presenter": true,
+ "kind": "city"
+}

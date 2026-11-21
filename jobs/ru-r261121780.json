@@ -1,0 +1,21 @@
+{
+ "id": "ru-r261121780",
+ "title": "Автовышка в городе Атлит",
+ "lines": [
+  "Нужна автовышка в Атлит?",
+  "Мы там работаем и знаем район.",
+  "Меряем высоту и вылет, проверяем провода и место для опор.",
+  "Безопасно, быстро и аккуратно.",
+  "Офек и Таль — приедем к вам."
+ ],
+ "photos": [
+  "assets/cities/at-atlit-fortress-912b.jpg",
+  "assets/cities/tal-ta-night3.jpg",
+  "assets/cities/tal-ta-tayelet-night.jpg"
+ ],
+ "lang": "ru",
+ "voice": "he-IL-AvriNeural",
+ "rate": "+4%",
+ "presenter": true,
+ "kind": "city"
+}

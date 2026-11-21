@@ -1,0 +1,21 @@
+{
+ "id": "ru-r261121783",
+ "title": "Автовышка в городе Иерусалим",
+ "lines": [
+  "Нужна автовышка в Иерусалим?",
+  "Мы там работаем и знаем район.",
+  "Меряем высоту и вылет, проверяем провода и место для опор.",
+  "Безопасно, быстро и аккуратно.",
+  "Офек и Таль — приедем к вам."
+ ],
+ "photos": [
+  "assets/cities/at-mamilla-mall-d446.jpg",
+  "assets/cities/tal-ta-beach-sunset.jpg",
+  "assets/cities/tal-haifa-carmel.jpg"
+ ],
+ "lang": "ru",
+ "voice": "he-IL-AvriNeural",
+ "rate": "+4%",
+ "presenter": true,
+ "kind": "city"
+}

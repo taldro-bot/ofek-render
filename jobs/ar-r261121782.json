@@ -1,0 +1,21 @@
+{
+ "id": "ar-r261121782",
+ "title": "رافعة سلة في القدس",
+ "lines": [
+  "تبحثون عن رافعة سلة في القدس؟",
+  "نحن نعمل هناك ونعرف المنطقة.",
+  "نقيس الارتفاع والمسافة، ونفحص الكهرباء ومكان الأرجل الداعمة.",
+  "عمل آمن، سريع ونظيف.",
+  "أوفيك وطال للرافعات – نصل إليكم."
+ ],
+ "photos": [
+  "assets/cities/at-jaffa-gate-a3eb.jpg",
+  "assets/cities/tal-jlm-night4.jpg",
+  "assets/cities/tal-bneibrak-night.jpg"
+ ],
+ "lang": "ar",
+ "voice": "he-IL-AvriNeural",
+ "rate": "+4%",
+ "presenter": true,
+ "kind": "city"
+}

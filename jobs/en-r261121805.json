@@ -1,0 +1,21 @@
+{
+ "id": "en-r261121805",
+ "title": "Boom lift crane in Jaffa",
+ "lines": [
+  "Need a boom lift in Jaffa?",
+  "We work there and know the area.",
+  "We measure height and reach, and check power lines and outrigger space.",
+  "Safe, fast and clean work.",
+  "Ofek et Tal Cranes – we come to you."
+ ],
+ "photos": [
+  "assets/cities/jaffa-clock.jpg",
+  "assets/cities/tal-jlm-night4.jpg",
+  "assets/cities/tal-ta-night1.jpg"
+ ],
+ "lang": "en",
+ "voice": "he-IL-AvriNeural",
+ "rate": "+4%",
+ "presenter": true,
+ "kind": "city"
+}

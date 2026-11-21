@@ -1,0 +1,21 @@
+{
+ "id": "ru-r261121799",
+ "title": "Автовышка в городе Герцлия",
+ "lines": [
+  "Нужна автовышка в Герцлия?",
+  "Мы там работаем и знаем район.",
+  "Меряем высоту и вылет, проверяем провода и место для опор.",
+  "Безопасно, быстро и аккуратно.",
+  "Офек и Таль — приедем к вам."
+ ],
+ "photos": [
+  "assets/cities/haifa-construction-crane-lift.jpg",
+  "assets/cities/tal-street-day.jpg",
+  "assets/cities/tal-jlm-shuk.jpg"
+ ],
+ "lang": "ru",
+ "voice": "he-IL-AvriNeural",
+ "rate": "+4%",
+ "presenter": true,
+ "kind": "city"
+}
