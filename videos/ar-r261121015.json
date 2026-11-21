@@ -1,0 +1,22 @@
+{
+ "id": "ar-r261121015",
+ "title": "تدريب العمل على المرتفعات للعمال",
+ "lines": [
+  "العمل على المرتفعات يحتاج إلى تدريب رسمي.",
+  "حسب أنظمة وزارة العمل – تدريب وشهادة.",
+  "نتعلم الحزام، السلالم، الأسطح، والسقالات.",
+  "نظري وعملي، بلغة واضحة وسهلة.",
+  "للتسجيل: أوفيك إت طال، 050-9081114."
+ ],
+ "photos": [
+  "assets/cities/netanya.jpg",
+  "https://www.tal83.com/img/manof-sal-guide-and-ordering.jpg",
+  "https://www.tal83.com/img/quick-response-access-solutions-gedera.jpg",
+  "https://www.tal83.com/img/crane-basket-safety-tip-leveling-slopes.jpg"
+ ],
+ "lang": "ar",
+ "voice": "ar-SA-HamedNeural",
+ "rate": "+4%",
+ "presenter": true,
+ "kind": "foreign"
+}
