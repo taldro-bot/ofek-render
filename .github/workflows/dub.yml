@@ -26,6 +26,7 @@ jobs:
         run: |
           mkdir -p out
           while read -r id; do j=jobs/$id.json
+            if grep -q '"typewriter": true' "$j"; then python3 typewriter.py --job "$j" < /dev/null || echo "FAILED $id"; continue; fi
             if grep -q '"clipmix": true' "$j"; then python3 clipmix.py --job "$j" < /dev/null || echo "FAILED $id"; continue; fi
             python3 fetch_photos.py "$j" < /dev/null && { python3 render.py "$j.local" < /dev/null || python3 render.py "$j.local" < /dev/null || echo "FAILED $id"; }
           done < ids.txt
