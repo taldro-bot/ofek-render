@@ -1,0 +1,22 @@
+{
+ "id": "r261121025",
+ "title": "ציוד לפני עבודה בגובה",
+ "lines": [
+  "מה חובה ללבוש לעבודה בגובה?",
+  "נעלי בטיחות עם סוליה נגד החלקה.",
+  "קסדת מגן מתאימה, עם רצועת סנטר.",
+  "ורתמה שנבדקה לפי הוראות היצרן.",
+  "ציוד ודרכה: אופק את טל מנופים."
+ ],
+ "photos": [
+  "assets/cities/tal-ta-night3.jpg",
+  "https://www.tal83.com/img/working-at-height-course-petah-tikva.jpg",
+  "https://www.tal83.com/img/ground-spotter-height-safety-tip.jpg",
+  "https://www.tal83.com/img/bucket-crane-rental-yehud.jpg"
+ ],
+ "lang": "he",
+ "voice": "he-IL-AvriNeural",
+ "rate": "+4%",
+ "presenter": true,
+ "kind": "regs"
+}

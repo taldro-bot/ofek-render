@@ -56,7 +56,7 @@ def main():
     sp = 'state/used.json'
     st = json.load(open(sp)) if os.path.exists(sp) else {'n': 0, 'used': []}
     n = st['n']; lang = LANG_CYCLE[n % len(LANG_CYCLE)]
-    mach = MACHINES[n % len(MACHINES)]
+    mach = os.environ.get('FORCE_MACH') or MACHINES[n % len(MACHINES)]   # 21.11: FORCE_MACH=regs to batch one kind
     if mach == 'foreign': lang = FOREIGN_LANGS[(n // len(MACHINES)) % len(FOREIGN_LANGS)]
     elif mach in ('question', 'quiz', 'tip', 'regs'): lang = 'he'
     rnd = random.Random(n * 7919 + 17)

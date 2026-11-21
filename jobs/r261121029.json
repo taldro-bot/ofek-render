@@ -1,0 +1,22 @@
+{
+ "id": "r261121029",
+ "title": "נושאי ההדרכה לפי החוק",
+ "lines": [
+  "מה לומדים בהדרכת עבודה בגובה?",
+  "ציוד ומערכות אבטחה, ובדיקת הציוד.",
+  "זיהוי סיכונים ומניעתם.",
+  "נקודות עיגון, והכוחות שפועלים בנפילה.",
+  "הדרכות לכל התחומים: אופק את טל, 050-9081114."
+ ],
+ "photos": [
+  "assets/cities/tal-ta-night1.jpg",
+  "https://www.tal83.com/img/working-at-height-safety-tip-ground-inspection-before-setup.jpg",
+  "https://www.tal83.com/img/cherry-picker-crane-rental-guide.jpg",
+  "https://www.tal83.com/img/quick-response-access-solutions-gedera.jpg"
+ ],
+ "lang": "he",
+ "voice": "he-IL-AvriNeural",
+ "rate": "+4%",
+ "presenter": true,
+ "kind": "regs"
+}

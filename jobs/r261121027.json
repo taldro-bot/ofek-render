@@ -1,0 +1,22 @@
+{
+ "id": "r261121027",
+ "title": "3 נקודות אחיזה בסולם",
+ "lines": [
+  "איך מטפסים בסולם לפי החוק?",
+  "פנים אל הסולם, שתי ידיים פנויות.",
+  "תמיד שלוש נקודות אחיזה.",
+  "ובסולם ארוך משני מטר – לא עולים עד השלב העליון.",
+  "אופק את טל מנופים – בטיחות בגובה."
+ ],
+ "photos": [
+  "assets/cities/tal-street-day.jpg",
+  "https://www.tal83.com/img/aerial-work-platform-rental-petah-tikva.jpg",
+  "https://www.tal83.com/img/cherry-picker-crane-rental-guide.jpg",
+  "https://www.tal83.com/img/aerial-work-platforms-tree-trimming-field-story.jpg"
+ ],
+ "lang": "he",
+ "voice": "he-IL-AvriNeural",
+ "rate": "+4%",
+ "presenter": true,
+ "kind": "regs"
+}

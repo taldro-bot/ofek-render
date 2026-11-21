@@ -1,0 +1,22 @@
+{
+ "id": "r261121034",
+ "title": "נפלת? חייבים לחלץ מהר",
+ "lines": [
+  "מה קורה אחרי שהרתמה בלמה נפילה?",
+  "החוק דורש לחלץ את העובד מהר, לפני נזק בלתי הפיך.",
+  "בחילוץ עצמי, עובד נוסף על הקרקע, או ציוד חילוץ במקום.",
+  "וציוד שבלם נפילה – יוצא משימוש לבדיקה.",
+  "אופק את טל מנופים."
+ ],
+ "photos": [
+  "assets/cities/tal-ta-night1.jpg",
+  "https://www.tal83.com/img/safety-tip-height-training-anchor-point.jpg",
+  "https://www.tal83.com/img/safety-tip-working-at-height-basket-harness.jpg",
+  "https://www.tal83.com/img/risk-assessment-safety-tip-height-work.jpg"
+ ],
+ "lang": "he",
+ "voice": "he-IL-AvriNeural",
+ "rate": "+4%",
+ "presenter": true,
+ "kind": "regs"
+}

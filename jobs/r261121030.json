@@ -1,0 +1,22 @@
+{
+ "id": "r261121030",
+ "title": "תמיד אדם נוסף למטה",
+ "lines": [
+  "יודעים מה החוק אומר על העובד שלמטה?",
+  "בזמן עבודה בגובה, תמיד צריך אדם בגיר נוסף על הקרקע.",
+  "הוא שומר על קשר עין עם מי שלמעלה.",
+  "עוזר, ומרחיק אנשים מאזור הסכנה.",
+  "אופק את טל מנופים – עובדים לפי התקנות."
+ ],
+ "photos": [
+  "assets/cities/ashdod.jpg",
+  "https://www.tal83.com/img/aerial-work-platforms-tree-trimming-field-story.jpg",
+  "https://www.tal83.com/img/working-at-height-safety-tip-ground-inspection-before-setup.jpg",
+  "https://www.tal83.com/img/aerial-platform-rental-nes-ziona.jpg"
+ ],
+ "lang": "he",
+ "voice": "he-IL-AvriNeural",
+ "rate": "+4%",
+ "presenter": true,
+ "kind": "regs"
+}

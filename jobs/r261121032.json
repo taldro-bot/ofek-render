@@ -1,0 +1,22 @@
+{
+ "id": "r261121032",
+ "title": "עבודה בגובה בלילה ובגשם",
+ "lines": [
+  "עבודה בגובה בלילה, ברוח או בגשם?",
+  "מותרת רק לפי הנחיות בטיחות בכתב מהמבצע.",
+  "וחייבת תאורה טובה – על המשטח, מהקרקע, או פנס על הקסדה.",
+  "מזג אוויר קשה? עוצרים וחושבים פעמיים.",
+  "אופק את טל מנופים."
+ ],
+ "photos": [
+  "assets/cities/jlm-mahane-yehuda.jpg",
+  "https://www.tal83.com/img/boom-lift-rental-yehud.jpg",
+  "https://www.tal83.com/img/ground-spotter-height-safety-tip.jpg",
+  "https://www.tal83.com/img/hero-boom.jpg"
+ ],
+ "lang": "he",
+ "voice": "he-IL-AvriNeural",
+ "rate": "+4%",
+ "presenter": true,
+ "kind": "regs"
+}

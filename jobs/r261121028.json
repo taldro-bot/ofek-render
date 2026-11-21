@@ -1,0 +1,22 @@
+{
+ "id": "r261121028",
+ "title": "מה זה \"עבודה בגובה\" לפי החוק?",
+ "lines": [
+  "מה זה עבודה בגובה לפי החוק?",
+  "כל עבודה שבה אפשר ליפול יותר משני מטרים.",
+  "כולל עבודה בלי מעקה, או התכופפות מעבר למעקה.",
+  "וכולל כל עבודה מתוך במה, סל הרמה או פיגום ממוכן.",
+  "תקנות עבודה בגובה, תשס\"ז 2007. אופק את טל מנופים."
+ ],
+ "photos": [
+  "assets/cities/jlm-jaffa-gate.jpg",
+  "https://www.tal83.com/img/working-at-height-safety-tip-ground-inspection-before-setup.jpg",
+  "https://www.tal83.com/img/sign-install.jpg",
+  "https://www.tal83.com/img/manof-sal-guide-and-ordering.jpg"
+ ],
+ "lang": "he",
+ "voice": "he-IL-AvriNeural",
+ "rate": "+4%",
+ "presenter": true,
+ "kind": "regs"
+}

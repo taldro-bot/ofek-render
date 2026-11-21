@@ -1,0 +1,22 @@
+{
+ "id": "r261121031",
+ "title": "מרחק מקווי חשמל",
+ "lines": [
+  "כמה מרחק שומרים מקווי חשמל?",
+  "לפחות 3.25 מטר מקווים עד 33 קילו-וולט.",
+  "ולפחות 5 מטר מקווי מתח גבוה יותר.",
+  "צריך להתקרב? רק אחרי ניתוק או מחיצות הגנה.",
+  "בטיחות חשמל בגובה. אופק את טל מנופים."
+ ],
+ "photos": [
+  "assets/cities/batyam.jpg",
+  "https://www.tal83.com/img/boom-lift-tree-pruning-safety-electrical-lines.jpg",
+  "https://www.tal83.com/img/sign-install.jpg",
+  "https://www.tal83.com/img/manof-sal-guide-and-ordering.jpg"
+ ],
+ "lang": "he",
+ "voice": "he-IL-AvriNeural",
+ "rate": "+4%",
+ "presenter": true,
+ "kind": "regs"
+}
