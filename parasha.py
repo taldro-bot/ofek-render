@@ -60,7 +60,8 @@ P = {
 
 
 def next_parasha():
-    u = 'https://www.hebcal.com/shabbat?cfg=json&geonameid=293397&M=on&lg=he'
+    f = datetime.date.today(); f += datetime.timedelta(days=(4 - f.weekday()) % 7)   # the coming Friday (Saturday -> next week)
+    u = 'https://www.hebcal.com/shabbat?cfg=json&geonameid=293397&M=on&lg=he&gy=%d&gm=%d&gd=%d' % (f.year, f.month, f.day)
     d = json.load(urllib.request.urlopen(urllib.request.Request(u, headers={'User-Agent': 'ofek-bot'}), timeout=30))
     for it in d.get('items', []):
         if it.get('category') == 'parashat':
