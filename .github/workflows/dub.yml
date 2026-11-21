@@ -18,7 +18,7 @@ jobs:
           sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg fonts-noto-core >/dev/null
           pip install -q edge-tts
       - name: pick dubbed jobs
-        env: { DUB_MANIFEST: 'MANIFEST_ID', MAXN: '9' }
+        env: { DUB_MANIFEST: '1_B5Pi1slRJdU0kNlJg8oUNIyshelL6RH', MAXN: '16' }
         run: |
           python3 dubrender.py > ids.txt || true
           cat ids.txt; [ -s ids.txt ] || echo "nothing ready" 
