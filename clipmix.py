@@ -96,8 +96,10 @@ def main():
         segs = []
         for i, (b, x) in enumerate(picks):
             src = get(RAW + b + '/clips/' + x, f'{TMP}/s{i}.mp4'); dst = f'{TMP}/v{i}.mp4'
-            sp_ = rnd.choice([1.0, 1.0, 1.25, 0.8])
-            vf = (f"setpts=PTS/{sp_},fps={FPS},split[a][b];[a]scale={W}:{H}:force_original_aspect_ratio=increase,crop={W}:{H},boxblur=26:2,eq=brightness=-0.12[bg];"
+            sp_ = rnd.choice([1.0, 1.0, 1.25, 0.8, 2.0])
+            fx = ''.join([',reverse' if rnd.random() < 0.25 else '', ',hflip' if rnd.random() < 0.3 else '',
+                          rnd.choice(['', '', ',eq=saturation=1.35:contrast=1.08', ',eq=gamma=0.9:saturation=0.8', ',colorbalance=rs=0.08:bs=-0.06', ',hue=s=0'])])
+            vf = (f"setpts=PTS/{sp_},fps={FPS}{fx},split[a][b];[a]scale={W}:{H}:force_original_aspect_ratio=increase,crop={W}:{H},boxblur=26:2,eq=brightness=-0.12[bg];"
                   f"[b]scale={W}:{H}:force_original_aspect_ratio=decrease,eq=contrast=1.07:saturation=1.18[fg];[bg][fg]overlay=(W-w)/2:(H-h)/2,"
                   f"zoompan=z='min(zoom+0.0009,1.08)':d=1:s={W}x{H}:fps={FPS}")
             run(['ffmpeg', '-nostdin', '-v', 'error', '-y', '-stream_loop', '2', '-i', src, '-t', str(SEG), '-filter_complex', '[0:v]' + vf,
