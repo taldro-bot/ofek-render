@@ -1,0 +1,43 @@
+name: clip-mix-machine
+on:
+  schedule:
+    - cron: '41 */4 * * *'   # every 4 hours, never-ending new combinations
+  workflow_dispatch:
+    inputs:
+      count: { description: 'videos per machine', default: '3' }
+permissions:
+  contents: write
+concurrency: { group: clipmix, cancel-in-progress: false }
+jobs:
+  mix:
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    strategy:
+      fail-fast: false
+      max-parallel: 1   # one after another: shared counter in state/clipmix.json
+      matrix: { m: [1, 2] }
+    steps:
+      - uses: actions/checkout@v4
+      - name: tools
+        run: sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg fonts-noto-core >/dev/null
+      - name: mix
+        run: |
+          git pull -q origin main
+          N="${{ github.event.inputs.count }}"; [ -z "$N" ] && N=3
+          python3 clipmix.py $N | tee ids.txt
+      - name: save state
+        run: |
+          git config user.name ofek-bot; git config user.email bot@tal83.com
+          for i in 1 2 3 4 5; do git add state/clipmix.json && git commit -qm "clipmix state" || break; git push -q origin HEAD:main && break; git pull -q --rebase origin main; done
+      - name: publish to out branch
+        run: |
+          ls out/*.mp4 >/dev/null 2>&1 || { echo "nothing (library still empty?)"; exit 0; }
+          mkdir -p /tmp/o && cp out/* /tmp/o/
+          git fetch origin out:out && git checkout out
+          for i in 1 2 3 4 5 6 7 8; do
+            git fetch -q origin out && git reset -q --hard origin/out
+            mkdir -p videos && cp /tmp/o/* videos/
+            for f in /tmp/o/*.mp4; do b=$(basename "$f" .mp4); grep -qx "$b" upload.txt 2>/dev/null || echo "$b" >> upload.txt; done
+            git add videos upload.txt && git commit -qm "clipmix $(date +%F-%T)" && git push -q origin out && break
+            sleep $((RANDOM % 30 + 5))
+          done

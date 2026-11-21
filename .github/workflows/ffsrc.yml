@@ -21,6 +21,22 @@ jobs:
           mkdir -p src; cd /tmp/s
           for b in $(ls *.part000 | sed 's/\.part000$//'); do cat "$b".part* > "$GITHUB_WORKSPACE/src/$b.mp4"; done
           ls -la "$GITHUB_WORKSPACE/src"
+      - name: clip library (21.11) – 4s clips of every source, kept forever for the clip-mix machine
+        run: |
+          mkdir -p /tmp/c/clips; n=0
+          for f in src/*.mp4; do
+            d=$(ffprobe -v error -show_entries format=duration -of csv=p=0 "$f" | cut -d. -f1); [ -z "$d" ] && continue; [ "$d" -lt 12 ] && continue
+            k=$(( d / 30 + 2 )); [ $k -gt 14 ] && k=14
+            for i in $(seq 1 $k); do t=$(( d * i / (k + 1) )); n=$((n+1))
+              ffmpeg -nostdin -v error -y -ss $t -t 4 -i "$f" -an -vf "scale=-2:720,fps=30" -c:v libx264 -preset veryfast -crf 27 /tmp/c/clips/c${{ github.event.inputs.start }}_$n.mp4 || true
+            done
+          done
+          (cd /tmp/c/clips && ls *.mp4 2>/dev/null) > /tmp/c/list.txt; wc -l /tmp/c/list.txt
+          [ -s /tmp/c/list.txt ] || exit 0
+          B=clips-${{ github.event.inputs.start }}
+          (cd /tmp/c && git init -q -b $B && git config user.name ofek-bot && git config user.email bot@tal83.com && git add -A && git commit -qm "$B" && git push -q -f "https://x-access-token:${{ github.token }}@github.com/${{ github.repository }}" $B)
+          git config user.name ofek-bot && git config user.email bot@tal83.com
+          for i in 1 2 3 4 5; do git pull -q --rebase origin main; echo $B >> state/clips.txt; git add state/clips.txt && git commit -qm "clips $B" && git push -q origin HEAD:main && break; git reset -q --hard origin/main; sleep $((RANDOM%20+5)); done
       - name: mix
         run: |
           export FF_START=${{ github.event.inputs.start }}; export FF_TITLE="עבודת מנוף מהשטח"
