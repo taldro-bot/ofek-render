@@ -30,10 +30,6 @@ jobs:
             if grep -q '"clipmix": true' "$j"; then python3 clipmix.py --job "$j" < /dev/null || echo "FAILED $id"; continue; fi
             python3 fetch_photos.py "$j" < /dev/null && { python3 render.py "$j.local" < /dev/null || python3 render.py "$j.local" < /dev/null || echo "FAILED $id"; }
           done < ids.txt
-      - name: save jobs + state
-        run: |
-          git config user.name "ofek-bot"; git config user.email "bot@tal83.com"
-          cat ids.txt >> state/dubbed.txt; git add jobs state && git commit -qm "dub $(date +%F)" && for i in 1 2 3; do git push -q && break; git pull -q --rebase; done
       - name: publish to out branch
         run: |
           ls out/*.mp4 >/dev/null 2>&1 || { echo "nothing rendered"; exit 0; }
@@ -46,4 +42,14 @@ jobs:
             for f in /tmp/o/*.mp4; do b=$(basename "$f" .mp4); grep -qx "$b" upload.txt 2>/dev/null || echo "$b" >> upload.txt; done
             git add videos upload.txt && git commit -qm "publish $(date +%F-%T)" && git push -q origin out && break
             sleep $((RANDOM % 25 + 5))
+          done
+      - name: "save state (21.11 – reset to remote each try, never a rebase conflict)"
+        run: |
+          git config user.name "ofek-bot"; git config user.email "bot@tal83.com"
+          cp ids.txt /tmp/ids.txt
+          for i in 1 2 3 4 5 6; do
+            git fetch -q origin main && git checkout -q -f -B main origin/main
+            cat /tmp/ids.txt >> state/dubbed.txt
+            git add state && git commit -qm "dub $(date +%F-%H)" && git push -q origin HEAD:main && break
+            sleep $((RANDOM % 20 + 5))
           done
