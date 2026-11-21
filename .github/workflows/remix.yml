@@ -6,46 +6,62 @@ on:
     inputs:
       count:
         description: 'how many new videos to make now'
-        default: '1'
+        default: '10'
 permissions:
   contents: write
 concurrency: { group: remix, cancel-in-progress: false }
 jobs:
   remix:
     runs-on: ubuntu-latest
-    timeout-minutes: 60
+    timeout-minutes: 15
+    outputs:
+      ids: ${{ steps.mk.outputs.ids }}
     steps:
       - uses: actions/checkout@v4
-      - name: deps
-        run: |
-          sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg fonts-noto-core >/dev/null
-          pip install -q edge-tts
       - name: make new jobs
+        id: mk
         run: |
-          N="${{ github.event.inputs.count }}"; [ -z "$N" ] && N=2
+          N="${{ github.event.inputs.count }}"; [ -z "$N" ] && N=10
           : > ids.txt
-          for i in $(seq 1 $N); do id=$(python3 remix.py); case "$id" in r*) echo "$id" >> state/pending.txt;; *) echo "$id" >> ids.txt;; esac; done; touch ids.txt
+          # Hebrew -> pending (dubbed by the Soniox secretaries via dub.yml); other languages render now
+          for i in $(seq 1 $N); do id=$(python3 remix.py); case "$id" in r*) echo "$id" >> state/pending.txt;; *) echo "$id" >> ids.txt;; esac; done
           cat ids.txt
-      - name: render
-        run: |
-          mkdir -p out
-          while read -r id; do j=jobs/$id.json
-            python3 fetch_photos.py "$j" < /dev/null && { python3 render.py "$j.local" < /dev/null || python3 render.py "$j.local" < /dev/null || echo "FAILED $id"; }
-          done < ids.txt
+          echo "ids=$(python3 -c 'import json;print(json.dumps(open("ids.txt").read().split() or ["none"]))')" >> $GITHUB_OUTPUT
       - name: save jobs + state
         run: |
           git config user.name "ofek-bot"; git config user.email "bot@tal83.com"
           git add jobs state && git commit -qm "remix $(date +%F)" && for i in 1 2 3; do git push -q && break; git pull -q --rebase; done
+  render:   # 21.11: machines in parallel, one video each
+    needs: remix
+    if: needs.remix.outputs.ids != '["none"]'
+    runs-on: ubuntu-latest
+    timeout-minutes: 40
+    strategy:
+      fail-fast: false
+      matrix:
+        id: ${{ fromJson(needs.remix.outputs.ids) }}
+    steps:
+      - uses: actions/checkout@v4
+        with: { ref: main }
+      - name: deps
+        run: |
+          sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg fonts-noto-core >/dev/null
+          pip install -q edge-tts
+      - name: render
+        run: |
+          git pull -q origin main; mkdir -p out; id=${{ matrix.id }}; j=jobs/$id.json
+          python3 fetch_photos.py "$j" < /dev/null && { python3 render.py "$j.local" < /dev/null || python3 render.py "$j.local" < /dev/null; }
+          cp $j out/
       - name: publish to out branch
         run: |
-          ls out/*.mp4 >/dev/null 2>&1 || { echo "nothing rendered"; exit 0; }
+          ls out/*.mp4 >/dev/null 2>&1 || { echo "nothing rendered"; exit 1; }
+          git config user.name "ofek-bot"; git config user.email "bot@tal83.com"
           mkdir -p /tmp/o && cp out/* /tmp/o/
-          for id in $(cat ids.txt); do [ -f jobs/$id.json ] && cp jobs/$id.json /tmp/o/; done
           git fetch origin out:out && git checkout out
-          for i in 1 2 3 4 5 6; do
+          for i in 1 2 3 4 5 6 7 8 9 10; do
             git fetch -q origin out && git reset -q --hard origin/out
             mkdir -p videos && cp /tmp/o/* videos/
             for f in /tmp/o/*.mp4; do b=$(basename "$f" .mp4); grep -qx "$b" upload.txt 2>/dev/null || echo "$b" >> upload.txt; done
-            git add videos upload.txt && git commit -qm "publish $(date +%F-%T)" && git push -q origin out && break
-            sleep $((RANDOM % 25 + 5))
+            git add videos upload.txt && git commit -qm "publish ${{ matrix.id }}" && git push -q origin out && break
+            sleep $((RANDOM % 30 + 5))
           done
