@@ -1,0 +1,21 @@
+{
+ "id": "fr-r261121021",
+ "title": "Grue partout en Israël",
+ "lines": [
+  "Aujourd'hui, nouveau chantier.",
+  "On mesure la hauteur depuis le trottoir, pas depuis le mur.",
+  "On vérifie les lignes électriques et la place des stabilisateurs.",
+  "Un travail sûr, rapide et propre.",
+  "Ofek et Tal Grues — on vient chez vous."
+ ],
+ "photos": [
+  "assets/cities/kfarsaba.jpg",
+  "https://www.tal83.com/img/boom-lift-tree-pruning-safety-electrical-lines.jpg",
+  "https://www.tal83.com/img/aerial-lift-rental-shoham.jpg",
+  "https://www.tal83.com/img/quick-response-access-solutions-gedera.jpg"
+ ],
+ "lang": "fr",
+ "voice": "fr-FR-HenriNeural",
+ "rate": "+4%",
+ "presenter": true
+}
