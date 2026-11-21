@@ -1,0 +1,22 @@
+{
+ "id": "r261121004",
+ "title": "טיפ יומי: גיזום ליד חשמל",
+ "lines": [
+  "טיפ יומי.",
+  "גיזום עצים ליד קווי מתח – רק עם תיאום.",
+  "שומרים מרחק ביטחון מהחוטים.",
+  "ענפים נופלים לכיוון בטוח, לא לכביש.",
+  "גיזום מקצועי. אופק את טל מנופים."
+ ],
+ "photos": [
+  "assets/cities/holon.jpg",
+  "https://www.tal83.com/img/bucket-crane-rental-yehud.jpg",
+  "https://www.tal83.com/img/ground-spotter-height-safety-tip.jpg",
+  "https://www.tal83.com/img/boom-towers.jpg"
+ ],
+ "lang": "he",
+ "voice": "he-IL-AvriNeural",
+ "rate": "+4%",
+ "presenter": true,
+ "kind": "tip"
+}

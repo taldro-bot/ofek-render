@@ -1,0 +1,22 @@
+{
+ "id": "r261121005",
+ "title": "הדרכת עבודה בגובה לעובדים זרים",
+ "lines": [
+  "יש לכם עובדים זרים? גם הם חייבים הדרכת עבודה בגובה.",
+  "לפי תקנות משרד העבודה – הדרכה רשמית ותעודה.",
+  "תאוריה ותרגול: רתמה, סולמות, גגות, במות הרמה ופיגומים.",
+  "ההדרכה מותאמת לעובדים שלא דוברים עברית.",
+  "לתיאום הדרכה: אופק את טל, 050-9081114."
+ ],
+ "photos": [
+  "assets/cities/beitshemesh.jpg",
+  "https://www.tal83.com/img/tree-lift-ramat-aviv-idan.jpg",
+  "https://www.tal83.com/img/crane-basket-safety-tip-power-lines.jpg",
+  "https://www.tal83.com/img/aerial-work-platforms-tree-trimming-field-story.jpg"
+ ],
+ "lang": "he",
+ "voice": "he-IL-AvriNeural",
+ "rate": "+4%",
+ "presenter": true,
+ "kind": "foreign"
+}

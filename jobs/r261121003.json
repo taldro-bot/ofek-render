@@ -1,0 +1,22 @@
+{
+ "id": "r261121003",
+ "title": "חידון לקבלן: זרוע 20 מטר",
+ "lines": [
+  "חידון לקבלן! זרוע של עשרים מטר.",
+  "המרחק בקרקע שתים עשרה מטר. לאיזה גובה מגיעים?",
+  "חשבו על פיתגורס.",
+  "בערך שש עשרה מטר.",
+  "ככה מחשבים לפני שמזמינים. אופק את טל מנופים."
+ ],
+ "photos": [
+  "assets/cities/holon.jpg",
+  "https://www.tal83.com/img/crane-basket-safety-tip-power-lines.jpg",
+  "https://www.tal83.com/img/aerial-lift-rental-shoham.jpg",
+  "https://www.tal83.com/img/hero-boom.jpg"
+ ],
+ "lang": "he",
+ "voice": "he-IL-AvriNeural",
+ "rate": "+4%",
+ "presenter": true,
+ "kind": "quiz"
+}

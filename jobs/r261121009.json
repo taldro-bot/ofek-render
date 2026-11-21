@@ -1,0 +1,22 @@
+{
+ "id": "r261121009",
+ "title": "קבלן, שמרת חניה למנוף?",
+ "lines": [
+  "קבלן, שאלה פשוטה: שמרת חניה למנוף?",
+  "מנוף צריך מקום לרגליים התומכות, לא רק לגלגלים.",
+  "בלי חניה – מאבדים שעה ברחוב.",
+  "שומרים שתיים-שלוש חניות מראש.",
+  "ככה עובדים מקצועי. אופק את טל מנופים."
+ ],
+ "photos": [
+  "assets/cities/batyam.jpg",
+  "https://www.tal83.com/img/crane-hand-signals-guide.jpg",
+  "https://www.tal83.com/img/sign-install.jpg",
+  "https://www.tal83.com/img/street-reach.jpg"
+ ],
+ "lang": "he",
+ "voice": "he-IL-AvriNeural",
+ "rate": "+4%",
+ "presenter": true,
+ "kind": "question"
+}
