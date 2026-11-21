@@ -18,5 +18,7 @@
  "voice": "he-IL-AvriNeural",
  "rate": "+4%",
  "presenter": true,
- "kind": "regs"
+ "kind": "regs",
+ "audio_url": "https://drive.google.com/uc?export=download&id=149rNZzpg49N8Ve1fwbMhkH_9aor7eUJ7",
+ "dub_voice": "Madhura"
 }
