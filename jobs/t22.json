@@ -1,0 +1,18 @@
+{
+ "id": "t22",
+ "title": "מנוף ברחובות – אופק את טל מנופים",
+ "lines": [
+  "היום אנחנו ברחובות.",
+  "גיזום עץ גבוה בין עצי ההדרים.",
+  "מודדים גובה, בודקים חוטי חשמל ותמיכות, ועובדים בבטחה.",
+  "צריכים מנוף ברחובות? מתקשרים לטל."
+ ],
+ "photos": [
+  "assets/cities/rehovot.jpg",
+  "assets/cities/beitshemesh.jpg"
+ ],
+ "lang": "he",
+ "voice": "he-IL-AvriNeural",
+ "rate": "+4%",
+ "presenter": true
+}

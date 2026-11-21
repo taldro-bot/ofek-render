@@ -1,0 +1,18 @@
+{
+ "id": "t24",
+ "title": "מנוף בבת ים – אופק את טל מנופים",
+ "lines": [
+  "היום אנחנו בבת ים.",
+  "תיקון מרפסת מול הטיילת.",
+  "מודדים גובה, בודקים חוטי חשמל ותמיכות, ועובדים בבטחה.",
+  "צריכים מנוף בבת ים? מתקשרים לטל."
+ ],
+ "photos": [
+  "assets/cities/batyam.jpg",
+  "assets/cities/herzliya.jpg"
+ ],
+ "lang": "he",
+ "voice": "he-IL-AvriNeural",
+ "rate": "+4%",
+ "presenter": true
+}

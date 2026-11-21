@@ -1,0 +1,26 @@
+{
+ "id": "t10",
+ "title": "מנוף בכל הארץ – מירושלים ועד באר שבע",
+ "lines": [
+  "שואלים אותי: טל, אתה מגיע גם אלינו?",
+  "ירושלים, תל אביב, חיפה, באר שבע, אשדוד ונתניה.",
+  "מנוף סל, מנוף זרוע, מנוף עם ג׳יב – לכל עבודה בגובה.",
+  "מהעיר ועד המדבר, מאילת ועד צפת.",
+  "תגידו איפה, ואני שם. אופק את טל מנופים."
+ ],
+ "photos": [
+  "assets/cities/jerusalem.png",
+  "assets/cities/telaviv.png",
+  "assets/cities/haifa.jpg",
+  "assets/cities/petahtikva.jpg",
+  "assets/cities/rishon.jpg",
+  "assets/cities/ashdod.jpg",
+  "assets/cities/netanya.jpg",
+  "assets/cities/beersheba.jpg",
+  "assets/cities/bneibrak.jpg"
+ ],
+ "lang": "he",
+ "voice": "he-IL-AvriNeural",
+ "rate": "+4%",
+ "presenter": true
+}

@@ -1,0 +1,18 @@
+{
+ "id": "t23",
+ "title": "מנוף באשקלון – אופק את טל מנופים",
+ "lines": [
+  "היום אנחנו באשקלון.",
+  "פריקת חומרי בנייה ליד החוף.",
+  "מודדים גובה, בודקים חוטי חשמל ותמיכות, ועובדים בבטחה.",
+  "צריכים מנוף באשקלון? מתקשרים לטל."
+ ],
+ "photos": [
+  "assets/cities/ashkelon.jpg",
+  "assets/cities/kfarsaba.jpg"
+ ],
+ "lang": "he",
+ "voice": "he-IL-AvriNeural",
+ "rate": "+4%",
+ "presenter": true
+}

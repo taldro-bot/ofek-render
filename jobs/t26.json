@@ -1,0 +1,18 @@
+{
+ "id": "t26",
+ "title": "מנוף בכפר סבא – אופק את טל מנופים",
+ "lines": [
+  "היום אנחנו בכפר סבא.",
+  "שלט חדש ברחוב בתי הקפה.",
+  "מודדים גובה, בודקים חוטי חשמל ותמיכות, ועובדים בבטחה.",
+  "צריכים מנוף בכפר סבא? מתקשרים לטל."
+ ],
+ "photos": [
+  "assets/cities/kfarsaba.jpg",
+  "assets/cities/telaviv.png"
+ ],
+ "lang": "he",
+ "voice": "he-IL-AvriNeural",
+ "rate": "+4%",
+ "presenter": true
+}

@@ -1,0 +1,18 @@
+{
+ "id": "t25",
+ "title": "מנוף בבית שמש – אופק את טל מנופים",
+ "lines": [
+  "היום אנחנו בבית שמש.",
+  "פרגולה עולה לגג בשכונה חדשה.",
+  "מודדים גובה, בודקים חוטי חשמל ותמיכות, ועובדים בבטחה.",
+  "צריכים מנוף בבית שמש? מתקשרים לטל."
+ ],
+ "photos": [
+  "assets/cities/beitshemesh.jpg",
+  "assets/cities/jerusalem.png"
+ ],
+ "lang": "he",
+ "voice": "he-IL-AvriNeural",
+ "rate": "+4%",
+ "presenter": true
+}

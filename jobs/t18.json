@@ -1,0 +1,18 @@
+{
+ "id": "t18",
+ "title": "מנוף בבאר שבע – אופק את טל מנופים",
+ "lines": [
+  "היום אנחנו בבאר שבע.",
+  "בלוקים לבניין חדש באור המדבר.",
+  "מודדים גובה, בודקים חוטי חשמל ותמיכות, ועובדים בבטחה.",
+  "צריכים מנוף בבאר שבע? מתקשרים לטל."
+ ],
+ "photos": [
+  "assets/cities/beersheba.jpg",
+  "assets/cities/ramatgan.jpg"
+ ],
+ "lang": "he",
+ "voice": "he-IL-AvriNeural",
+ "rate": "+4%",
+ "presenter": true
+}
