@@ -3,11 +3,11 @@ male Soniox voice (dub pipeline, job kind 'diary'), avatar + brand bar.
   python typewriter.py new        -> creates the next diary job in jobs/ + state/pending.txt (prints id)
   python typewriter.py --job J    -> renders out/<id>.mp4 (needs audio_url filled by dubrender.py)"""
 import os, sys, json, random, subprocess, datetime, urllib.request, wave, struct, math
-from PIL import Image, ImageDraw, ImageFont
+
 from kinds import DIARY
 W, H, FPS = 1080, 1920, 30
 OUT = os.path.abspath('out'); TMP = '/tmp/tw'; os.makedirs(OUT, exist_ok=True); os.makedirs(TMP, exist_ok=True)
-FONT = 'assets/fonts/Heebo-Bold.ttf' if os.path.exists('assets/fonts/Heebo-Bold.ttf') else [os.path.join(r, f) for r, _, fs in os.walk('assets') for f in fs if f.lower().startswith('heebo')][0]
+FONT = 'assets/fonts/Heebo.ttf'
 BG = [(20, 22, 26), (250, 246, 236), (14, 30, 52), (36, 24, 18)]
 
 
@@ -39,6 +39,7 @@ def clicks(path, times, dur):
 
 
 def render(j, voice):
+    from PIL import Image, ImageDraw, ImageFont
     vdur = float(subprocess.check_output(['ffprobe', '-v', 'error', '-show_entries', 'format=duration', '-of', 'csv=p=0', voice]).decode().strip())
     T = vdur + 2.5; rnd = random.Random(hash(j['id']) & 0xffff); bg = rnd.choice(BG); dark = sum(bg) < 300
     fg = (245, 240, 228) if dark else (30, 30, 34); acc = (255, 194, 14)

@@ -16,7 +16,7 @@ jobs:
       - name: deps
         run: |
           sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg fonts-noto-core >/dev/null
-          pip install -q edge-tts
+          pip install -q edge-tts pillow
       - name: pick dubbed jobs
         env: { DUB_MANIFEST: '1_B5Pi1slRJdU0kNlJg8oUNIyshelL6RH', MAXN: '16' }
         run: |
