@@ -1,0 +1,34 @@
+name: ffmix
+on:
+  workflow_dispatch:
+  push:
+    paths: ['ffmix/go.txt']
+permissions:
+  contents: write
+jobs:
+  mix:
+    runs-on: ubuntu-latest
+    timeout-minutes: 300
+    steps:
+      - uses: actions/checkout@v4
+      - name: tools
+        run: sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg fonts-noto-core >/dev/null && pip install -q gdown edge-tts
+      - name: download long videos (folder id kept as a repo secret)
+        env: { SRC: '${{ secrets.FF_SRC }}' }
+        run: |
+          gdown -q --folder "https://drive.google.com/drive/folders/$SRC" -O src </dev/null || true
+          ls -la src || true
+      - name: mix
+        run: |
+          [ -d src ] && [ -n "$(ls src)" ] || { echo "no source videos"; mkdir -p out; exit 0; }
+          export FF_START=$(cat ffmix/go.txt); export FF_TITLE="$(cat ffmix/title.txt 2>/dev/null)"
+          python ffmix.py src out; rm -rf src; ls -la out
+      - name: publish (orphan branch 'ffmix', engine pulls hourly)
+        run: |
+          cd out 2>/dev/null || exit 0; shopt -s nullglob
+          F=$(ls ff[0-9]*.mp4 ffr[0-9]*.mp4 ffs[0-9]*.mp4 ff-mix-*.mp4 2>/dev/null | grep -v body)
+          [ -n "$F" ] || { echo none; exit 0; }
+          mkdir -p /tmp/f/videos && for f in $F; do cp "$f" /tmp/f/videos/; done
+          (cd /tmp/f/videos && ls *.mp4 | sed 's/\.mp4$//') > /tmp/f/upload.txt
+          cd /tmp/f && git init -q -b ffmix && git config user.name "ofek-bot" && git config user.email "bot@tal83.com"
+          git add -A && git commit -qm "ffmix $(date +%F)" && git push -q -f "https://x-access-token:${{ github.token }}@github.com/${{ github.repository }}" ffmix
