@@ -69,7 +69,7 @@ def main():
     photos = rnd.sample(FIELD, 3)
     rnd.shuffle(photos)
     pics = [U + p + '.jpg' for p in photos]
-    pics.insert(rnd.randrange(3), 'assets/cities/' + rnd.choice(CITYIMG))
+    pics.insert(0, 'assets/cities/' + rnd.choice(CITYIMG))   # viral: strongest image = first frame
     art = None
     if lang == 'he' and n % 3 == 1:  # every 3rd Hebrew video: remix one of our articles/tips
         try:
