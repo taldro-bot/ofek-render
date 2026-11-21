@@ -1,0 +1,19 @@
+{
+ "id": "ar-s009",
+ "lang": "ar",
+ "title": "سلة أم خطّاف رفع؟",
+ "lines": [
+  "لرافعتنا خياران.",
+  "سلة، لرفع الأشخاص للعمل على المرتفعات.",
+  "أو خطّاف، لرفع المعدات والمكيّفات والمواد.",
+  "يمكن إنزال السلة والعمل بالخطّاف في نفس اليوم.",
+  "أخبرونا ماذا تحتاجون، ونجد لكم الحل المناسب."
+ ],
+ "photos": [
+  "https://www.tal83.com/img/hero-boom.jpg",
+  "https://www.tal83.com/img/sign-install.jpg",
+  "https://www.tal83.com/img/boom-towers.jpg",
+  "https://www.tal83.com/img/truck-street.jpg"
+ ],
+ "voice": "ar-JO-SanaNeural"
+}

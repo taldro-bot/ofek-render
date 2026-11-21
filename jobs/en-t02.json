@@ -1,0 +1,20 @@
+{
+ "id": "en-t02",
+ "title": "How to check a harness in two minutes",
+ "lines": [
+  "Read the label: standard number, year of manufacture and serial number.",
+  "A CE mark alone is not enough. Next to it you need a four-digit number of a notified body.",
+  "Check stitching, webbing and buckles. A cut, burn or rust means the harness is out.",
+  "A harness that has arrested a fall is retired, even if it looks fine.",
+  "And a competent person signs the periodic inspection."
+ ],
+ "photos": [
+  "https://www.tal83.com/img/property-appraisal-safety-tip-harness-inspection.jpg",
+  "https://www.tal83.com/img/teken-eropi-sini-american-ratma.jpg",
+  "https://www.tal83.com/img/ladder-course.jpg"
+ ],
+ "lang": "en",
+ "voice": "en-US-GuyNeural",
+ "rate": "+4%",
+ "presenter": true
+}

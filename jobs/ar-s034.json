@@ -1,0 +1,20 @@
+{
+ "id": "ar-s034",
+ "title": "طفاية حريق في البيت أو العمل؟ افحصوها",
+ "lines": [
+  "عندكم طفاية حريق؟ متى فُحصت آخر مرة؟",
+  "الطفاية تحتاج فحصاً دورياً من فاحص طفايات معتمد.",
+  "نفحص المؤشر والمسمار والخرطوم، وأنه لا يوجد صدأ أو ضرر.",
+  "ونتأكد أنها معلّقة في مكان سهل الوصول وغير مسدود.",
+  "طفاية سليمة هي الفرق بين عطل صغير وحريق.",
+  "أوفيك إت طال للرافعات. السلامة أولاً."
+ ],
+ "photos": [
+  "https://drive.google.com/uc?export=download&id=1vtIvSySLcXVQltLdgj0vzJiStyXKFtNw",
+  "https://drive.google.com/uc?export=download&id=1Y6w6Z6sGga4mAXDZcXnD8EMZdZn_v96o",
+  "https://drive.google.com/uc?export=download&id=16xvdq_mx5Wbm3OMKxK20c3Hbixgnl2vC",
+  "https://drive.google.com/uc?export=download&id=1VGaiwB76ZpMXR_wx6kfBhaunJT8We3e6"
+ ],
+ "lang": "ar",
+ "voice": "ar-JO-SanaNeural"
+}

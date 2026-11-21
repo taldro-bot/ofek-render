@@ -1,0 +1,20 @@
+{
+ "id": "ar-s023",
+ "title": "نقطة التثبيت والإنقاذ",
+ "lines": [
+  "ربطت نفسك بنقطة تثبيت. هل ستصمد فعلاً؟",
+  "نقطة التثبيت يجب أن تكون قوية، وأعلى ما يمكن.",
+  "خط التثبيت الثابت يفحصه فاحص أو مهندس، مرة كل خمس سنوات على الأقل.",
+  "ودائماً يجب وجود خطة: كيف ننقذ من سقط وبقي معلّقاً بالحزام.",
+  "الدقائق حاسمة. خطّطوا قبل الصعود.",
+  "أوفيك إت طال للرافعات. السلامة أولاً."
+ ],
+ "photos": [
+  "https://drive.google.com/uc?export=download&id=1hbvrB7jHoZ-2ic7xOpPal_HYmzh1fGZC",
+  "https://drive.google.com/uc?export=download&id=1Ud3UuCJDWhzsADAFbbrL9rYIymcAIGv7",
+  "https://drive.google.com/uc?export=download&id=1zRR-bRX1gqKxgmywMMynVRsfkyqXrRbI",
+  "https://drive.google.com/uc?export=download&id=1R3mHA12S8i2P_CWsQS-MCBtxf2kzujGL"
+ ],
+ "lang": "ar",
+ "voice": "ar-JO-SanaNeural"
+}

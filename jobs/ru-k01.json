@@ -1,0 +1,21 @@
+{
+ "id": "ru-k01",
+ "title": "Что такое автовышка?",
+ "lines": [
+  "Автовышка — это кран-манипулятор на грузовике с люлькой для человека.",
+  "Тот же кран, что снимает бойлер, поднимает монтажника вывески на четвёртый этаж.",
+  "Высоту и вылет меряем от тротуара, а не от стены, и добавляем три-четыре метра запаса.",
+  "Проверяем провода, место для опор и грунт, который не просядет.",
+  "Полный гид — на сайте tal83.com."
+ ],
+ "photos": [
+  "https://www.tal83.com/img/bucket-crane-petah-tikva.jpg",
+  "https://www.tal83.com/img/truck-street.jpg",
+  "https://www.tal83.com/img/crane-basket-safety-tip-power-lines.jpg",
+  "https://www.tal83.com/img/hero-boom.jpg"
+ ],
+ "lang": "ru",
+ "voice": "ru-RU-DmitryNeural",
+ "rate": "+4%",
+ "presenter": true
+}

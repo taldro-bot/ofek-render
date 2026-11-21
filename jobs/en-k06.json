@@ -1,0 +1,20 @@
+{
+ "id": "en-k06",
+ "title": "Lifting platforms – which one fits?",
+ "lines": [
+  "A scissor lift goes straight up, with a wide deck.",
+  "An articulating boom reaches up and over obstacles.",
+  "A telescopic boom gives height and reach in open spaces.",
+  "On a platform, the person on top controls it. On a basket crane, the operator works from the ground.",
+  "Either way: a valid inspection and work-at-height training."
+ ],
+ "photos": [
+  "assets/diag/platforms.png",
+  "https://www.tal83.com/img/aerial-lift-rental-shoham.jpg",
+  "https://www.tal83.com/img/boom-lift-rental-yehud.jpg"
+ ],
+ "lang": "en",
+ "voice": "en-US-GuyNeural",
+ "rate": "+4%",
+ "presenter": true
+}

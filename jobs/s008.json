@@ -1,0 +1,20 @@
+{
+ "id": "s008",
+ "title": "כמה רחוק המשאית יכולה לעמוד?",
+ "lines": [
+  "המשאית יכולה לעמוד עד עשרה מטר מהבניין.",
+  "גובה העבודה שלנו עד שמונה עשרה מטר.",
+  "אפשר לעבוד מעל גדר, חומה, עצים וגג רעפים.",
+  "פתח צר? הסל עובר עד מטר שלושים רוחב.",
+  "לא בטוחים? שלחו תמונה ונבדוק בשבילכם."
+ ],
+ "photos": [
+  "https://www.tal83.com/img/boom-towers.jpg",
+  "https://www.tal83.com/img/street-reach.jpg",
+  "https://www.tal83.com/img/boom-lift-tree-pruning-safety-electrical-lines.jpg",
+  "https://www.tal83.com/img/hero-boom.jpg"
+ ],
+ "voice": "danit",
+ "audio_url": "https://drive.google.com/uc?export=download&id=1ZVQauJO22Dc_NLyijfUrQb3mYjKms6l8",
+ "v": 3
+}

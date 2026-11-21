@@ -1,0 +1,24 @@
+{
+ "id": "ar-t017",
+ "title": "خطوط كهرباء قريبة؟ نتوقف",
+ "lines": [
+  "ترى خطوط كهرباء قرب الرافعة؟ لا نخاطر.",
+  "الكهرباء قد تقفز حتى دون لمس مباشر.",
+  "نوقف العمل.",
+  "ننسّق مع شركة الكهرباء.",
+  "ونكمل فقط عندما يكون كل شيء آمنًا ومصدّقًا.",
+  "لا يوجد عمل يستحق مثل هذا الخطر.",
+  "نصيحة طال اليومية. أوفيك إت طال للرافعات."
+ ],
+ "photos": [
+  "assets/clips/crane_c223.mp4",
+  "assets/clips/basket_c196.mp4",
+  "assets/clips/basket_c218.mp4",
+  "assets/clips/crane_c620.mp4",
+  "assets/clips/crane_c610.mp4",
+  "assets/clips/crane_c222.mp4",
+  "assets/clips/crane_c376.mp4"
+ ],
+ "lang": "ar",
+ "rate": "+0%"
+}

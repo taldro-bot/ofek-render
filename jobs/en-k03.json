@@ -1,0 +1,20 @@
+{
+ "id": "en-k03",
+ "title": "What is a jib on a crane?",
+ "lines": [
+  "A jib is an extra arm attached to the tip of the main boom.",
+  "It adds height and reach, getting over walls and around obstacles.",
+  "The price: you lift less at the jib tip.",
+  "And the jib weight itself counts as part of the load.",
+  "With or without a jib? It depends on the job. Ask first."
+ ],
+ "photos": [
+  "assets/diag/jib.png",
+  "https://www.tal83.com/img/boom-towers.jpg",
+  "https://www.tal83.com/img/hero-boom.jpg"
+ ],
+ "lang": "en",
+ "voice": "en-US-GuyNeural",
+ "rate": "+4%",
+ "presenter": true
+}

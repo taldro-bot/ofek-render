@@ -1,0 +1,20 @@
+{
+ "id": "fr-k02",
+ "title": "Tonne-mètre : pourquoi plus loin, c'est moins",
+ "lines": [
+  "Une grue articulée se mesure en tonnes-mètres : le poids multiplié par la distance.",
+  "Une grue de douze tonnes-mètres lève en théorie quatre tonnes à trois mètres.",
+  "Mais à douze mètres ? Environ une tonne seulement.",
+  "En pratique encore moins, car la flèche elle-même pèse.",
+  "Seul l'abaque de charge du fabricant fait foi."
+ ],
+ "photos": [
+  "assets/diag/tm.png",
+  "https://www.tal83.com/img/hero-boom.jpg",
+  "https://www.tal83.com/img/truck-street.jpg"
+ ],
+ "lang": "fr",
+ "voice": "fr-FR-HenriNeural",
+ "rate": "+4%",
+ "presenter": true
+}

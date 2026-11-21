@@ -1,0 +1,20 @@
+{
+ "id": "fr-k04",
+ "title": "L'angle de flèche, le secret du grutier",
+ "lines": [
+  "Une flèche relevée rapproche la charge : on lève plus.",
+  "Une flèche basse éloigne la charge : on lève moins.",
+  "La portée est la longueur de flèche multipliée par le cosinus de l'angle.",
+  "L'indicateur d'angle sur la flèche dit au grutier où il en est.",
+  "Si l'angle n'est pas dans l'abaque, on prend le suivant plus bas."
+ ],
+ "photos": [
+  "assets/diag/angle.png",
+  "https://www.tal83.com/img/hero-boom.jpg",
+  "https://www.tal83.com/img/bucket-crane-petah-tikva.jpg"
+ ],
+ "lang": "fr",
+ "voice": "fr-FR-HenriNeural",
+ "rate": "+4%",
+ "presenter": true
+}

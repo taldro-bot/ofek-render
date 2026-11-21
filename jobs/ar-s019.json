@@ -1,0 +1,20 @@
+{
+ "id": "ar-s019",
+ "title": "لا صعود بدون تدريب ساري المفعول",
+ "lines": [
+  "عامل جديد في الموقع؟ قبل أن يصعد، توقّف.",
+  "كل عامل على ارتفاع يحتاج تدريباً من مدرّب معتمد للعمل على ارتفاع.",
+  "التدريب حسب نوع العمل: سلّم، سطح، سلة، سقالة.",
+  "الشهادة صالحة لمدة سنتين على الأكثر، ثم تجديد.",
+  "نسخة منها تُحفظ في سجل الموقع، وهذا أول ما يُفحص.",
+  "تحتاجون تدريباً؟ أوفيك إت طال للرافعات."
+ ],
+ "photos": [
+  "https://drive.google.com/uc?export=download&id=1aiaBTSaT4N1GMd7VB0eKojZTMRCd1H5M",
+  "https://drive.google.com/uc?export=download&id=1vtIvSySLcXVQltLdgj0vzJiStyXKFtNw",
+  "https://drive.google.com/uc?export=download&id=1djCl4BW7ovN-peSoln9ltz7a-G78Wpiu",
+  "https://drive.google.com/uc?export=download&id=1-SniyEyg5KMDTZgMOm4I4gtiSWBh4po_"
+ ],
+ "lang": "ar",
+ "voice": "ar-JO-SanaNeural"
+}

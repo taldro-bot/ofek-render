@@ -1,0 +1,20 @@
+{
+ "id": "ar-s029",
+ "title": "ممّ يتكوّن سعر رافعة السلة؟",
+ "lines": [
+  "كم تكلّف رافعة السلة؟ هذا يعتمد على عدة أمور.",
+  "كم ساعة سيستغرق العمل، وفي أي مدينة.",
+  "متى نبدأ: في الصباح الباكر أم لاحقاً.",
+  "ونوع العمل، وهل يحتاج تنسيقاً خاصاً أو تصاريح.",
+  "أرسلوا صورة وتفاصيل، وستحصلون على عرض دقيق.",
+  "أوفيك إت طال للرافعات. السلامة أولاً."
+ ],
+ "photos": [
+  "https://drive.google.com/uc?export=download&id=1RXaEfX0GJ5v-GdTmLwgpuvx4eLQfyase",
+  "https://drive.google.com/uc?export=download&id=1GZJcFxgYBHFuRYPEu5s4gaxoqKgq2bUY",
+  "https://drive.google.com/uc?export=download&id=1Gr42T0AprhJ8OuA7wwKDKyG3fT6MVmSA",
+  "https://drive.google.com/uc?export=download&id=186O7-4mLGydfU4Lyw8iBMfD-2Db1rpDm"
+ ],
+ "lang": "ar",
+ "voice": "ar-JO-SanaNeural"
+}

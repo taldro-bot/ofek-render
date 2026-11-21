@@ -1,0 +1,19 @@
+{
+ "id": "ar-s002",
+ "lang": "ar",
+ "title": "كم شخصًا يدخل السلة؟",
+ "lines": [
+  "في سلتنا يصعد حتى شخصين.",
+  "حتى مئتي كيلوغرام، مع العدّة.",
+  "مشغّل الرافعة يربط لكم الحزام، ويشغّل السلة بجهاز التحكم.",
+  "العامل في السلة لا يشغّلها وحده، وهذا بالضبط ما يحميكم.",
+  "تحتاجون رفع طاقم إلى الأعلى؟ تحدثوا معنا."
+ ],
+ "photos": [
+  "https://www.tal83.com/img/hero-boom.jpg",
+  "https://www.tal83.com/img/bucket-crane-rental-yehud.jpg",
+  "https://www.tal83.com/img/street-reach.jpg",
+  "https://www.tal83.com/img/ziud-2.jpg"
+ ],
+ "voice": "ar-JO-SanaNeural"
+}

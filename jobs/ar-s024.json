@@ -1,0 +1,20 @@
+{
+ "id": "ar-s024",
+ "title": "داخل السلة: ماذا يطلب القانون",
+ "lines": [
+  "تدخلون سلة الرافعة؟ هذا ما يجب أن يكون.",
+  "الرافعة فحصها فاحص معتمد، وهناك تقرير فحص ساري.",
+  "المشغّل مؤهَّل، ويفحص الرافعة كل صباح قبل العمل.",
+  "كل من في السلة مربوط بنقطة تثبيت فيها، بحبل قصير قدر الإمكان.",
+  "عندنا، هذا يحدث كل يوم كأمر طبيعي.",
+  "أوفيك إت طال للرافعات. السلامة أولاً."
+ ],
+ "photos": [
+  "https://drive.google.com/uc?export=download&id=1Rl3ReLK9JV1ZFxEu0Xcd_1zcewiXvIpy",
+  "https://drive.google.com/uc?export=download&id=1Rj1NoawvaDJwdQpgWfG9p_9BU5ojy41c",
+  "https://drive.google.com/uc?export=download&id=1ADcKEr9T_MCzu6G4W3HZXab1vqlSTqDy",
+  "https://drive.google.com/uc?export=download&id=1zk4s0kYYvfNS1CrcxXeHjo07juz6Be3E"
+ ],
+ "lang": "ar",
+ "voice": "ar-JO-SanaNeural"
+}

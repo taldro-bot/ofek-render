@@ -1,0 +1,21 @@
+{
+ "id": "ar-k01",
+ "title": "ما هي رافعة السلة؟",
+ "lines": [
+  "رافعة السلة هي رافعة ذراع على شاحنة، وفي طرفها سلة لشخص.",
+  "نفس الرافعة التي تنزل سخان الماء، ترفع أيضاً عامل تركيب اللافتات للطابق الرابع.",
+  "نقيس الارتفاع والمسافة من الرصيف، وليس من الحائط، ونضيف ثلاثة إلى أربعة أمتار للأمان.",
+  "نفحص أسلاك الكهرباء، ومكان الأرجل الداعمة، وأرضاً لا تغوص.",
+  "الدليل الكامل على موقع tal83.com"
+ ],
+ "photos": [
+  "https://www.tal83.com/img/bucket-crane-petah-tikva.jpg",
+  "https://www.tal83.com/img/truck-street.jpg",
+  "https://www.tal83.com/img/crane-basket-safety-tip-power-lines.jpg",
+  "https://www.tal83.com/img/hero-boom.jpg"
+ ],
+ "lang": "ar",
+ "voice": "ar-SA-HamedNeural",
+ "rate": "+4%",
+ "presenter": true
+}

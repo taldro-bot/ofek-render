@@ -1,0 +1,20 @@
+{
+ "id": "ar-k03",
+ "title": "ما هو الجيب في الرافعة؟",
+ "lines": [
+  "الجيب ذراع إضافية تُركّب في طرف الذراع الرئيسية.",
+  "تضيف ارتفاعاً ومدى، وتصل فوق الجدار وحول العوائق.",
+  "الثمن: في طرف الجيب نرفع أقل.",
+  "ووزن الجيب نفسه يُحسب من الحمل.",
+  "مع جيب أو بدون؟ حسب العمل، اسألوا قبل."
+ ],
+ "photos": [
+  "assets/diag/jib.png",
+  "https://www.tal83.com/img/boom-towers.jpg",
+  "https://www.tal83.com/img/hero-boom.jpg"
+ ],
+ "lang": "ar",
+ "voice": "ar-SA-HamedNeural",
+ "rate": "+4%",
+ "presenter": true
+}

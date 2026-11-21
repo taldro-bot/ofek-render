@@ -1,0 +1,20 @@
+{
+ "id": "ar-s027",
+ "title": "خطوط الكهرباء: حافظوا على المسافة",
+ "lines": [
+  "خط كهرباء فوق منطقة العمل؟ هذه أهم قاعدة اليوم.",
+  "في خطوط الجهد العادي: ثلاثة أمتار وربع على الأقل من الأسلاك.",
+  "في الجهد الأعلى: خمسة أمتار على الأقل.",
+  "وهذا يشمل الأدوات والمواد التي في أيديكم.",
+  "تحتاجون الاقتراب؟ فقط بعد فصل التيار أو حماية مناسبة.",
+  "أوفيك إت طال للرافعات. السلامة أولاً."
+ ],
+ "photos": [
+  "https://drive.google.com/uc?export=download&id=1OpmWVYx2118NzFQxWw8Ctlk80voYkYdK",
+  "https://drive.google.com/uc?export=download&id=1-seGWCfV6r7hAzHGlMlFcVHv5vEzayJM",
+  "https://drive.google.com/uc?export=download&id=1pQsVq1SVpkEGrkUQFV6tkMnQzNUvnYG9",
+  "https://drive.google.com/uc?export=download&id=1ubaj8vBo3GgflEXZGeLI4u9Qy48-UhTM"
+ ],
+ "lang": "ar",
+ "voice": "ar-JO-SanaNeural"
+}

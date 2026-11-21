@@ -1,0 +1,20 @@
+{
+ "id": "en-t03",
+ "title": "How strong must a harness be?",
+ "lines": [
+  "In Europe and China a harness must hold fifteen kilonewtons, about one and a half tonnes.",
+  "The American standard asks more of the webbing: twenty-two kilonewtons when new.",
+  "But the force on the body is limited in all of them to about six hundred kilos.",
+  "Israel accepts gear certified to European, American or international standards.",
+  "Questions about gear or work-at-height training? Talk to Tal."
+ ],
+ "photos": [
+  "https://www.tal83.com/img/safety-tip-working-at-height-basket-harness.jpg",
+  "https://www.tal83.com/img/risk-assessment-safety-tip-height-work.jpg",
+  "https://www.tal83.com/img/teken-eropi-sini-american-ratma.jpg"
+ ],
+ "lang": "en",
+ "voice": "en-US-GuyNeural",
+ "rate": "+4%",
+ "presenter": true
+}

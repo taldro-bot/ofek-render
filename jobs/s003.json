@@ -1,0 +1,19 @@
+{
+ "id": "s003",
+ "title": "המשאית תיכנס לרחוב שלכם?",
+ "lines": [
+  "אורך המשאית שבעה מטר, מקצה לקצה.",
+  "הגובה שלה שלוש מטר ותשעים.",
+  "רחוב צר עם רכבים חונים? אם משאית גזם עברה, גם אנחנו נעבור.",
+  "ושימו לב: מתחת לגשר בכיכר רבין אנחנו לא עוברים.",
+  "שלחו תמונה של הרחוב, ונגיד לכם תוך דקה."
+ ],
+ "photos": [
+  "https://www.tal83.com/img/truck-street.jpg",
+  "https://www.tal83.com/img/street-reach.jpg",
+  "https://www.tal83.com/img/bucket-crane-rental-yehud.jpg"
+ ],
+ "voice": "danit",
+ "audio_url": "https://drive.google.com/uc?export=download&id=1V6csMmKprAJN2CHnubyYKOlFw_XmnSf0",
+ "v": 3
+}

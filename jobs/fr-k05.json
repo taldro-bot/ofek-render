@@ -1,0 +1,20 @@
+{
+ "id": "fr-k05",
+ "title": "Une grue de 100 tonnes lève 100 tonnes ?",
+ "lines": [
+  "Pas vraiment.",
+  "Le chiffre dans le nom, c'est la capacité au rayon le plus court, stabilisateurs sortis.",
+  "Plus la charge s'éloigne, plus la capacité baisse.",
+  "L'atout d'une grosse grue, c'est la portée et la hauteur.",
+  "Pour chaque gros levage : abaque du fabricant et plan de levage."
+ ],
+ "photos": [
+  "assets/diag/mobile.png",
+  "https://www.tal83.com/img/boom-towers.jpg",
+  "assets/diag/tm.png"
+ ],
+ "lang": "fr",
+ "voice": "fr-FR-HenriNeural",
+ "rate": "+4%",
+ "presenter": true
+}

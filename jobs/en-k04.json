@@ -1,0 +1,20 @@
+{
+ "id": "en-k04",
+ "title": "Boom angle – the operator secret",
+ "lines": [
+  "A steep boom brings the load closer, so you lift more.",
+  "A flat boom pushes the load out, so you lift less.",
+  "Horizontal reach is boom length times the cosine of the angle.",
+  "The angle indicator on the boom tells the operator where he stands.",
+  "If the angle is not in the chart, use the next lower one."
+ ],
+ "photos": [
+  "assets/diag/angle.png",
+  "https://www.tal83.com/img/hero-boom.jpg",
+  "https://www.tal83.com/img/bucket-crane-petah-tikva.jpg"
+ ],
+ "lang": "en",
+ "voice": "en-US-GuyNeural",
+ "rate": "+4%",
+ "presenter": true
+}

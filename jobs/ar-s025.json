@@ -1,0 +1,20 @@
+{
+ "id": "ar-s025",
+ "title": "سطح مستوٍ بلا درابزين",
+ "lines": [
+  "تعملون على سطح مستوٍ بلا درابزين؟",
+  "بدون وسائل حماية، يُسمح العمل فقط على بُعد أكثر من مترين من الحافة.",
+  "الشريط القريب من الحافة يُعلَّم مسبقاً بلافتة تحذير.",
+  "اللافتة بالعبرية والعربية: \"ممنوع المرور، خطر السقوط\".",
+  "سطح هش أو مائل؟ له قواعد أشد.",
+  "أوفيك إت طال للرافعات. السلامة أولاً."
+ ],
+ "photos": [
+  "https://drive.google.com/uc?export=download&id=1vtIvSySLcXVQltLdgj0vzJiStyXKFtNw",
+  "https://drive.google.com/uc?export=download&id=1RXaEfX0GJ5v-GdTmLwgpuvx4eLQfyase",
+  "https://drive.google.com/uc?export=download&id=1BRasGRfV-GwZ52LdiEiyuFfCuPhqj7SW",
+  "https://drive.google.com/uc?export=download&id=1Y6w6Z6sGga4mAXDZcXnD8EMZdZn_v96o"
+ ],
+ "lang": "ar",
+ "voice": "ar-JO-SanaNeural"
+}

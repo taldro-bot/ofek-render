@@ -1,0 +1,20 @@
+{
+ "id": "fr-k06",
+ "title": "Nacelles élévatrices : laquelle choisir ?",
+ "lines": [
+  "La nacelle ciseaux monte tout droit, avec une grande plateforme.",
+  "La nacelle articulée passe au-dessus et autour des obstacles.",
+  "La nacelle télescopique donne hauteur et portée en terrain dégagé.",
+  "Sur une nacelle, c'est la personne en haut qui pilote. Sur une grue à nacelle, le grutier est en bas.",
+  "Dans tous les cas : contrôle à jour et formation au travail en hauteur."
+ ],
+ "photos": [
+  "assets/diag/platforms.png",
+  "https://www.tal83.com/img/aerial-lift-rental-shoham.jpg",
+  "https://www.tal83.com/img/boom-lift-rental-yehud.jpg"
+ ],
+ "lang": "fr",
+ "voice": "fr-FR-HenriNeural",
+ "rate": "+4%",
+ "presenter": true
+}

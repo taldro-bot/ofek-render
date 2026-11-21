@@ -1,0 +1,21 @@
+{
+ "id": "k01",
+ "title": "מה זה מנוף סל?",
+ "lines": [
+  "מנוף סל זה מנוף זרוע על משאית, עם סל לאדם בקצה.",
+  "אותו מנוף שמוריד דוד שמש, מרים גם את המתקין לשלט בקומה רביעית.",
+  "מודדים גובה ומרחק מהמדרכה, לא מהקיר, ומוסיפים שלושה עד ארבעה מטר ביטחון.",
+  "בודקים חוטי חשמל, מקום לתמיכות, ומשטח שלא שוקע.",
+  "המדריך המלא מחכה לכם באתר שלנו."
+ ],
+ "photos": [
+  "https://www.tal83.com/img/bucket-crane-petah-tikva.jpg",
+  "https://www.tal83.com/img/truck-street.jpg",
+  "https://www.tal83.com/img/crane-basket-safety-tip-power-lines.jpg",
+  "https://www.tal83.com/img/hero-boom.jpg"
+ ],
+ "lang": "he",
+ "voice": "he-IL-AvriNeural",
+ "rate": "+4%",
+ "presenter": true
+}

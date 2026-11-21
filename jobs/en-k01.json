@@ -1,0 +1,21 @@
+{
+ "id": "en-k01",
+ "title": "What is a basket crane?",
+ "lines": [
+  "A basket crane is a knuckle boom crane on a truck, with a person basket at the tip.",
+  "The same crane that lowers a water heater also lifts a sign installer to the fourth floor.",
+  "Measure height and distance from the sidewalk, not the wall, and add three to four meters of margin.",
+  "Check power lines, room for the outriggers, and ground that will not sink.",
+  "The full guide is on tal83.com."
+ ],
+ "photos": [
+  "https://www.tal83.com/img/bucket-crane-petah-tikva.jpg",
+  "https://www.tal83.com/img/truck-street.jpg",
+  "https://www.tal83.com/img/crane-basket-safety-tip-power-lines.jpg",
+  "https://www.tal83.com/img/hero-boom.jpg"
+ ],
+ "lang": "en",
+ "voice": "en-US-GuyNeural",
+ "rate": "+4%",
+ "presenter": true
+}

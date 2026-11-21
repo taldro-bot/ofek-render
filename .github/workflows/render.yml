@@ -1,0 +1,45 @@
+name: render
+on:
+  workflow_dispatch:
+    inputs:
+      job:
+        description: 'job file in jobs/ (e.g. jobs/test1.json)'
+        required: true
+  push:
+    paths: ['jobs/**.json', '.github/workflows/render.yml']
+permissions:
+  contents: write
+jobs:
+  render:
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    steps:
+      - uses: actions/checkout@v4
+        with: { fetch-depth: 2 }
+      - name: deps
+        run: |
+          sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg fonts-noto-core >/dev/null
+          pip install -q edge-tts
+      - name: pick jobs
+        id: pick
+        run: |
+          if [ -n "${{ github.event.inputs.job }}" ]; then for x in ${{ github.event.inputs.job }}; do ls $x; done > jobs.txt
+          else git diff --name-only HEAD~1 HEAD -- "jobs/*.json" > jobs.txt 2>/dev/null || true; fi
+          cat jobs.txt
+      - name: render
+        run: |
+          # 13.11: one bad job never stops the rest; ffmpeg crash -> one retry
+          while read -r j; do [ -f "$j" ] || continue
+            python3 fetch_photos.py "$j" < /dev/null && { python3 render.py "$j.local" < /dev/null || python3 render.py "$j.local" < /dev/null || echo "FAILED $j"; }
+          done < jobs.txt
+      - name: publish to out branch
+        run: |
+          git config user.name "ofek-bot"; git config user.email "bot@tal83.com"
+          mkdir -p /tmp/o && cp out/* /tmp/o/
+          git fetch origin out:out 2>/dev/null && git checkout out || git checkout --orphan out
+          git rm -rq --cached . 2>/dev/null || true
+          find . -mindepth 1 -maxdepth 1 ! -name .git -exec rm -rf {} +
+          git checkout out -- . 2>/dev/null || true
+          mkdir -p videos && cp /tmp/o/* videos/
+          git add videos && git commit -qm "render ${GITHUB_SHA::7}"
+          for i in 1 2 3 4 5; do git push -q origin out && break; sleep $((RANDOM % 20 + 5)); git pull -q --rebase origin out; done

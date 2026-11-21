@@ -1,0 +1,20 @@
+{
+ "id": "en-k05",
+ "title": "Does a 100-tonne crane lift 100 tonnes?",
+ "lines": [
+  "Not exactly.",
+  "The number in the name is the capacity at the shortest radius, with outriggers fully out.",
+  "The farther the load, the more the capacity drops.",
+  "A big crane wins on distance and height.",
+  "So every big lift needs the manufacturer chart and a lift plan."
+ ],
+ "photos": [
+  "assets/diag/mobile.png",
+  "https://www.tal83.com/img/boom-towers.jpg",
+  "assets/diag/tm.png"
+ ],
+ "lang": "en",
+ "voice": "en-US-GuyNeural",
+ "rate": "+4%",
+ "presenter": true
+}

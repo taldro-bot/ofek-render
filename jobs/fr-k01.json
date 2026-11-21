@@ -1,0 +1,21 @@
+{
+ "id": "fr-k01",
+ "title": "Qu'est-ce qu'une grue à nacelle ?",
+ "lines": [
+  "Une grue à nacelle, c'est une grue articulée sur camion, avec une nacelle pour une personne.",
+  "La même grue qui descend un chauffe-eau monte aussi le poseur d'enseigne au quatrième étage.",
+  "On mesure la hauteur et la distance depuis le trottoir, pas depuis le mur, et on ajoute trois à quatre mètres de marge.",
+  "On vérifie les lignes électriques, la place pour les stabilisateurs et un sol qui ne s'enfonce pas.",
+  "Le guide complet est sur tal83.com."
+ ],
+ "photos": [
+  "https://www.tal83.com/img/bucket-crane-petah-tikva.jpg",
+  "https://www.tal83.com/img/truck-street.jpg",
+  "https://www.tal83.com/img/crane-basket-safety-tip-power-lines.jpg",
+  "https://www.tal83.com/img/hero-boom.jpg"
+ ],
+ "lang": "fr",
+ "voice": "fr-FR-HenriNeural",
+ "rate": "+4%",
+ "presenter": true
+}

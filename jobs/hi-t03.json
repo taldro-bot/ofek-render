@@ -1,0 +1,20 @@
+{
+ "id": "hi-t03",
+ "title": "हार्नेस कितना मज़बूत होना चाहिए?",
+ "lines": [
+  "यूरोप और चीन में हार्नेस को पंद्रह किलोन्यूटन, लगभग डेढ़ टन, झेलना होता है।",
+  "अमेरिकी मानक में पट्टे ज़्यादा मज़बूत हैं: नए हार्नेस में बाईस किलोन्यूटन।",
+  "लेकिन शरीर पर झटका सभी में लगभग छह सौ किलो तक सीमित है।",
+  "इज़राइल में यूरोपीय, अमेरिकी या अंतरराष्ट्रीय मानक वाला सामान मान्य है।",
+  "सामान या ऊँचाई पर काम की ट्रेनिंग के बारे में सवाल? ताल से बात करें।"
+ ],
+ "photos": [
+  "https://www.tal83.com/img/safety-tip-working-at-height-basket-harness.jpg",
+  "https://www.tal83.com/img/risk-assessment-safety-tip-height-work.jpg",
+  "https://www.tal83.com/img/teken-eropi-sini-american-ratma.jpg"
+ ],
+ "lang": "hi",
+ "voice": "hi-IN-MadhurNeural",
+ "rate": "+4%",
+ "presenter": true
+}

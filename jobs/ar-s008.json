@@ -1,0 +1,19 @@
+{
+ "id": "ar-s008",
+ "lang": "ar",
+ "title": "كم تستطيع الشاحنة أن تبتعد؟",
+ "lines": [
+  "الشاحنة تستطيع الوقوف حتى عشرة أمتار من المبنى.",
+  "ارتفاع العمل عندنا حتى ثمانية عشر مترًا.",
+  "يمكن العمل فوق سياج، أو سور، أو أشجار، أو سقف قرميد.",
+  "فتحة ضيقة؟ السلة تمرّ من عرض متر وثلاثين سنتيمترًا.",
+  "لستم متأكدين؟ أرسلوا صورة ونفحص لكم."
+ ],
+ "photos": [
+  "https://www.tal83.com/img/boom-towers.jpg",
+  "https://www.tal83.com/img/street-reach.jpg",
+  "https://www.tal83.com/img/boom-lift-tree-pruning-safety-electrical-lines.jpg",
+  "https://www.tal83.com/img/hero-boom.jpg"
+ ],
+ "voice": "ar-JO-SanaNeural"
+}

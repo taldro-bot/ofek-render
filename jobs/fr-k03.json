@@ -1,0 +1,20 @@
+{
+ "id": "fr-k03",
+ "title": "C'est quoi un jib sur une grue ?",
+ "lines": [
+  "Le jib est un bras supplémentaire fixé au bout de la flèche principale.",
+  "Il ajoute de la hauteur et de la portée, et passe au-dessus des murs et autour des obstacles.",
+  "Le prix : au bout du jib, on lève moins.",
+  "Et le poids du jib compte dans la charge.",
+  "Avec ou sans jib ? Ça dépend du chantier. Demandez avant."
+ ],
+ "photos": [
+  "assets/diag/jib.png",
+  "https://www.tal83.com/img/boom-towers.jpg",
+  "https://www.tal83.com/img/hero-boom.jpg"
+ ],
+ "lang": "fr",
+ "voice": "fr-FR-HenriNeural",
+ "rate": "+4%",
+ "presenter": true
+}

@@ -1,0 +1,20 @@
+{
+ "id": "ar-t02",
+ "title": "كيف تفحص حزام الأمان في دقيقتين",
+ "lines": [
+  "انظر إلى الملصق: رقم المعيار، سنة الصنع والرقم التسلسلي.",
+  "علامة سي إي وحدها لا تكفي. يجب أن يكون بجانبها رقم من أربع خانات لمختبر معتمد.",
+  "افحص الخياطة والأشرطة والأبازيم. قطع أو حرق أو صدأ، الحزام خارج الخدمة.",
+  "الحزام الذي أوقف سقوطاً يخرج من الاستعمال، حتى لو بدا سليماً.",
+  "وفي الفحص الدوري، شخص مؤهل يوقّع."
+ ],
+ "photos": [
+  "https://www.tal83.com/img/property-appraisal-safety-tip-harness-inspection.jpg",
+  "https://www.tal83.com/img/teken-eropi-sini-american-ratma.jpg",
+  "https://www.tal83.com/img/ladder-course.jpg"
+ ],
+ "lang": "ar",
+ "voice": "ar-SA-HamedNeural",
+ "rate": "+4%",
+ "presenter": true
+}

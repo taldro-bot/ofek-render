@@ -1,0 +1,19 @@
+{
+ "id": "ar-s005",
+ "lang": "ar",
+ "title": "كم يستغرق تجهيز الرافعة؟",
+ "lines": [
+  "نصل، نثبّت، ونبدأ العمل.",
+  "التثبيت يستغرق بين خمس وخمس عشرة دقيقة.",
+  "والطيّ في النهاية حوالي سبع دقائق.",
+  "يعني تقريبًا كل الوقت الذي تدفعون مقابله، هو عمل حقيقي.",
+  "أوفيك إت طال للرافعات. سرعة، دقة، وأمان."
+ ],
+ "photos": [
+  "https://www.tal83.com/img/hero-boom.jpg",
+  "https://www.tal83.com/img/street-reach.jpg",
+  "https://www.tal83.com/img/boom-towers.jpg",
+  "https://www.tal83.com/img/truck-street.jpg"
+ ],
+ "voice": "ar-JO-SanaNeural"
+}

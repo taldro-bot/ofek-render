@@ -1,0 +1,20 @@
+{
+ "id": "en-k02",
+ "title": "Tonne-metre: why farther means less",
+ "lines": [
+  "A knuckle boom crane is rated in tonne-metres: weight times distance.",
+  "A twelve tonne-metre crane can, in theory, lift four tonnes at three metres.",
+  "But at twelve metres? Only about one tonne.",
+  "In practice even less, because the boom itself has weight.",
+  "Only the manufacturer load chart decides."
+ ],
+ "photos": [
+  "assets/diag/tm.png",
+  "https://www.tal83.com/img/hero-boom.jpg",
+  "https://www.tal83.com/img/truck-street.jpg"
+ ],
+ "lang": "en",
+ "voice": "en-US-GuyNeural",
+ "rate": "+4%",
+ "presenter": true
+}

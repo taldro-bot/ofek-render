@@ -1,0 +1,24 @@
+{
+ "id": "en-t017",
+ "title": "Power lines nearby? Stop",
+ "lines": [
+  "See power lines near the crane? Don't take the risk.",
+  "Electricity can arc even without direct contact.",
+  "Stop the work.",
+  "Coordinate with the electric company.",
+  "Only continue when it's safe and approved.",
+  "No job is worth that risk.",
+  "Tal's daily tip. Ofek At Tal Cranes."
+ ],
+ "photos": [
+  "assets/clips/crane_c223.mp4",
+  "assets/clips/basket_c196.mp4",
+  "assets/clips/basket_c218.mp4",
+  "assets/clips/crane_c620.mp4",
+  "assets/clips/crane_c610.mp4",
+  "assets/clips/crane_c222.mp4",
+  "assets/clips/crane_c376.mp4"
+ ],
+ "lang": "en",
+ "rate": "+0%"
+}

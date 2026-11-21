@@ -1,0 +1,20 @@
+{
+ "id": "ar-t03",
+ "title": "ما مدى قوة الحزام المطلوبة؟",
+ "lines": [
+  "في أوروبا والصين يجب أن يتحمل الحزام خمسة عشر كيلونيوتن، حوالي طن ونصف.",
+  "في المعيار الأمريكي الأشرطة أقوى: اثنان وعشرون كيلونيوتن للحزام الجديد.",
+  "لكن الضربة على الجسم محدودة في الجميع بحوالي ستمئة كيلو.",
+  "في إسرائيل يُقبل المعدات حسب المعيار الأوروبي أو الأمريكي أو الدولي.",
+  "أسئلة عن المعدات أو تدريب العمل على ارتفاع؟ تواصلوا مع طال."
+ ],
+ "photos": [
+  "https://www.tal83.com/img/safety-tip-working-at-height-basket-harness.jpg",
+  "https://www.tal83.com/img/risk-assessment-safety-tip-height-work.jpg",
+  "https://www.tal83.com/img/teken-eropi-sini-american-ratma.jpg"
+ ],
+ "lang": "ar",
+ "voice": "ar-SA-HamedNeural",
+ "rate": "+4%",
+ "presenter": true
+}
