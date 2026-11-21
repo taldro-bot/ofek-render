@@ -1,55 +1,82 @@
 name: dub-render
 on:
   schedule:
-    - cron: '41 */2 * * *'   # every 2h (21.11 big queue): render jobs whose Soniox dub is ready
+    - cron: '41 */2 * * *'   # every 2h: render jobs whose Soniox dub is ready (21.11: 20 machines in parallel)
   workflow_dispatch:
-
 permissions:
   contents: write
 concurrency: { group: dub, cancel-in-progress: false }
 jobs:
-  remix:
+  pick:
     runs-on: ubuntu-latest
-    timeout-minutes: 60
+    timeout-minutes: 10
+    outputs:
+      ids: ${{ steps.p.outputs.ids }}
     steps:
       - uses: actions/checkout@v4
+      - id: p
+        env: { DUB_MANIFEST: '1_B5Pi1slRJdU0kNlJg8oUNIyshelL6RH', MAXN: '40' }
+        run: |
+          python3 dubrender.py > ids.txt || true
+          cat ids.txt
+          mkdir -p /tmp/dj && for id in $(cat ids.txt); do cp jobs/$id.json /tmp/dj/; done
+          echo "ids=$(python3 -c 'import json;print(json.dumps(open("ids.txt").read().split() or ["none"]))')" >> $GITHUB_OUTPUT
+      - uses: actions/upload-artifact@v4
+        with: { name: dubjobs, path: /tmp/dj, if-no-files-found: ignore, retention-days: 2 }
+  render:
+    needs: pick
+    if: needs.pick.outputs.ids != '["none"]'
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    strategy:
+      fail-fast: false
+      max-parallel: 20
+      matrix:
+        id: ${{ fromJson(needs.pick.outputs.ids) }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/download-artifact@v4
+        with: { name: dubjobs, path: jobs }
       - name: deps
         run: |
           sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg fonts-noto-core >/dev/null
           pip install -q edge-tts pillow
-      - name: pick dubbed jobs
-        env: { DUB_MANIFEST: '1_B5Pi1slRJdU0kNlJg8oUNIyshelL6RH', MAXN: '24' }
-        run: |
-          python3 dubrender.py > ids.txt || true
-          cat ids.txt; [ -s ids.txt ] || echo "nothing ready" 
       - name: render
         run: |
-          mkdir -p out
-          while read -r id; do j=jobs/$id.json
-            if grep -q '"typewriter": true' "$j"; then python3 typewriter.py --job "$j" < /dev/null || echo "FAILED $id"; continue; fi
-            if grep -q '"clipmix": true' "$j"; then python3 clipmix.py --job "$j" < /dev/null || echo "FAILED $id"; continue; fi
-            python3 fetch_photos.py "$j" < /dev/null && { python3 render.py "$j.local" < /dev/null || python3 render.py "$j.local" < /dev/null || echo "FAILED $id"; }
-          done < ids.txt
+          mkdir -p out; id=${{ matrix.id }}; j=jobs/$id.json
+          if grep -q '"typewriter": true' "$j"; then python3 typewriter.py --job "$j" < /dev/null
+          elif grep -q '"clipmix": true' "$j"; then python3 clipmix.py --job "$j" < /dev/null
+          else python3 fetch_photos.py "$j" < /dev/null && { python3 render.py "$j.local" < /dev/null || python3 render.py "$j.local" < /dev/null; }; fi
+          ls out/$id.mp4
+          [ -f out/$id.json ] || cp $j out/
       - name: publish to out branch
         run: |
-          ls out/*.mp4 >/dev/null 2>&1 || { echo "nothing rendered"; exit 0; }
+          git config user.name "ofek-bot"; git config user.email "bot@tal83.com"
           mkdir -p /tmp/o && cp out/* /tmp/o/
-          for id in $(cat ids.txt); do [ -f jobs/$id.json ] && cp jobs/$id.json /tmp/o/; done
-          git fetch origin out:out && git checkout out
-          for i in 1 2 3 4 5 6; do
+          git fetch -q origin out:out && git checkout -q out
+          for i in $(seq 1 12); do
             git fetch -q origin out && git reset -q --hard origin/out
             mkdir -p videos && cp /tmp/o/* videos/
-            for f in /tmp/o/*.mp4; do b=$(basename "$f" .mp4); grep -qx "$b" upload.txt 2>/dev/null || echo "$b" >> upload.txt; done
-            git add videos upload.txt && git commit -qm "publish $(date +%F-%T)" && git push -q origin out && break
-            sleep $((RANDOM % 25 + 5))
+            grep -qx "${{ matrix.id }}" upload.txt 2>/dev/null || echo "${{ matrix.id }}" >> upload.txt
+            git add videos upload.txt && git commit -qm "publish ${{ matrix.id }}" && git push -q origin out && break
+            sleep $((RANDOM % 30 + 5))
           done
-      - name: "save state (21.11 – reset to remote each try, never a rebase conflict)"
+  save:
+    needs: [pick, render]
+    if: always() && needs.pick.outputs.ids != '["none"]'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with: { fetch-depth: 0 }
+      - name: mark rendered ids as dubbed (only those that reached the out branch)
         run: |
           git config user.name "ofek-bot"; git config user.email "bot@tal83.com"
-          cp ids.txt /tmp/ids.txt
-          for i in 1 2 3 4 5 6; do
-            git fetch -q origin main && git checkout -q -f -B main origin/main
-            cat /tmp/ids.txt >> state/dubbed.txt
+          echo '${{ needs.pick.outputs.ids }}' | python3 -c 'import json,sys;print("\n".join(json.load(sys.stdin)))' > /tmp/picked.txt
+          for i in $(seq 1 8); do
+            git fetch -q origin main out && git checkout -q -f -B main origin/main
+            git show origin/out:upload.txt > /tmp/up.txt
+            grep -xFf /tmp/up.txt /tmp/picked.txt | grep -vxFf state/dubbed.txt >> state/dubbed.txt || true
             git add state && git commit -qm "dub $(date +%F-%H)" && git push -q origin HEAD:main && break
+            git diff --quiet HEAD origin/main && break
             sleep $((RANDOM % 20 + 5))
           done
