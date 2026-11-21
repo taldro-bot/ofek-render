@@ -1,0 +1,21 @@
+{
+ "id": "r261121812",
+ "title": "צריך מנוף סל בחולון? אין בעיה!",
+ "lines": [
+  "צריך מנוף סל בחולון? אין בעיה!",
+  "אנחנו כל הזמן עובדים שם.",
+  "מכירים את הרחובות, את החניות ואת הגישה לבניינים.",
+  "עבודה בטוחה, מהירה ונקייה – עם סל אדם תקני.",
+  "אופק את טל מנופים – 050-9081114, tal83.com."
+ ],
+ "photos": [
+  "assets/cities/holon.jpg",
+  "assets/cities/tal-street-day.jpg",
+  "assets/cities/tal-ta-night1.jpg"
+ ],
+ "lang": "he",
+ "voice": "he-IL-AvriNeural",
+ "rate": "+4%",
+ "presenter": true,
+ "kind": "city"
+}
