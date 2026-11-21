@@ -1,0 +1,22 @@
+{
+ "id": "r261121014",
+ "title": "טיפ יומי: סימני ידיים",
+ "lines": [
+  "טיפ יומי.",
+  "מכוון אחד בלבד נותן סימנים למנופאי.",
+  "יד פתוחה מורמת – עצור.",
+  "סימן ברור, קשר עין, בלי צעקות.",
+  "תקשורת נכונה מונעת תאונות. אופק את טל מנופים."
+ ],
+ "photos": [
+  "assets/cities/tal-street-day.jpg",
+  "https://www.tal83.com/img/manof-sal-guide-and-ordering.jpg",
+  "https://www.tal83.com/img/aerial-platform-rental-nes-ziona.jpg",
+  "https://www.tal83.com/img/crane-hand-signals-guide.jpg"
+ ],
+ "lang": "he",
+ "voice": "he-IL-AvriNeural",
+ "rate": "+4%",
+ "presenter": true,
+ "kind": "tip"
+}

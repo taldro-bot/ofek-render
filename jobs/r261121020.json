@@ -1,0 +1,21 @@
+{
+ "id": "r261121020",
+ "title": "עבודה בגובה בחולון – בלי פיגום",
+ "lines": [
+  "שלט, חזית, תאורה או גיזום בחולון?",
+  "מנוף סל מגיע, נפתח ועובד תוך דקות.",
+  "רתמה, קסדה, ומשגיח קרקע למטה.",
+  "בלי פיגום, בלי בלגן, בלי לחסום יום שלם.",
+  "אופק את טל מנופים – עובדים בגובה, בבטחה."
+ ],
+ "photos": [
+  "assets/cities/tal-haifa-carmel.jpg",
+  "https://www.tal83.com/img/sign-install.jpg",
+  "https://www.tal83.com/img/risk-assessment-safety-tip-height-work.jpg",
+  "https://www.tal83.com/img/working-at-height-safety-equipment-checklist.jpg"
+ ],
+ "lang": "he",
+ "voice": "he-IL-AvriNeural",
+ "rate": "+4%",
+ "presenter": true
+}
