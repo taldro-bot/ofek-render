@@ -1,0 +1,31 @@
+name: wide-machine
+on:
+  schedule:
+    - cron: '7 */3 * * *'   # every 3h: 15 Shorts -> regular 16:9 videos
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency: { group: wide, cancel-in-progress: false }
+jobs:
+  wide:
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    steps:
+      - uses: actions/checkout@v4
+      - name: deps
+        run: sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg >/dev/null
+      - name: make wide videos
+        env: { WIDE_SRC: '1B8A5RCz2cgeIcjyN9FasYKaqth8MTgrT', MAXN: '15' }
+        run: python3 wide.py | tee made.txt
+      - name: save state
+        run: |
+          git config user.name "ofek-bot"; git config user.email "bot@tal83.com"
+          git add state && git commit -qm "wide $(date +%F-%H)" && for i in 1 2 3; do git push -q && break; git pull -q --rebase; done || true
+      - name: publish (orphan branch 'wide', replaced every run so the repo never grows)
+        run: |
+          ls out/*w.mp4 >/dev/null 2>&1 || { echo none; exit 0; }
+          mkdir -p /tmp/w/videos && cp out/*w.mp4 out/*w.json /tmp/w/videos/
+          (cd /tmp/w/videos && ls *.mp4 | sed 's/\.mp4$//') > /tmp/w/upload.txt
+          cd /tmp/w && git init -q -b wide && git config user.name "ofek-bot" && git config user.email "bot@tal83.com"
+          git add -A && git commit -qm "wide batch $(date +%F-%H)"
+          git push -q -f "https://x-access-token:${{ github.token }}@github.com/${{ github.repository }}" wide
