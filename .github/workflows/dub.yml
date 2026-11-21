@@ -1,0 +1,47 @@
+name: dub-render
+on:
+  schedule:
+    - cron: '41 */6 * * *'   # every 6h: render Hebrew jobs whose Soniox dub is ready
+  workflow_dispatch:
+
+permissions:
+  contents: write
+concurrency: { group: dub, cancel-in-progress: false }
+jobs:
+  remix:
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    steps:
+      - uses: actions/checkout@v4
+      - name: deps
+        run: |
+          sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg fonts-noto-core >/dev/null
+          pip install -q edge-tts
+      - name: pick dubbed jobs
+        env: { DUB_MANIFEST: 'MANIFEST_ID', MAXN: '9' }
+        run: |
+          python3 dubrender.py > ids.txt || true
+          cat ids.txt; [ -s ids.txt ] || echo "nothing ready" 
+      - name: render
+        run: |
+          mkdir -p out
+          while read -r id; do j=jobs/$id.json
+            python3 fetch_photos.py "$j" < /dev/null && { python3 render.py "$j.local" < /dev/null || python3 render.py "$j.local" < /dev/null || echo "FAILED $id"; }
+          done < ids.txt
+      - name: save jobs + state
+        run: |
+          git config user.name "ofek-bot"; git config user.email "bot@tal83.com"
+          cat ids.txt >> state/dubbed.txt; git add jobs state && git commit -qm "dub $(date +%F)" && for i in 1 2 3; do git push -q && break; git pull -q --rebase; done
+      - name: publish to out branch
+        run: |
+          ls out/*.mp4 >/dev/null 2>&1 || { echo "nothing rendered"; exit 0; }
+          mkdir -p /tmp/o && cp out/* /tmp/o/
+          for id in $(cat ids.txt); do [ -f jobs/$id.json ] && cp jobs/$id.json /tmp/o/; done
+          git fetch origin out:out && git checkout out
+          for i in 1 2 3 4 5 6; do
+            git fetch -q origin out && git reset -q --hard origin/out
+            mkdir -p videos && cp /tmp/o/* videos/
+            for f in /tmp/o/*.mp4; do b=$(basename "$f" .mp4); grep -qx "$b" upload.txt 2>/dev/null || echo "$b" >> upload.txt; done
+            git add videos upload.txt && git commit -qm "publish $(date +%F-%T)" && git push -q origin out && break
+            sleep $((RANDOM % 25 + 5))
+          done
