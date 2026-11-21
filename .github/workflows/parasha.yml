@@ -1,0 +1,16 @@
+name: parasha-machine
+on:
+  schedule:
+    - cron: '11 4 * * 3'   # Wednesday ~06:11 Israel – next Shabbat's parasha in 2 minutes (male Soniox voice, rendered by dub.yml)
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  new:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: |
+          python3 parasha.py new
+          git config user.name ofek-bot; git config user.email bot@tal83.com
+          for i in 1 2 3 4 5; do git add jobs state && git commit -qm "parasha job" && git push -q && break; git pull -q --rebase; done

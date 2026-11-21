@@ -74,12 +74,15 @@ def render(j, voice):
     for fi in range(frames):
         tt = fi / FPS
         while k < len(sched) and sched[k][0] <= tt: state = (sched[k][1], sched[k][2]); k += 1
-        im = base.copy(); dr = ImageDraw.Draw(im); y = 600
+        im = base.copy(); dr = ImageDraw.Draw(im); rows = []
         for li in range(state[0] + 1 if k else 0):
             txt = lines[li] if li < state[0] else lines[li][:state[1]]
-            for wl in wrap(txt):
-                lw = dr.textlength(wl, font=f_l); dr.text((W - 80 - lw, y), wl, font=f_l, fill=fg); y += 82
-            y += 26
+            rows += [(wl, 82) for wl in wrap(txt)]; rows[-1] = (rows[-1][0], 108)
+        while rows and 600 + sum(h for _, h in rows) > H - 230: rows.pop(0)   # 21.11 scroll up when the page is full (long texts)
+        y = 600
+        for wl, h in rows:
+            lw = dr.textlength(wl, font=f_l); dr.text((W - 80 - lw, y), wl, font=f_l, fill=fg); y += h
+        y += 26
         if (fi // 15) % 2 == 0 and k < len(sched): dr.rectangle([W - 86 - (0 if not k else 0), y - 104, W - 80, y - 40], fill=acc)   # blinking cursor
         im.save(f'{fdir}/{fi:05d}.jpg', quality=90)
     ck = f'{TMP}/clicks.wav'; clicks(ck, times, T)
