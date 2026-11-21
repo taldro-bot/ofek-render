@@ -1,0 +1,39 @@
+name: takeout-batch
+on:
+  workflow_dispatch:
+    inputs:
+      src: { description: 'source branch (src-NNN) with split mp4 chunks', required: true }
+      start: { description: 'FF_START number', required: true }
+permissions:
+  contents: write
+concurrency: { group: 'ffsrc-${{ github.event.inputs.src }}', cancel-in-progress: false }
+jobs:
+  mix:
+    runs-on: ubuntu-latest
+    timeout-minutes: 340
+    steps:
+      - uses: actions/checkout@v4
+      - name: tools
+        run: sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg fonts-noto-core >/dev/null && pip install -q edge-tts
+      - name: get sources
+        run: |
+          git fetch -q --depth 1 origin "${{ github.event.inputs.src }}" && git worktree add -q /tmp/s FETCH_HEAD
+          mkdir -p src; cd /tmp/s
+          for b in $(ls *.part000 | sed 's/\.part000$//'); do cat "$b".part* > "$GITHUB_WORKSPACE/src/$b.mp4"; done
+          ls -la "$GITHUB_WORKSPACE/src"
+      - name: mix
+        run: |
+          export FF_START=${{ github.event.inputs.start }}; export FF_TITLE="עבודת מנוף מהשטח"
+          python ffmix.py src out || true; rm -rf src; ls out | head -50
+      - name: publish (orphan branch ffo-START) + register for the engine
+        run: |
+          cd out 2>/dev/null || exit 0; shopt -s nullglob
+          F=$(ls ff[0-9]*.mp4 ffr[0-9]*.mp4 ffs[0-9]*.mp4 2>/dev/null | grep -v body)
+          [ -n "$F" ] || { echo none; exit 0; }
+          B=ffo-${{ github.event.inputs.start }}
+          mkdir -p /tmp/f/videos && for f in $F; do cp "$f" /tmp/f/videos/; done
+          (cd /tmp/f/videos && ls *.mp4 | sed 's/\.mp4$//') > /tmp/f/upload.txt
+          (cd /tmp/f && git init -q -b $B && git config user.name ofek-bot && git config user.email bot@tal83.com && git add -A && git commit -qm "$B" && git push -q -f "https://x-access-token:${{ github.token }}@github.com/${{ github.repository }}" $B)
+          cd $GITHUB_WORKSPACE && git config user.name ofek-bot && git config user.email bot@tal83.com
+          for i in 1 2 3 4 5; do git pull -q --rebase origin main; echo $B >> state/ffo.txt; git add state/ffo.txt && git commit -qm "ffo $B" && git push -q origin HEAD:main && break; git reset -q --hard origin/main; sleep $((RANDOM%20+5)); done
+          git push -q origin --delete "${{ github.event.inputs.src }}" || true
