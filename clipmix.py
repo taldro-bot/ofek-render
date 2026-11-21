@@ -4,7 +4,7 @@ different procedurally-generated music (tempo/key/style), logo badge + Tal masco
 usage: python clipmix.py COUNT  -> out/<id>.mp4 + out/<id>.json, prints ids"""
 import os, sys, json, random, subprocess, datetime, urllib.request, wave, struct, math
 import render as R
-from kinds import QUESTION, QUIZ, TIP
+from kinds import QUESTION, QUIZ, TIP, REGS
 from remix import VIRAL, CITIES
 
 W, H, FPS, SEG = 1080, 1920, 30, 3.6
@@ -86,7 +86,7 @@ def main():
         try: lib += [(b, x) for x in urllib.request.urlopen(RAW + b + '/list.txt', timeout=30).read().decode().split()]
         except Exception as e: print('skip', b, e, file=sys.stderr)
     if len(lib) < 8: print('library too small', len(lib), file=sys.stderr); return
-    texts = [('tip', t) for t in TIP] + [('question', t) for t in QUESTION] + [('quiz', t) for t in QUIZ] + [('viral', t) for t in VIRAL]
+    texts = [('tip', t) for t in TIP] + [('question', t) for t in QUESTION] + [('quiz', t) for t in QUIZ] + [('viral', t) for t in VIRAL] + [('regs', t) for t in REGS]
     day = datetime.date.today().strftime('%y%m%d'); ids = []
     for _ in range(cnt):
         n = st['n']; rnd = random.Random(n * 104729 + 3); jid = 'r%s%03d' % (day, 700 + n % 100)
