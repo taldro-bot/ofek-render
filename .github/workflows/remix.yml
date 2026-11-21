@@ -1,0 +1,48 @@
+name: remix-machine
+on:
+  schedule:
+    - cron: '23 1 * * *'   # every day 03:23 Israel time
+  workflow_dispatch:
+    inputs:
+      count:
+        description: 'how many new videos to make now'
+        default: '1'
+permissions:
+  contents: write
+concurrency: { group: remix, cancel-in-progress: false }
+jobs:
+  remix:
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    steps:
+      - uses: actions/checkout@v4
+      - name: deps
+        run: |
+          sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg fonts-noto-core >/dev/null
+          pip install -q edge-tts
+      - name: make new jobs
+        run: |
+          N="${{ github.event.inputs.count }}"; [ -z "$N" ] && N=1
+          : > ids.txt
+          for i in $(seq 1 $N); do python3 remix.py >> ids.txt; done
+          cat ids.txt
+      - name: render
+        run: |
+          mkdir -p out
+          while read -r id; do j=jobs/$id.json
+            python3 fetch_photos.py "$j" < /dev/null && { python3 render.py "$j.local" < /dev/null || python3 render.py "$j.local" < /dev/null || echo "FAILED $id"; }
+          done < ids.txt
+      - name: save jobs + state
+        run: |
+          git config user.name "ofek-bot"; git config user.email "bot@tal83.com"
+          git add jobs state && git commit -qm "remix $(date +%F)" && for i in 1 2 3; do git push -q && break; git pull -q --rebase; done
+      - name: publish to out branch
+        run: |
+          ls out/*.mp4 >/dev/null 2>&1 || { echo "nothing rendered"; exit 0; }
+          mkdir -p /tmp/o && cp out/* /tmp/o/
+          for id in $(cat ids.txt); do [ -f jobs/$id.json ] && cp jobs/$id.json /tmp/o/; done
+          git fetch origin out:out && git checkout out
+          mkdir -p videos && cp /tmp/o/* videos/
+          for f in /tmp/o/*.mp4; do b=$(basename "$f" .mp4); grep -qx "$b" upload.txt 2>/dev/null || echo "$b" >> upload.txt; done
+          git add videos upload.txt && git commit -qm "remix videos $(date +%F)"
+          for i in 1 2 3 4 5; do git push -q origin out && break; sleep $((RANDOM % 20 + 5)); git pull -q --rebase origin out; done
