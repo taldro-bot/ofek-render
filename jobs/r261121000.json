@@ -1,0 +1,21 @@
+{
+ "id": "r261121000",
+ "title": "התקנת מזגן לגג באור יהודה",
+ "lines": [
+  "מזגן גדול, גג גבוה, מדרגות צרות?",
+  "מנוף זרוע מרים אותו מעל הבניין.",
+  "בלי לסחוב, בלי לשרוט קירות.",
+  "דקות של הנפה במקום שעות של סבל.",
+  "צריכים באור יהודה? טל מגיע."
+ ],
+ "photos": [
+  "assets/cities/ashdod.jpg",
+  "https://www.tal83.com/img/hero-boom.jpg",
+  "https://www.tal83.com/img/safety-tip-height-training-anchor-point.jpg",
+  "https://www.tal83.com/img/manof-sal-guide-and-ordering.jpg"
+ ],
+ "lang": "he",
+ "voice": "he-IL-AvriNeural",
+ "rate": "+4%",
+ "presenter": true
+}
