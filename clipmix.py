@@ -77,6 +77,49 @@ Dialogue: 0,0:00:00.00,0:01:00.00,F,,0,0,0,,{RLM}אופק את טל מנופים
 """ + ev)
 
 
+def build(jid, title, lines, picks, rnd, kind, voice=None):
+    """render one video; voice = local mp3 of the Soniox dub (then clips cover the whole voice, music goes quiet)"""
+    vdur = 0.0
+    if voice:
+        vdur = float(subprocess.check_output(['ffprobe', '-v', 'error', '-show_entries', 'format=duration', '-of', 'csv=p=0', voice]).decode().strip() or 0)
+        need = max(3, int(vdur / SEG + 0.99)); picks = (picks * 3)[:need]
+    segs = []
+    for i, (b, x) in enumerate(picks):
+        src = get(RAW + b + '/clips/' + x, f'{TMP}/s{i}.mp4'); dst = f'{TMP}/v{i}.mp4'
+        sp_ = rnd.choice([1.0, 1.0, 1.25, 0.8, 2.0])
+        fx = ''.join([',reverse' if rnd.random() < 0.25 else '', ',hflip' if rnd.random() < 0.3 else '',
+                      rnd.choice(['', '', ',eq=saturation=1.35:contrast=1.08', ',eq=gamma=0.9:saturation=0.8', ',colorbalance=rs=0.08:bs=-0.06', ',hue=s=0'])])
+        vf = (f"setpts=PTS/{sp_},fps={FPS}{fx},split[a][b];[a]scale={W}:{H}:force_original_aspect_ratio=increase,crop={W}:{H},boxblur=26:2,eq=brightness=-0.12[bg];"
+              f"[b]scale={W}:{H}:force_original_aspect_ratio=decrease,eq=contrast=1.07:saturation=1.18[fg];[bg][fg]overlay=(W-w)/2:(H-h)/2")
+        run(['ffmpeg', '-nostdin', '-v', 'error', '-y', '-stream_loop', '2', '-i', src, '-t', str(SEG), '-filter_complex', '[0:v]' + vf,
+             '-an', '-c:v', 'libx264', '-preset', 'veryfast', '-crf', '20', dst]); segs.append(dst)
+    lst = f'{TMP}/l.txt'; open(lst, 'w').write(''.join(f"file '{s}'\n" for s in segs))
+    body = f'{TMP}/body.mp4'; total = SEG * len(segs); a = f'{TMP}/t.ass'; ass(a, title, lines, total)
+    run(['ffmpeg', '-nostdin', '-v', 'error', '-y', '-f', 'concat', '-safe', '0', '-i', lst, '-i', R.BADGE, '-i', R.MASCOT,
+         '-filter_complex', f"[1:v]scale=180:-2[lg];[2:v]scale=-2:430[ms];[0:v][lg]overlay=W-w-34:34[a];[a][ms]overlay=10:H-h-200,ass={a}:fontsdir={R.FONT_DIR},format=yuv420p[v]",
+         '-map', '[v]', '-c:v', 'libx264', '-preset', 'veryfast', '-crf', '20', body])
+    end = f'{TMP}/end.mp4'
+    if not os.path.exists(end): R.end_card(end, 4.0)
+    T = total + 4.0; mus = f'{TMP}/m.wav'; music(mus, T + 1, rnd)
+    if voice:  # mix the dub over quiet music
+        vm = f'{TMP}/vm.wav'; run(['ffmpeg', '-nostdin', '-v', 'error', '-y', '-i', mus, '-i', voice, '-filter_complex', '[0:a]volume=0.22[m];[1:a]adelay=400|400,volume=1.6[v];[m][v]amix=inputs=2:duration=first:normalize=0', vm]); mus = vm
+    out = os.path.join(OUT, jid + '.mp4')
+    run(['ffmpeg', '-nostdin', '-v', 'error', '-y', '-i', body, '-i', end, '-i', mus, '-filter_complex',
+         f"[0:v][1:v]xfade=transition=fade:duration=0.4:offset={total - 0.4:.2f}[v];[2:a]atrim=0:{T - 0.4:.2f},afade=t=in:d=0.4,afade=t=out:st={T - 2.2:.2f}:d=2,volume=0.7[a]",
+         '-map', '[v]', '-map', '[a]', '-c:v', 'libx264', '-preset', 'medium', '-crf', '23', '-maxrate', '6M', '-bufsize', '12M',
+         '-c:a', 'aac', '-b:a', '160k', '-movflags', '+faststart', out])
+    json.dump({'id': jid, 'title': title, 'lines': lines, 'lang': 'he', 'kind': 'clipmix-' + kind + ('-dub' if voice else ''),
+               'clips': [b + '/' + x for b, x in picks]}, open(os.path.join(OUT, jid + '.json'), 'w', encoding='utf-8'), ensure_ascii=False)
+
+
+def job_main(path):
+    """dub.yml: render a dubbed clipmix job (audio_url filled by dubrender.py)"""
+    j = json.load(open(path)); rnd = random.Random(hash(j['id']) & 0xffff)
+    picks = [tuple(c.split('/', 1)) for c in j['clips']]
+    v = get(j['audio_url'], f'{TMP}/voice.mp3')
+    build(j['id'], j['title'], j['lines'], picks, rnd, j.get('kind', 'mix'), voice=v)
+
+
 def main():
     cnt = int(sys.argv[1]) if len(sys.argv) > 1 else 4
     sp = 'state/clipmix.json'; st = json.load(open(sp)) if os.path.exists(sp) else {'n': 0}
@@ -92,36 +135,18 @@ def main():
         n = st['n']; rnd = random.Random(n * 104729 + 3); jid = 'r%s%03d' % (day, 700 + n % 100)
         kind, (title, lines) = texts[n % len(texts)]; city = rnd.choice(CITIES)
         title = title.format(c=city); lines = [l.format(c=city) for l in lines]
-        picks = rnd.sample(lib, min(len(lib), len(lines) + 2))
-        segs = []
-        for i, (b, x) in enumerate(picks):
-            src = get(RAW + b + '/clips/' + x, f'{TMP}/s{i}.mp4'); dst = f'{TMP}/v{i}.mp4'
-            sp_ = rnd.choice([1.0, 1.0, 1.25, 0.8, 2.0])
-            fx = ''.join([',reverse' if rnd.random() < 0.25 else '', ',hflip' if rnd.random() < 0.3 else '',
-                          rnd.choice(['', '', ',eq=saturation=1.35:contrast=1.08', ',eq=gamma=0.9:saturation=0.8', ',colorbalance=rs=0.08:bs=-0.06', ',hue=s=0'])])
-            vf = (f"setpts=PTS/{sp_},fps={FPS}{fx},split[a][b];[a]scale={W}:{H}:force_original_aspect_ratio=increase,crop={W}:{H},boxblur=26:2,eq=brightness=-0.12[bg];"
-                  f"[b]scale={W}:{H}:force_original_aspect_ratio=decrease,eq=contrast=1.07:saturation=1.18[fg];[bg][fg]overlay=(W-w)/2:(H-h)/2,"
-                  f"zoompan=z='min(zoom+0.0009,1.08)':d=1:s={W}x{H}:fps={FPS}")
-            run(['ffmpeg', '-nostdin', '-v', 'error', '-y', '-stream_loop', '2', '-i', src, '-t', str(SEG), '-filter_complex', '[0:v]' + vf,
-                 '-an', '-c:v', 'libx264', '-preset', 'veryfast', '-crf', '20', dst]); segs.append(dst)
-        lst = f'{TMP}/l.txt'; open(lst, 'w').write(''.join(f"file '{s}'\n" for s in segs))
-        body = f'{TMP}/body.mp4'; total = SEG * len(segs); a = f'{TMP}/t.ass'; ass(a, title, lines, total)
-        run(['ffmpeg', '-nostdin', '-v', 'error', '-y', '-f', 'concat', '-safe', '0', '-i', lst, '-i', R.BADGE, '-i', R.MASCOT,
-             '-filter_complex', f"[1:v]scale=180:-2[lg];[2:v]scale=-2:430[ms];[0:v][lg]overlay=W-w-34:34[a];[a][ms]overlay=10:H-h-200,ass={a}:fontsdir={R.FONT_DIR},format=yuv420p[v]",
-             '-map', '[v]', '-c:v', 'libx264', '-preset', 'veryfast', '-crf', '20', body])
-        end = f'{TMP}/end.mp4'
-        if not os.path.exists(end): R.end_card(end, 4.0)
-        T = total + 4.0; mus = f'{TMP}/m.wav'; music(mus, T + 1, rnd)
-        out = os.path.join(OUT, jid + '.mp4')
-        run(['ffmpeg', '-nostdin', '-v', 'error', '-y', '-i', body, '-i', end, '-i', mus, '-filter_complex',
-             f"[0:v][1:v]xfade=transition=fade:duration=0.4:offset={total - 0.4:.2f}[v];[2:a]atrim=0:{T - 0.4:.2f},afade=t=in:d=0.4,afade=t=out:st={T - 2.2:.2f}:d=2,volume=0.7[a]",
-             '-map', '[v]', '-map', '[a]', '-c:v', 'libx264', '-preset', 'medium', '-crf', '23', '-maxrate', '6M', '-bufsize', '12M',
-             '-c:a', 'aac', '-b:a', '160k', '-movflags', '+faststart', out])
-        json.dump({'id': jid, 'title': title, 'lines': lines, 'lang': 'he', 'kind': 'clipmix-' + kind,
-                   'clips': [b + '/' + x for b, x in picks]}, open(os.path.join(OUT, jid + '.json'), 'w', encoding='utf-8'), ensure_ascii=False)
+        picks = rnd.sample(lib, min(len(lib), len(lines) + 6))
+        if n % 2 == 1:   # every 2nd: dubbed by the Soniox secretaries (engine makes the voice, dub.yml renders)
+            os.makedirs('jobs', exist_ok=True)
+            json.dump({'id': jid, 'title': title, 'lines': lines, 'lang': 'he', 'clipmix': True, 'kind': kind, 'clips': [b + '/' + x for b, x in picks]},
+                      open('jobs/%s.json' % jid, 'w', encoding='utf-8'), ensure_ascii=False, indent=1)
+            open('state/pending.txt', 'a').write(jid + '\n')
+        else:
+            build(jid, title, lines, picks, rnd, kind)
         st['n'] = n + 1; ids.append(jid)
     json.dump(st, open(sp, 'w')); print(' '.join(ids))
 
 
 if __name__ == '__main__':
-    main()
+    if len(sys.argv) > 2 and sys.argv[1] == '--job': job_main(sys.argv[2])
+    else: main()

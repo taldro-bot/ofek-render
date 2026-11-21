@@ -28,7 +28,7 @@ jobs:
       - name: save state
         run: |
           git config user.name ofek-bot; git config user.email bot@tal83.com
-          for i in 1 2 3 4 5; do git add state/clipmix.json && git commit -qm "clipmix state" || break; git push -q origin HEAD:main && break; git pull -q --rebase origin main; done
+          for i in 1 2 3 4 5; do git add state jobs && git commit -qm "clipmix state" || break; git push -q origin HEAD:main && break; git pull -q --rebase origin main; done
       - name: publish to out branch
         run: |
           ls out/*.mp4 >/dev/null 2>&1 || { echo "nothing (library still empty?)"; exit 0; }
