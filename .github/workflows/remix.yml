@@ -42,7 +42,10 @@ jobs:
           mkdir -p /tmp/o && cp out/* /tmp/o/
           for id in $(cat ids.txt); do [ -f jobs/$id.json ] && cp jobs/$id.json /tmp/o/; done
           git fetch origin out:out && git checkout out
-          mkdir -p videos && cp /tmp/o/* videos/
-          for f in /tmp/o/*.mp4; do b=$(basename "$f" .mp4); grep -qx "$b" upload.txt 2>/dev/null || echo "$b" >> upload.txt; done
-          git add videos upload.txt && git commit -qm "remix videos $(date +%F)"
-          for i in 1 2 3 4 5; do git push -q origin out && break; sleep $((RANDOM % 20 + 5)); git pull -q --rebase origin out; done
+          for i in 1 2 3 4 5 6; do
+            git fetch -q origin out && git reset -q --hard origin/out
+            mkdir -p videos && cp /tmp/o/* videos/
+            for f in /tmp/o/*.mp4; do b=$(basename "$f" .mp4); grep -qx "$b" upload.txt 2>/dev/null || echo "$b" >> upload.txt; done
+            git add videos upload.txt && git commit -qm "publish $(date +%F-%T)" && git push -q origin out && break
+            sleep $((RANDOM % 25 + 5))
+          done

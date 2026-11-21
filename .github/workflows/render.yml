@@ -40,7 +40,10 @@ jobs:
           git rm -rq --cached . 2>/dev/null || true
           find . -mindepth 1 -maxdepth 1 ! -name .git -exec rm -rf {} +
           git checkout out -- . 2>/dev/null || true
-          mkdir -p videos && cp /tmp/o/* videos/
-          for f in /tmp/o/*.mp4; do b=$(basename "$f" .mp4); grep -qx "$b" upload.txt 2>/dev/null || echo "$b" >> upload.txt; done
-          git add videos upload.txt && git commit -qm "render ${GITHUB_SHA::7}"
-          for i in 1 2 3 4 5; do git push -q origin out && break; sleep $((RANDOM % 20 + 5)); git pull -q --rebase origin out; done
+          for i in 1 2 3 4 5 6; do
+            git fetch -q origin out && git reset -q --hard origin/out
+            mkdir -p videos && cp /tmp/o/* videos/
+            for f in /tmp/o/*.mp4; do b=$(basename "$f" .mp4); grep -qx "$b" upload.txt 2>/dev/null || echo "$b" >> upload.txt; done
+            git add videos upload.txt && git commit -qm "publish $(date +%F-%T)" && git push -q origin out && break
+            sleep $((RANDOM % 25 + 5))
+          done
