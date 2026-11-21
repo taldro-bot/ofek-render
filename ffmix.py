@@ -76,6 +76,12 @@ def finish(body, out):
 TOPIC = os.environ.get('FF_TITLE', 'עבודת מנוף סל מהשטח')
 
 
+def meta(path, title, desc=''):  # 21.11: real titles for YouTube/FB/IG (was falling back to the file id)
+    vid = os.path.basename(path)[:-4]
+    json.dump({'id': vid, 'title': title[:95], 'lines': [desc or title], 'lang': 'he', 'kind': 'ffmix'},
+              open(os.path.join(OUT, vid + '.json'), 'w', encoding='utf-8'), ensure_ascii=False)
+
+
 def reverse(src, out):  # 4s chunks – whole-clip reverse gets OOM-killed
     d = probe(src)[0]; parts = []; t = 0.0; k = 0
     while t < d - 0.05:
@@ -94,18 +100,18 @@ for i, f in enumerate(vids):
     src = os.path.join(SRC, f)
     body = os.path.join(OUT, code + '-body.mp4')
     timelapse(src, body)
-    finish(body, os.path.join(OUT, code + '.mp4'))
+    finish(body, os.path.join(OUT, code + '.mp4')); meta(os.path.join(OUT, code + '.mp4'), '⏩ %s בהילוך מהיר | אופק את טל מנופים' % TOPIC)
     d = probe(src)[0]
     HK = R.HOOKS['he']
     # 20.11 (Tal: "להשתגע איתו"): reverse version + 4 part-shorts per source
     rb = os.path.join(OUT, 'rbody.mp4')
     timelapse(src, rb, title='⏪ אחורה בזמן', sub=TOPIC)
     reverse(rb, os.path.join(OUT, 'rrev.mp4'))
-    finish(os.path.join(OUT, 'rrev.mp4'), os.path.join(OUT, 'ffr%03d.mp4' % (start_n + i)))
+    finish(os.path.join(OUT, 'rrev.mp4'), os.path.join(OUT, 'ffr%03d.mp4' % (start_n + i))); meta(os.path.join(OUT, 'ffr%03d.mp4' % (start_n + i)), '⏪ אחורה בזמן: %s | אופק את טל מנופים' % TOPIC)
     for q in range(4):
         sb = os.path.join(OUT, 'sbody.mp4')
         timelapse(src, sb, secs=22.0, start=d * q / 4, span=d / 4, title=TOPIC, sub='חלק %d מתוך 4' % (q + 1), hook=HK[(i + q + 2) % len(HK)])
-        finish(sb, os.path.join(OUT, 'ffs%03d%s.mp4' % (start_n + i, 'abcd'[q])))
+        finish(sb, os.path.join(OUT, 'ffs%03d%s.mp4' % (start_n + i, 'abcd'[q]))); meta(os.path.join(OUT, 'ffs%03d%s.mp4' % (start_n + i, 'abcd'[q])), '%s – חלק %d מתוך 4 | אופק את טל מנופים' % (HK[(i + q + 2) % len(HK)], q + 1))
     bit = os.path.join(OUT, f'bit{i}.mp4')   # mix: middle third of the job at high speed, 8s
     timelapse(src, bit, secs=8.0, start=d * 0.3, span=d * 0.4, title='⏩ עבודות מנוף בהילוך מהיר', sub='אופק את טל מנופים')
     bits.append(bit)
@@ -115,4 +121,4 @@ if len(bits) > 1:
     lst = os.path.join(OUT, 'bits.txt'); open(lst, 'w').write(''.join(f"file '{b}'\n" for b in bits))
     mixb = os.path.join(OUT, 'mix-body.mp4')
     run(['ffmpeg', '-nostdin', '-v', 'error', '-y', '-f', 'concat', '-safe', '0', '-i', lst, '-c', 'copy', mixb])
-    finish(mixb, os.path.join(OUT, 'ff-mix-%03d.mp4' % start_n))
+    finish(mixb, os.path.join(OUT, 'ff-mix-%03d.mp4' % start_n)); meta(os.path.join(OUT, 'ff-mix-%03d.mp4' % start_n), '⏩ עבודות מנוף בהילוך מהיר – מיקס מהשטח | אופק את טל מנופים')

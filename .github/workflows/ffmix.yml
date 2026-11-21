@@ -28,7 +28,7 @@ jobs:
           cd out 2>/dev/null || exit 0; shopt -s nullglob
           F=$(ls ff[0-9]*.mp4 ffr[0-9]*.mp4 ffs[0-9]*.mp4 ff-mix-*.mp4 2>/dev/null | grep -v body)
           [ -n "$F" ] || { echo none; exit 0; }
-          mkdir -p /tmp/f/videos && for f in $F; do cp "$f" /tmp/f/videos/; done
+          mkdir -p /tmp/f/videos && for f in $F; do cp "$f" /tmp/f/videos/; [ -f "${f%.mp4}.json" ] && cp "${f%.mp4}.json" /tmp/f/videos/; done
           (cd /tmp/f/videos && ls *.mp4 | sed 's/\.mp4$//') > /tmp/f/upload.txt
           cd /tmp/f && git init -q -b ffmix && git config user.name "ofek-bot" && git config user.email "bot@tal83.com"
           git add -A && git commit -qm "ffmix $(date +%F)" && git push -q -f "https://x-access-token:${{ github.token }}@github.com/${{ github.repository }}" ffmix
