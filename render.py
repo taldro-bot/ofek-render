@@ -136,7 +136,7 @@ HOOKS = {
     'si': ['වාව්! මෙහෙම දෙයක් ඔබ දැකලා නැහැ', 'අපි කළ දේ බලන්න', 'නිවැරදිව කරන්නේ මෙහෙමයි'],
 }
 SUBY = 1380
-MASCOT = os.path.join(ROOT, 'assets', 'mascot_tal.png'); MH, MY = 620, 1060
+MASCOT = os.path.join(ROOT, 'assets', 'mascot_round.png'); MH, MY = 470, 1160   # 21.11 round avatar, full hair
 DISC = ''  # optional disclaimer shown at the start (job['disclaimer'])
 
 
@@ -340,7 +340,7 @@ def main(job_path):
          '-filter_complex', "[2:v]scale=300:-2[lg];[0:v][lg]overlay=W-w-30:30:enable='lt(t,%.2f)'[a];"
          "[a][3:v]overlay=x='-w+w*t/%.2f':y=0:shortest=1:enable='lt(t,%.2f)'[b];"
          # 20.11 WOW: Tal's cartoon pops up bottom-left, wiggles, ducks away (job 'nomascot' to skip)
-         "[4:v]scale=-2:%d,format=rgba,rotate=a='0.07*sin(2*PI*2.5*t)':c=none:ow=rotw(0.12):oh=roth(0.12)[ms];" % (body, body, body, 500 if job.get('presenter') else MH)
+         "[4:v]scale=-2:%d,format=rgba,rotate=a='0.07*sin(2*PI*2.5*t)':c=none:ow=rotw(0.12):oh=roth(0.12)[ms];" % (body, body, body, 440 if job.get('presenter') else MH)
          + (("[b][ms]overlay=x=0:y='if(lt(t,0.35),H-(H-%d)*t/0.35,%d+10*sin(2*PI*1.6*t))':eof_action=repeat:enable='lt(t,%.2f)'[c];" % (1210, 1210, body))
             if job.get('presenter') else
             ("[b][ms]overlay=x=10:y='if(lt(t,0.35),H-(H-%d)*t/0.35,if(lt(t,1.9),%d+12*sin(2*PI*2*t),%d+(H-%d)*(t-1.9)/0.3))':eof_action=pass:enable='lt(t,%s)'[c];" % (MY, MY, MY, MY, '2.2' if not job.get('nomascot') else '0'))) +
