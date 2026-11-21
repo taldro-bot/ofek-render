@@ -1,7 +1,7 @@
 name: dub-render
 on:
   schedule:
-    - cron: '41 */6 * * *'   # every 6h: render Hebrew jobs whose Soniox dub is ready
+    - cron: '41 */2 * * *'   # every 2h (21.11 big queue): render jobs whose Soniox dub is ready
   workflow_dispatch:
 
 permissions:
@@ -18,7 +18,7 @@ jobs:
           sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg fonts-noto-core >/dev/null
           pip install -q edge-tts pillow
       - name: pick dubbed jobs
-        env: { DUB_MANIFEST: '1_B5Pi1slRJdU0kNlJg8oUNIyshelL6RH', MAXN: '16' }
+        env: { DUB_MANIFEST: '1_B5Pi1slRJdU0kNlJg8oUNIyshelL6RH', MAXN: '24' }
         run: |
           python3 dubrender.py > ids.txt || true
           cat ids.txt; [ -s ids.txt ] || echo "nothing ready" 
