@@ -1,0 +1,23 @@
+{
+ "id": "r261121786",
+ "title": "מנוף סל בחיפה – גם בנמל חיפה",
+ "lines": [
+  "מחפשים מנוף סל בחיפה?",
+  "גם בנמל חיפה אנחנו עובדים.",
+  "מודדים גובה ומרחק מהמדרכה, בודקים חשמל ומקום לרגליות.",
+  "עבודה בטוחה, מהירה ונקייה – עם סל אדם תקני.",
+  "אופק את טל מנופים – מגיעים לחיפה. 050-9081114."
+ ],
+ "photos": [
+  "assets/cities/haifa-port-crane-operation-scene-6604.jpg",
+  "assets/cities/tal-ta-alley-wave.jpg",
+  "assets/cities/tal-haifa-carmel.jpg"
+ ],
+ "lang": "he",
+ "voice": "he-IL-AvriNeural",
+ "rate": "+4%",
+ "presenter": true,
+ "kind": "city",
+ "audio_url": "https://drive.google.com/uc?export=download&id=1h6ILteOsh2YNYSqDGrVten8nuZIEysWf",
+ "dub_voice": "Shalini"
+}
