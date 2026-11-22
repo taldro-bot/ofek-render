@@ -54,7 +54,7 @@ jobs:
         run: |
           git config user.name "ofek-bot"; git config user.email "bot@tal83.com"
           mkdir -p /tmp/o && cp out/* /tmp/o/
-          git fetch -q origin out:out && git checkout -q out
+          git fetch -q origin out:out && git checkout -qf out && git clean -fdq
           for i in $(seq 1 12); do
             git fetch -q origin out && git reset -q --hard origin/out
             mkdir -p videos && cp /tmp/o/* videos/
