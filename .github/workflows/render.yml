@@ -37,6 +37,7 @@ jobs:
       - name: publish to out branch
         run: |
           git config user.name "ofek-bot"; git config user.email "bot@tal83.com"
+          ls out/*.mp4 >/dev/null 2>&1 || { echo "nothing to publish"; exit 0; }
           mkdir -p /tmp/o && cp out/* /tmp/o/
           git fetch origin out:out 2>/dev/null && git checkout out || git checkout --orphan out
           git rm -rq --cached . 2>/dev/null || true
