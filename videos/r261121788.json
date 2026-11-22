@@ -1,0 +1,23 @@
+{
+ "id": "r261121788",
+ "title": "מנוף סל בחיפה – גם בהמושבה הגרמנית",
+ "lines": [
+  "מנוף בהמושבה הגרמנית? בטח.",
+  "גם בהמושבה הגרמנית אנחנו עובדים.",
+  "מודדים גובה ומרחק מהמדרכה, בודקים חשמל ומקום לרגליות.",
+  "עבודה בטוחה, מהירה ונקייה – עם סל אדם תקני.",
+  "אופק את טל מנופים – מגיעים לחיפה. 050-9081114."
+ ],
+ "photos": [
+  "assets/cities/haifa-crane-photo-generation-20e2.jpg",
+  "assets/cities/tal-jlm-night2.jpg",
+  "assets/cities/tal-jlm-old.jpg"
+ ],
+ "lang": "he",
+ "voice": "he-IL-AvriNeural",
+ "rate": "+4%",
+ "presenter": true,
+ "kind": "city",
+ "audio_url": "https://drive.google.com/uc?export=download&id=1TBlp0XMxbUaYp43TY1ZiTyHYZ4TWtkq2",
+ "dub_voice": "Deepa"
+}
