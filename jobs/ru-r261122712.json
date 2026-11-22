@@ -1,0 +1,43 @@
+{
+ "id": "ru-r261122712",
+ "title": "Подъёмная платформа – везде, всегда, для любой задачи",
+ "lines": [
+  "Нужна подъёмная платформа? Офек и Таль.",
+  "Ножничная, коленчатая и паучья платформа.",
+  "Замена освещения, монтаж вывесок, покраска фасадов и кондиционеры.",
+  "Офисы, склады, торговые центры, залы и синагоги.",
+  "Петах-Тиква, Рош-ха-Аин, Кфар-Саба и Тель-Авив.",
+  "Хайфа, Иерусалим, Нетания, Холон и до Эйлата.",
+  "Всегда – даже ночью, когда помещение пустое.",
+  "Работник пристёгнут в корзине, ограждение вокруг и наблюдающий внизу.",
+  "Для любой задачи, для любой работы – большой или маленькой.",
+  "Офек и Таль – подъёмные платформы везде и всегда.",
+  "Звоните 050-9081114 или заходите на tal83.com."
+ ],
+ "photos": [
+  "assets/cities/ai4-bama-herzliya.jpg",
+  "assets/cities/ai4-bama-rosh-haayin.jpg",
+  "assets/cities/ai4-bama-tel-aviv.jpg",
+  "assets/cities/ai4-bama-modiin.jpg",
+  "assets/cities/ai4-bama-rehovot.jpg",
+  "assets/cities/ai4-bama-holon.jpg",
+  "assets/cities/ai4-bama-spider.jpg",
+  "assets/cities/ai4-bama-petah-tikva.jpg",
+  "https://www.tal83.com/img/aerial-lift-rental-shoham.jpg",
+  "https://www.tal83.com/img/aerial-platform-rental-nes-ziona.jpg",
+  "assets/cities/ai4-bama-netanya.jpg",
+  "assets/cities/ai4-bama-eilat.jpg",
+  "assets/cities/ai4-bama-bnei-brak.jpg",
+  "assets/cities/ai4-bama-ramat-gan-mall.jpg",
+  "assets/cities/ai4-bama-kfar-saba.jpg",
+  "assets/cities/ai4-bama-haifa.jpg",
+  "assets/cities/ai4-bama-jerusalem.jpg",
+  "https://www.tal83.com/img/aerial-work-platform-rental-petah-tikva.jpg",
+  "https://www.tal83.com/img/boom-lift-rental-yehud.jpg"
+ ],
+ "lang": "ru",
+ "voice": "he-IL-AvriNeural",
+ "rate": "+4%",
+ "presenter": true,
+ "kind": "tour"
+}

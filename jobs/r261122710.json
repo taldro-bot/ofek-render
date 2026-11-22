@@ -1,0 +1,43 @@
+{
+ "id": "r261122710",
+ "title": "במת הרמה – בכל מקום, בכל זמן, לכל משימה",
+ "lines": [
+  "צריכים במת הרמה? אופק את טל מנופים.",
+  "במת מספריים, במת זרוע ובמת עכביש.",
+  "החלפת תאורה, התקנת שלטים, צביעת חזיתות ומזגנים.",
+  "משרדים, מחסנים, קניונים, אולמות ובתי כנסת.",
+  "פתח תקווה, ראש העין, כפר סבא ותל אביב.",
+  "חיפה, ירושלים, נתניה, חולון ועד אילת.",
+  "בכל זמן – גם בלילה, כשהמקום ריק ושקט.",
+  "עובד רתום בתוך הסל, גידור סביב, ואיש קרקע תמיד.",
+  "לכל משימה, לכל ג'וב – קטן או גדול.",
+  "אופק את טל מנופים – במות הרמה בכל מקום, בכל זמן.",
+  "חייגו 050-9081114, או היכנסו ל-tal83.com."
+ ],
+ "photos": [
+  "assets/cities/ai4-bama-herzliya.jpg",
+  "assets/cities/ai4-bama-rosh-haayin.jpg",
+  "assets/cities/ai4-bama-tel-aviv.jpg",
+  "assets/cities/ai4-bama-modiin.jpg",
+  "assets/cities/ai4-bama-rehovot.jpg",
+  "assets/cities/ai4-bama-holon.jpg",
+  "assets/cities/ai4-bama-spider.jpg",
+  "assets/cities/ai4-bama-petah-tikva.jpg",
+  "https://www.tal83.com/img/aerial-lift-rental-shoham.jpg",
+  "https://www.tal83.com/img/aerial-platform-rental-nes-ziona.jpg",
+  "assets/cities/ai4-bama-netanya.jpg",
+  "assets/cities/ai4-bama-eilat.jpg",
+  "assets/cities/ai4-bama-bnei-brak.jpg",
+  "assets/cities/ai4-bama-ramat-gan-mall.jpg",
+  "assets/cities/ai4-bama-kfar-saba.jpg",
+  "assets/cities/ai4-bama-haifa.jpg",
+  "assets/cities/ai4-bama-jerusalem.jpg",
+  "https://www.tal83.com/img/aerial-work-platform-rental-petah-tikva.jpg",
+  "https://www.tal83.com/img/boom-lift-rental-yehud.jpg"
+ ],
+ "lang": "he",
+ "voice": "he-IL-AvriNeural",
+ "rate": "+4%",
+ "presenter": true,
+ "kind": "tour"
+}
