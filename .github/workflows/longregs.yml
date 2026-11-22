@@ -10,9 +10,9 @@ jobs:
       - run: |
           sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg >/dev/null
           : > /tmp/l.txt; for i in $(seq 23 36); do f=videos/r2611210$i.mp4; [ -f $f ] && echo "file '$PWD/$f'" >> /tmp/l.txt; done; cat /tmp/l.txt
-          ffmpeg -y -f concat -safe 0 -i /tmp/l.txt -c:v libx264 -preset veryfast -crf 23 -c:a aac -b:a 128k -movflags +faststart /tmp/r261121660.mp4
+          ffmpeg -y -f concat -safe 0 -i /tmp/l.txt -c:v libx264 -preset veryfast -crf 28 -maxrate 1600k -bufsize 3200k -c:a aac -b:a 128k -movflags +faststart /tmp/r261121660.mp4
           python3 -c 'import json;json.dump({"id":"r261121660","title":"תקנות עבודה בגובה – כל הפרקים בסרטון אחד","lang":"he","kind":"regs","long":True},open("/tmp/r261121660.json","w"),ensure_ascii=False)'
           git config user.name ofek-bot; git config user.email bot@tal83.com
           for i in $(seq 1 8); do git fetch -q origin out && git reset -q --hard origin/out
             cp /tmp/r261121660.* videos/; grep -qx r261121660 upload.txt || echo r261121660 >> upload.txt
-            git add videos upload.txt && git commit -qm "publish r261121660 (long regs)" && git push -q origin out && break; sleep 10; done
+            git add videos upload.txt && git commit -qm "publish r261121660 (long regs)" && git push -q origin out && break; sleep 10; done; git log origin/out -1 --format=%s | grep -q r261121660
