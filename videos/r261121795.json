@@ -1,0 +1,23 @@
+{
+ "id": "r261121795",
+ "title": "מנוף סל בירושלים – גם בבית אבן עם נוף",
+ "lines": [
+  "מחפשים מנוף סל בירושלים?",
+  "גם בבית אבן עם נוף אנחנו עובדים.",
+  "מודדים גובה ומרחק מהמדרכה, בודקים חשמל ומקום לרגליות.",
+  "עבודה בטוחה, מהירה ונקייה – עם סל אדם תקני.",
+  "אופק את טל מנופים – מגיעים לירושלים. 050-9081114."
+ ],
+ "photos": [
+  "assets/cities/jerusalem-crane-construction-scene-da03.jpg",
+  "assets/cities/tal-ta-alley-wave.jpg",
+  "assets/cities/tal-ta-beach-sunset.jpg"
+ ],
+ "lang": "he",
+ "voice": "he-IL-AvriNeural",
+ "rate": "+4%",
+ "presenter": true,
+ "kind": "city",
+ "audio_url": "https://drive.google.com/uc?export=download&id=1HOaKj8xWQbYNBtLcYI6wRI_xnWWAsh_m",
+ "dub_voice": "Kayla"
+}
