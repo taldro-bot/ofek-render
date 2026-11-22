@@ -1,0 +1,23 @@
+{
+ "id": "r261121810",
+ "title": "מנוף סל בצפת – גם בסמטאות העיר העתיקה",
+ "lines": [
+  "מחפשים מנוף סל בצפת?",
+  "גם בסמטאות העיר העתיקה אנחנו עובדים.",
+  "מודדים גובה ומרחק מהמדרכה, בודקים חשמל ומקום לרגליות.",
+  "עבודה בטוחה, מהירה ונקייה – עם סל אדם תקני.",
+  "אופק את טל מנופים – מגיעים לצפת. 050-9081114."
+ ],
+ "photos": [
+  "assets/cities/safed-alleys.jpg",
+  "assets/cities/tal-street-day.jpg",
+  "assets/cities/tal-jlm-shuk.jpg"
+ ],
+ "lang": "he",
+ "voice": "he-IL-AvriNeural",
+ "rate": "+4%",
+ "presenter": true,
+ "kind": "city",
+ "audio_url": "https://drive.google.com/uc?export=download&id=1_O8ckNE6-C1_GSu9P-Axv4yNH8g_4h31",
+ "dub_voice": "Piper"
+}
