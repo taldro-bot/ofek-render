@@ -1,0 +1,23 @@
+{
+ "id": "r261121781",
+ "title": "מנוף סל בקיסריה – גם בנמל קיסריה",
+ "lines": [
+  "עבודה בגובה בקיסריה?",
+  "גם בנמל קיסריה אנחנו עובדים.",
+  "מודדים גובה ומרחק מהמדרכה, בודקים חשמל ומקום לרגליות.",
+  "עבודה בטוחה, מהירה ונקייה – עם סל אדם תקני.",
+  "אופק את טל מנופים – מגיעים לקיסריה. 050-9081114."
+ ],
+ "photos": [
+  "assets/cities/at-caesarea-harbour-fe84.jpg",
+  "assets/cities/tal-street-day.jpg",
+  "assets/cities/tal-ta-tayelet-night.jpg"
+ ],
+ "lang": "he",
+ "voice": "he-IL-AvriNeural",
+ "rate": "+4%",
+ "presenter": true,
+ "kind": "city",
+ "audio_url": "https://drive.google.com/uc?export=download&id=1D0t3KAV8I4cUhkllDUzVJ5H_LJ2fSKZZ",
+ "dub_voice": "Brooke"
+}
