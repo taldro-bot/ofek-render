@@ -1,0 +1,23 @@
+{
+ "id": "ar-c2211045",
+ "title": "رافعة سلة في نس تسيونا",
+ "lines": [
+  "تبحثون عن رافعة سلة في نس تسيونا؟",
+  "نحن نعمل هناك ونعرف المنطقة.",
+  "نقيس الارتفاع والمسافة، ونفحص الكهرباء ومكان الأرجل الداعمة.",
+  "عمل آمن، سريع ونظيف.",
+  "أوفيك وطال للرافعات – 050-9081114."
+ ],
+ "photos": [
+  "assets/cities/ai3-ness-ziona.jpg",
+  "assets/cities/tal-street-day.jpg",
+  "assets/cities/tal-ta-tayelet-night.jpg"
+ ],
+ "lang": "ar",
+ "voice": "he-IL-AvriNeural",
+ "rate": "+4%",
+ "presenter": true,
+ "kind": "city",
+ "audio_url": "https://drive.google.com/uc?export=download&id=1jCr9-B_ckgSnTTiedUYxcPPNqycf3lmA",
+ "dub_voice": "Nora"
+}
