@@ -1,0 +1,23 @@
+{
+ "id": "r261121806",
+ "title": "מנוף סל ביפו – גם בנמל יפו",
+ "lines": [
+  "מנוף בנמל יפו? בטח.",
+  "גם בנמל יפו אנחנו עובדים.",
+  "מודדים גובה ומרחק מהמדרכה, בודקים חשמל ומקום לרגליות.",
+  "עבודה בטוחה, מהירה ונקייה – עם סל אדם תקני.",
+  "אופק את טל מנופים – מגיעים ליפו. 050-9081114."
+ ],
+ "photos": [
+  "assets/cities/jaffa-port.jpg",
+  "assets/cities/tal-ta-beach-sunset.jpg",
+  "assets/cities/tal-haifa-carmel.jpg"
+ ],
+ "lang": "he",
+ "voice": "he-IL-AvriNeural",
+ "rate": "+4%",
+ "presenter": true,
+ "kind": "city",
+ "audio_url": "https://drive.google.com/uc?export=download&id=1ltKnkTkAY2yYi4CD1H3uQ_PpjIdCFODF",
+ "dub_voice": "Divya"
+}
