@@ -30,6 +30,8 @@ jobs:
         run: |
           # 13.11: one bad job never stops the rest; ffmpeg crash -> one retry
           while read -r j; do [ -f "$j" ] || continue
+            grep -qE '"(typewriter|clipmix|quizvid)": true' "$j" && continue   # 22.11: these go through dub-render
+            grep -q '"photos"' "$j" || continue
             python3 fetch_photos.py "$j" < /dev/null && { python3 render.py "$j.local" < /dev/null || python3 render.py "$j.local" < /dev/null || echo "FAILED $j"; }
           done < jobs.txt
       - name: publish to out branch
