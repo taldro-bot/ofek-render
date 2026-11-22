@@ -1,3 +1,4 @@
+import sys
 """Daily remix generator — makes one NEW unique video job per run from our own material.
 Combines: topic template x city x photos x language x hook (render.py rotates hooks by id).
 State in state/used.json so no combination repeats. Output: jobs/<id>.json, prints the id."""
@@ -79,6 +80,16 @@ def main():
         if mach == 'foreign': title, lines = FOREIGN[lang]; lines = list(lines); rnd.shuffle(lines[1:4])
         else:
             pool = REGS_AR if (lang == 'ar' and mach == 'regs') else {'question': QUESTION, 'quiz': QUIZ, 'tip': TIP, 'regs': REGS}[mach]; uk = st.setdefault('k_' + mach + ('_ar' if pool is REGS_AR else ''), [])
+            if mach == 'tip':   # 22.11 Tal: the tip machine dubs the real daily tips from tal83 (falls back to the fixed TIP list)
+                try:
+                    live = json.loads(urllib.request.urlopen(urllib.request.Request('https://www.tal83.com/api/tips.json', headers={'User-Agent': 'Mozilla/5.0 ofek-remix'}), timeout=30).read())
+                    ud = st.setdefault('tips_live', [])
+                    cand = [t for t in live if t.get('title') and t.get('tip') and t['title'] not in ud]
+                    if cand:
+                        t = cand[0]; ud.append(t['title']); del ud[:-200]
+                        sents = [x.strip() for x in re.split(r'(?<=[.!?])\s+|,\s+(?=כדי|אחרת|כי)', t['tip']) if x.strip()]
+                        pool = [('טיפ יומי: ' + t['title'], ['טיפ יומי מאופק את טל.', t['title'] + '.'] + sents + ['טיפ ביום – שומר עליכם. אופק את טל מנופים.'])]; uk = []
+                except Exception as e: print('live tips:', e, file=sys.stderr)
             free = [i for i in range(len(pool)) if i not in uk] or list(range(len(pool)))
             if len(free) == len(pool): uk.clear()
             i = rnd.choice(free); uk.append(i); title, lines = pool[i]; lines = list(lines)
