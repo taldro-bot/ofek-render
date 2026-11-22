@@ -1,0 +1,23 @@
+{
+ "id": "r261121809",
+ "title": "מנוף סל בטבריה – גם בהטיילת",
+ "lines": [
+  "מנוף בהטיילת? בטח.",
+  "גם בהטיילת אנחנו עובדים.",
+  "מודדים גובה ומרחק מהמדרכה, בודקים חשמל ומקום לרגליות.",
+  "עבודה בטוחה, מהירה ונקייה – עם סל אדם תקני.",
+  "אופק את טל מנופים – מגיעים לטבריה. 050-9081114."
+ ],
+ "photos": [
+  "assets/cities/tiberias-promenade.jpg",
+  "assets/cities/tal-jlm-night4.jpg",
+  "assets/cities/tal-jlm-old.jpg"
+ ],
+ "lang": "he",
+ "voice": "he-IL-AvriNeural",
+ "rate": "+4%",
+ "presenter": true,
+ "kind": "city",
+ "audio_url": "https://drive.google.com/uc?export=download&id=1mO4EqVLPV44GK56vlctypxN2j64uE0z1",
+ "dub_voice": "Hazel"
+}
