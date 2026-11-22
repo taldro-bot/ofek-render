@@ -1,0 +1,21 @@
+{
+ "id": "he-c2211048",
+ "title": "מנוף סל במודיעין – בכל זמן",
+ "lines": [
+  "מחפשים מנוף סל במודיעין?",
+  "אנחנו עובדים במודיעין ומכירים את הסביבה.",
+  "מודדים גובה ומרחק מהמדרכה, בודקים חשמל ומקום לרגליות.",
+  "עבודה בטוחה, מהירה ונקייה – עם סל אדם תקני.",
+  "אופק את טל מנופים – 050-9081114, tal83.com."
+ ],
+ "photos": [
+  "assets/cities/ai3-modiin.jpg",
+  "assets/cities/tal-ta-alley-wave.jpg",
+  "assets/cities/tal-street-day.jpg"
+ ],
+ "lang": "he",
+ "voice": "he-IL-AvriNeural",
+ "rate": "+4%",
+ "presenter": true,
+ "kind": "city"
+}

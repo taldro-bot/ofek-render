@@ -1,0 +1,21 @@
+{
+ "id": "ar-c2211085",
+ "title": "منصة رفع في تل أبيب",
+ "lines": [
+  "تحتاجون منصة رفع في تل أبيب؟",
+  "منصة مقصية، ذراع أو عنكبوت – حسب العمل.",
+  "إنارة، لافتات، مكيفات ودهان – في الداخل والخارج.",
+  "عامل مربوط في السلة، سياج حولها وشخص على الأرض دائماً.",
+  "أوفيك وطال – 050-9081114."
+ ],
+ "photos": [
+  "assets/cities/ai4-bama-tel-aviv.jpg",
+  "assets/cities/tal-street-day.jpg",
+  "assets/cities/tal-ta-tayelet-night.jpg"
+ ],
+ "lang": "ar",
+ "voice": "he-IL-AvriNeural",
+ "rate": "+4%",
+ "presenter": true,
+ "kind": "city"
+}

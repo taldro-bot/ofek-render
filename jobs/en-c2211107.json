@@ -1,0 +1,21 @@
+{
+ "id": "en-c2211107",
+ "title": "Lifting Platform in Netanya",
+ "lines": [
+  "Need a lifting platform in Netanya?",
+  "Scissor, boom or spider lift – whatever the job needs.",
+  "Lighting, signs, air-conditioning and painting – inside and out.",
+  "Worker harnessed in the basket, barriers around, ground man always.",
+  "Ofek and Tal Cranes – 050-9081114, tal83.com."
+ ],
+ "photos": [
+  "assets/cities/ai4-bama-netanya.jpg",
+  "assets/cities/tal-ta-night3.jpg",
+  "assets/cities/tal-ta-alley-wave.jpg"
+ ],
+ "lang": "en",
+ "voice": "he-IL-AvriNeural",
+ "rate": "+4%",
+ "presenter": true,
+ "kind": "city"
+}

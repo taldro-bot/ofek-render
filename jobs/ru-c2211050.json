@@ -1,0 +1,21 @@
+{
+ "id": "ru-c2211050",
+ "title": "Автовышка в Модиине",
+ "lines": [
+  "Нужна автовышка в Модиине?",
+  "Мы работаем там и знаем район.",
+  "Измеряем высоту и расстояние, проверяем провода и место для опор.",
+  "Безопасно, быстро и чисто.",
+  "Офек и Таль – 050-9081114, tal83.com."
+ ],
+ "photos": [
+  "assets/cities/ai3-modiin.jpg",
+  "assets/cities/tal-ta-tayelet-night.jpg",
+  "assets/cities/tal-ta-night3.jpg"
+ ],
+ "lang": "ru",
+ "voice": "he-IL-AvriNeural",
+ "rate": "+4%",
+ "presenter": true,
+ "kind": "city"
+}

@@ -1,0 +1,21 @@
+{
+ "id": "ru-c2211078",
+ "title": "Подъёмная платформа в Кфар-Сабе",
+ "lines": [
+  "Нужна подъёмная платформа в Кфар-Сабе?",
+  "Ножничная, коленчатая или паучья – по задаче.",
+  "Освещение, вывески, кондиционеры и покраска – внутри и снаружи.",
+  "Работник пристёгнут, ограждение вокруг и наблюдающий внизу.",
+  "Офек и Таль – 050-9081114, tal83.com."
+ ],
+ "photos": [
+  "assets/cities/ai4-bama-kfar-saba.jpg",
+  "assets/cities/tal-ta-tayelet-night.jpg",
+  "assets/cities/tal-ta-night3.jpg"
+ ],
+ "lang": "ru",
+ "voice": "he-IL-AvriNeural",
+ "rate": "+4%",
+ "presenter": true,
+ "kind": "city"
+}

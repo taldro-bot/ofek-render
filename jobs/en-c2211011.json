@@ -1,0 +1,21 @@
+{
+ "id": "en-c2211011",
+ "title": "Boom Lift in Kfar Saba",
+ "lines": [
+  "Need a boom lift in Kfar Saba?",
+  "We work there and know the area.",
+  "We measure height and distance, check power lines and outrigger space.",
+  "Safe, fast and clean work.",
+  "Ofek and Tal Cranes – 050-9081114, tal83.com."
+ ],
+ "photos": [
+  "assets/cities/ai3-kfar-saba.jpg",
+  "assets/cities/tal-ta-night3.jpg",
+  "assets/cities/tal-ta-alley-wave.jpg"
+ ],
+ "lang": "en",
+ "voice": "he-IL-AvriNeural",
+ "rate": "+4%",
+ "presenter": true,
+ "kind": "city"
+}

@@ -1,0 +1,21 @@
+{
+ "id": "ar-c2211089",
+ "title": "منصة رفع في حولون",
+ "lines": [
+  "تحتاجون منصة رفع في حولون؟",
+  "منصة مقصية، ذراع أو عنكبوت – حسب العمل.",
+  "إنارة، لافتات، مكيفات ودهان – في الداخل والخارج.",
+  "عامل مربوط في السلة، سياج حولها وشخص على الأرض دائماً.",
+  "أوفيك وطال – 050-9081114."
+ ],
+ "photos": [
+  "assets/cities/ai4-bama-holon.jpg",
+  "assets/cities/tal-street-day.jpg",
+  "assets/cities/tal-ta-tayelet-night.jpg"
+ ],
+ "lang": "ar",
+ "voice": "he-IL-AvriNeural",
+ "rate": "+4%",
+ "presenter": true,
+ "kind": "city"
+}

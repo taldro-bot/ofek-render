@@ -1,0 +1,21 @@
+{
+ "id": "ar-c2211053",
+ "title": "رافعة سلة في عسقلان",
+ "lines": [
+  "تبحثون عن رافعة سلة في عسقلان؟",
+  "نحن نعمل هناك ونعرف المنطقة.",
+  "نقيس الارتفاع والمسافة، ونفحص الكهرباء ومكان الأرجل الداعمة.",
+  "عمل آمن، سريع ونظيف.",
+  "أوفيك وطال للرافعات – 050-9081114."
+ ],
+ "photos": [
+  "assets/cities/ai3-ashkelon.jpg",
+  "assets/cities/tal-street-day.jpg",
+  "assets/cities/tal-ta-tayelet-night.jpg"
+ ],
+ "lang": "ar",
+ "voice": "he-IL-AvriNeural",
+ "rate": "+4%",
+ "presenter": true,
+ "kind": "city"
+}

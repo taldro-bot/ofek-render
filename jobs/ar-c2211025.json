@@ -1,0 +1,21 @@
+{
+ "id": "ar-c2211025",
+ "title": "رافعة سلة في بني براك",
+ "lines": [
+  "تبحثون عن رافعة سلة في بني براك؟",
+  "نحن نعمل هناك ونعرف المنطقة.",
+  "نقيس الارتفاع والمسافة، ونفحص الكهرباء ومكان الأرجل الداعمة.",
+  "عمل آمن، سريع ونظيف.",
+  "أوفيك وطال للرافعات – 050-9081114."
+ ],
+ "photos": [
+  "assets/cities/ai3-bnei-brak-rabbi-akiva.jpg",
+  "assets/cities/tal-street-day.jpg",
+  "assets/cities/tal-ta-tayelet-night.jpg"
+ ],
+ "lang": "ar",
+ "voice": "he-IL-AvriNeural",
+ "rate": "+4%",
+ "presenter": true,
+ "kind": "city"
+}

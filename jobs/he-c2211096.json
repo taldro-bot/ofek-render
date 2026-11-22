@@ -1,0 +1,21 @@
+{
+ "id": "he-c2211096",
+ "title": "במת הרמה ברחובות",
+ "lines": [
+  "צריכים במת הרמה ברחובות?",
+  "במת מספריים, זרוע או עכביש – לפי העבודה.",
+  "תאורה, שלטים, מזגנים וצביעה – בפנים ובחוץ.",
+  "עובד רתום בסל, גידור סביב ואיש קרקע תמיד.",
+  "אופק את טל מנופים – 050-9081114, tal83.com."
+ ],
+ "photos": [
+  "assets/cities/ai4-bama-rehovot.jpg",
+  "assets/cities/tal-ta-alley-wave.jpg",
+  "assets/cities/tal-street-day.jpg"
+ ],
+ "lang": "he",
+ "voice": "he-IL-AvriNeural",
+ "rate": "+4%",
+ "presenter": true,
+ "kind": "city"
+}
