@@ -1,0 +1,23 @@
+{
+ "id": "ar-c2211081",
+ "title": "منصة رفع في هرتسليا",
+ "lines": [
+  "تحتاجون منصة رفع في هرتسليا؟",
+  "منصة مقصية، ذراع أو عنكبوت – حسب العمل.",
+  "إنارة، لافتات، مكيفات ودهان – في الداخل والخارج.",
+  "عامل مربوط في السلة، سياج حولها وشخص على الأرض دائماً.",
+  "أوفيك وطال – 050-9081114."
+ ],
+ "photos": [
+  "assets/cities/ai4-bama-herzliya.jpg",
+  "assets/cities/tal-street-day.jpg",
+  "assets/cities/tal-ta-tayelet-night.jpg"
+ ],
+ "lang": "ar",
+ "voice": "he-IL-AvriNeural",
+ "rate": "+4%",
+ "presenter": true,
+ "kind": "city",
+ "audio_url": "https://drive.google.com/uc?export=download&id=12-w7ziACSxHihg7Tg_nfrkzvCt-931Sd",
+ "dub_voice": "Vani"
+}
