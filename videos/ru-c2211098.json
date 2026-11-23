@@ -1,0 +1,23 @@
+{
+ "id": "ru-c2211098",
+ "title": "Подъёмная платформа в Реховоте",
+ "lines": [
+  "Нужна подъёмная платформа в Реховоте?",
+  "Ножничная, коленчатая или паучья – по задаче.",
+  "Освещение, вывески, кондиционеры и покраска – внутри и снаружи.",
+  "Работник пристёгнут, ограждение вокруг и наблюдающий внизу.",
+  "Офек и Таль – 050-9081114, tal83.com."
+ ],
+ "photos": [
+  "assets/cities/ai4-bama-rehovot.jpg",
+  "assets/cities/tal-ta-tayelet-night.jpg",
+  "assets/cities/tal-ta-night3.jpg"
+ ],
+ "lang": "ru",
+ "voice": "he-IL-AvriNeural",
+ "rate": "+4%",
+ "presenter": true,
+ "kind": "city",
+ "audio_url": "https://drive.google.com/uc?export=download&id=1Q20SqYcX7uICccBGKtY2do0DprVK-hfO",
+ "dub_voice": "Kayla"
+}
