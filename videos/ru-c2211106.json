@@ -1,0 +1,23 @@
+{
+ "id": "ru-c2211106",
+ "title": "Подъёмная платформа в Нетании",
+ "lines": [
+  "Нужна подъёмная платформа в Нетании?",
+  "Ножничная, коленчатая или паучья – по задаче.",
+  "Освещение, вывески, кондиционеры и покраска – внутри и снаружи.",
+  "Работник пристёгнут, ограждение вокруг и наблюдающий внизу.",
+  "Офек и Таль – 050-9081114, tal83.com."
+ ],
+ "photos": [
+  "assets/cities/ai4-bama-netanya.jpg",
+  "assets/cities/tal-ta-tayelet-night.jpg",
+  "assets/cities/tal-ta-night3.jpg"
+ ],
+ "lang": "ru",
+ "voice": "he-IL-AvriNeural",
+ "rate": "+4%",
+ "presenter": true,
+ "kind": "city",
+ "audio_url": "https://drive.google.com/uc?export=download&id=1nF6z4R5-HXSf-jj-Xn1f49WVYQQFlfkD",
+ "dub_voice": "Andrei"
+}
