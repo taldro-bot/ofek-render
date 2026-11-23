@@ -1,0 +1,23 @@
+{
+ "id": "en-c2211099",
+ "title": "Lifting Platform in Rehovot",
+ "lines": [
+  "Need a lifting platform in Rehovot?",
+  "Scissor, boom or spider lift – whatever the job needs.",
+  "Lighting, signs, air-conditioning and painting – inside and out.",
+  "Worker harnessed in the basket, barriers around, ground man always.",
+  "Ofek and Tal Cranes – 050-9081114, tal83.com."
+ ],
+ "photos": [
+  "assets/cities/ai4-bama-rehovot.jpg",
+  "assets/cities/tal-ta-night3.jpg",
+  "assets/cities/tal-ta-alley-wave.jpg"
+ ],
+ "lang": "en",
+ "voice": "he-IL-AvriNeural",
+ "rate": "+4%",
+ "presenter": true,
+ "kind": "city",
+ "audio_url": "https://drive.google.com/uc?export=download&id=1lm1AU9E2D6D-8ndMEpBL1LJJjZ87WWex",
+ "dub_voice": "Alistair"
+}
