@@ -1,0 +1,23 @@
+{
+ "id": "ar-c2211061",
+ "title": "رافعة سلة في البحر الميت",
+ "lines": [
+  "تبحثون عن رافعة سلة في البحر الميت؟",
+  "نحن نعمل هناك ونعرف المنطقة.",
+  "نقيس الارتفاع والمسافة، ونفحص الكهرباء ومكان الأرجل الداعمة.",
+  "عمل آمن، سريع ونظيف.",
+  "أوفيك وطال للرافعات – 050-9081114."
+ ],
+ "photos": [
+  "assets/cities/ai3-dead-sea.jpg",
+  "assets/cities/tal-street-day.jpg",
+  "assets/cities/tal-ta-tayelet-night.jpg"
+ ],
+ "lang": "ar",
+ "voice": "he-IL-AvriNeural",
+ "rate": "+4%",
+ "presenter": true,
+ "kind": "city",
+ "audio_url": "https://drive.google.com/uc?export=download&id=1UcXSlrHx3Lan2fVpI5ikSRPcjqwN7LXv",
+ "dub_voice": "Vani"
+}
