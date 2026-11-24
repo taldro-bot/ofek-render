@@ -1,0 +1,23 @@
+{
+ "id": "ru-r261121805",
+ "title": "Автовышка в городе Яффо",
+ "lines": [
+  "Нужна автовышка в Яффо?",
+  "Мы там работаем и знаем район.",
+  "Меряем высоту и вылет, проверяем провода и место для опор.",
+  "Безопасно, быстро и аккуратно.",
+  "Офек и Таль — приедем к вам."
+ ],
+ "photos": [
+  "assets/cities/jaffa-clock.jpg",
+  "assets/cities/tal-jlm-night4.jpg",
+  "assets/cities/tal-ta-night1.jpg"
+ ],
+ "lang": "ru",
+ "voice": "he-IL-AvriNeural",
+ "rate": "+4%",
+ "presenter": true,
+ "kind": "city",
+ "audio_url": "https://drive.google.com/uc?export=download&id=1a-I0qyc2stWcHUA9EBkrEB-8cobKs-zJ",
+ "dub_voice": "Deepa"
+}
