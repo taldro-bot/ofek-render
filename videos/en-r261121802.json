@@ -1,0 +1,23 @@
+{
+ "id": "en-r261121802",
+ "title": "Boom lift crane in Tel Aviv",
+ "lines": [
+  "Need a boom lift in Tel Aviv?",
+  "We work there and know the area.",
+  "We measure height and reach, and check power lines and outrigger space.",
+  "Safe, fast and clean work.",
+  "Ofek et Tal Cranes – we come to you."
+ ],
+ "photos": [
+  "assets/cities/tlv-atarim.jpg",
+  "assets/cities/tal-ta-alley-wave.jpg",
+  "assets/cities/tal-jlm-night2.jpg"
+ ],
+ "lang": "en",
+ "voice": "he-IL-AvriNeural",
+ "rate": "+4%",
+ "presenter": true,
+ "kind": "city",
+ "audio_url": "https://drive.google.com/uc?export=download&id=152P3Y9mJ-rACNG17AL71LxtBr0Tfz_Po",
+ "dub_voice": "Andrei"
+}
