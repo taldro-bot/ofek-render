@@ -1,0 +1,23 @@
+{
+ "id": "ar-r261121799",
+ "title": "رافعة سلة في هرتسليا",
+ "lines": [
+  "تبحثون عن رافعة سلة في هرتسليا؟",
+  "نحن نعمل هناك ونعرف المنطقة.",
+  "نقيس الارتفاع والمسافة، ونفحص الكهرباء ومكان الأرجل الداعمة.",
+  "عمل آمن، سريع ونظيف.",
+  "أوفيك وطال للرافعات – نصل إليكم."
+ ],
+ "photos": [
+  "assets/cities/haifa-construction-crane-lift.jpg",
+  "assets/cities/tal-street-day.jpg",
+  "assets/cities/tal-jlm-shuk.jpg"
+ ],
+ "lang": "ar",
+ "voice": "he-IL-AvriNeural",
+ "rate": "+4%",
+ "presenter": true,
+ "kind": "city",
+ "audio_url": "https://drive.google.com/uc?export=download&id=1AVZhgSdvVbeVYj-kXorsadshQi5T4wid",
+ "dub_voice": "Alvaro"
+}
