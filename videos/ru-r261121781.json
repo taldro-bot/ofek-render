@@ -1,0 +1,23 @@
+{
+ "id": "ru-r261121781",
+ "title": "Автовышка в городе Кейсария",
+ "lines": [
+  "Нужна автовышка в Кейсария?",
+  "Мы там работаем и знаем район.",
+  "Меряем высоту и вылет, проверяем провода и место для опор.",
+  "Безопасно, быстро и аккуратно.",
+  "Офек и Таль — приедем к вам."
+ ],
+ "photos": [
+  "assets/cities/at-caesarea-harbour-fe84.jpg",
+  "assets/cities/tal-street-day.jpg",
+  "assets/cities/tal-ta-tayelet-night.jpg"
+ ],
+ "lang": "ru",
+ "voice": "he-IL-AvriNeural",
+ "rate": "+4%",
+ "presenter": true,
+ "kind": "city",
+ "audio_url": "https://drive.google.com/uc?export=download&id=1J9_rC1VhwckAmmOOt0A6Oy4O49XDb4ER",
+ "dub_voice": "Arjun"
+}
