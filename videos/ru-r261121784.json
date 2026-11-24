@@ -1,0 +1,23 @@
+{
+ "id": "ru-r261121784",
+ "title": "Автовышка в городе Западная Галилея",
+ "lines": [
+  "Нужна автовышка в Западная Галилея?",
+  "Мы там работаем и знаем район.",
+  "Меряем высоту и вылет, проверяем провода и место для опор.",
+  "Безопасно, быстро и аккуратно.",
+  "Офек и Таль — приедем к вам."
+ ],
+ "photos": [
+  "assets/cities/at-rosh-hanikra-cliffs-afc4.jpg",
+  "assets/cities/tal-ta-beach-sunset.jpg",
+  "assets/cities/tal-ta-alley-wave.jpg"
+ ],
+ "lang": "ru",
+ "voice": "he-IL-AvriNeural",
+ "rate": "+4%",
+ "presenter": true,
+ "kind": "city",
+ "audio_url": "https://drive.google.com/uc?export=download&id=12Gnaz383S3Rw_6uaFrnet1JRt5M8Fwch",
+ "dub_voice": "Antoine"
+}
