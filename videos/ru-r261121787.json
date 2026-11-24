@@ -1,0 +1,23 @@
+{
+ "id": "ru-r261121787",
+ "title": "Автовышка в городе Хайфа",
+ "lines": [
+  "Нужна автовышка в Хайфа?",
+  "Мы там работаем и знаем район.",
+  "Меряем высоту и вылет, проверяем провода и место для опор.",
+  "Безопасно, быстро и аккуратно.",
+  "Офек и Таль — приедем к вам."
+ ],
+ "photos": [
+  "assets/cities/haifa-promenade-crane-operation-f898.jpg",
+  "assets/cities/tal-ta-night1.jpg",
+  "assets/cities/tal-street-day.jpg"
+ ],
+ "lang": "ru",
+ "voice": "he-IL-AvriNeural",
+ "rate": "+4%",
+ "presenter": true,
+ "kind": "city",
+ "audio_url": "https://drive.google.com/uc?export=download&id=1fgTn0N6YJY6ux_nps58ereqp18K1X-Rg",
+ "dub_voice": "Aman"
+}
