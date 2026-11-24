@@ -1,0 +1,23 @@
+{
+ "id": "en-r261121795",
+ "title": "Boom lift crane in Jerusalem",
+ "lines": [
+  "Need a boom lift in Jerusalem?",
+  "We work there and know the area.",
+  "We measure height and reach, and check power lines and outrigger space.",
+  "Safe, fast and clean work.",
+  "Ofek et Tal Cranes – we come to you."
+ ],
+ "photos": [
+  "assets/cities/jerusalem-crane-construction-scene-da03.jpg",
+  "assets/cities/tal-ta-alley-wave.jpg",
+  "assets/cities/tal-ta-beach-sunset.jpg"
+ ],
+ "lang": "en",
+ "voice": "he-IL-AvriNeural",
+ "rate": "+4%",
+ "presenter": true,
+ "kind": "city",
+ "audio_url": "https://drive.google.com/uc?export=download&id=11wBTzRtU8R3cpN59qJqn1xoOpiMOrBWN",
+ "dub_voice": "Andrei"
+}
