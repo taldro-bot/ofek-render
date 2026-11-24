@@ -1,0 +1,23 @@
+{
+ "id": "en-r261121784",
+ "title": "Boom lift crane in the Western Galilee",
+ "lines": [
+  "Need a boom lift in the Western Galilee?",
+  "We work there and know the area.",
+  "We measure height and reach, and check power lines and outrigger space.",
+  "Safe, fast and clean work.",
+  "Ofek et Tal Cranes – we come to you."
+ ],
+ "photos": [
+  "assets/cities/at-rosh-hanikra-cliffs-afc4.jpg",
+  "assets/cities/tal-ta-beach-sunset.jpg",
+  "assets/cities/tal-ta-alley-wave.jpg"
+ ],
+ "lang": "en",
+ "voice": "he-IL-AvriNeural",
+ "rate": "+4%",
+ "presenter": true,
+ "kind": "city",
+ "audio_url": "https://drive.google.com/uc?export=download&id=1twPrBOA6eRrDHcfl0HvCZHOv9SkJRspV",
+ "dub_voice": "Divya"
+}
