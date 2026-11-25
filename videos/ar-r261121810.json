@@ -1,0 +1,23 @@
+{
+ "id": "ar-r261121810",
+ "title": "رافعة سلة في صفد",
+ "lines": [
+  "تبحثون عن رافعة سلة في صفد؟",
+  "نحن نعمل هناك ونعرف المنطقة.",
+  "نقيس الارتفاع والمسافة، ونفحص الكهرباء ومكان الأرجل الداعمة.",
+  "عمل آمن، سريع ونظيف.",
+  "أوفيك وطال للرافعات – نصل إليكم."
+ ],
+ "photos": [
+  "assets/cities/safed-alleys.jpg",
+  "assets/cities/tal-street-day.jpg",
+  "assets/cities/tal-jlm-shuk.jpg"
+ ],
+ "lang": "ar",
+ "voice": "he-IL-AvriNeural",
+ "rate": "+4%",
+ "presenter": true,
+ "kind": "city",
+ "audio_url": "https://drive.google.com/uc?export=download&id=1lEhxZCKLxZ-YGldTlkv1wfp5ymgPBRtD",
+ "dub_voice": "Andrei"
+}
