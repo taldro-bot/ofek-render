@@ -1,0 +1,22 @@
+{
+ "id": "r261127049",
+ "title": "קבלן? 3 שאלות לפני שמזמינים מנוף",
+ "lines": [
+  "קבלן, לפני שאתה מזמין מנוף – שלוש שאלות.",
+  "מה המשקל המדויק, כולל המשטח?",
+  "מה המרחק מהמדרכה לנקודת ההנחה?",
+  "יש חשמל או עצים בדרך?",
+  "ענית? תתקשר, ונסגור תוך דקה. אופק את טל מנופים."
+ ],
+ "photos": [
+  "assets/cities/jerusalem.png",
+  "https://www.tal83.com/img/bucket-crane-petah-tikva.jpg",
+  "https://www.tal83.com/img/manof-sal-guide-and-ordering.jpg",
+  "https://www.tal83.com/img/aerial-platform-rental-nes-ziona.jpg"
+ ],
+ "lang": "he",
+ "voice": "he-IL-AvriNeural",
+ "rate": "+4%",
+ "presenter": true,
+ "kind": "question"
+}
