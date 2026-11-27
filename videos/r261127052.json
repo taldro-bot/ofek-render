@@ -1,0 +1,24 @@
+{
+ "id": "r261127052",
+ "title": "קבלן, תמונה שווה אלף מילים",
+ "lines": [
+  "קבלן, לפני שמזמינים – שלח תמונה.",
+  "תמונה של הרחוב, של הגג, ושל הדרך.",
+  "ככה יודעים איזה מנוף מתאים.",
+  "בלי הפתעות ביום העבודה.",
+  "וואטסאפ 050-9081114. אופק את טל מנופים."
+ ],
+ "photos": [
+  "assets/cities/tlv-port.jpg",
+  "https://www.tal83.com/img/bucket-truck-services-nes-ziona.jpg",
+  "https://www.tal83.com/img/quick-response-access-solutions-gedera.jpg",
+  "https://www.tal83.com/img/truck-street.jpg"
+ ],
+ "lang": "he",
+ "voice": "he-IL-AvriNeural",
+ "rate": "+4%",
+ "presenter": true,
+ "kind": "question",
+ "audio_url": "https://drive.google.com/uc?export=download&id=1TENs7ZPaBp14KotPJBLlrwcqq3GNE2Oz",
+ "dub_voice": "Kayla"
+}
