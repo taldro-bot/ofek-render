@@ -24,7 +24,7 @@ jobs:
           N="${{ github.event.inputs.count }}"; [ -z "$N" ] && N=10
           : > ids.txt
           # Hebrew -> pending (dubbed by the Soniox secretaries via dub.yml); other languages render now
-          for i in $(seq 1 $N); do id=$(python3 remix.py); case "$id" in r*|ar-*) echo "$id" >> state/pending.txt;;   # 21.11 Arabic dubbed by Soniox too *) echo "$id" >> ids.txt;; esac; done
+          for i in $(seq 1 $N); do id=$(python3 remix.py); case "$id" in r*|ar-*) echo "$id" >> state/pending.txt;; *) echo "$id" >> ids.txt;; esac; done   # 21.11 Arabic dubbed by Soniox too (27.11: comment moved - it broke the line)
           cat ids.txt
           echo "ids=$(python3 -c 'import json;print(json.dumps(open("ids.txt").read().split() or ["none"]))')" >> $GITHUB_OUTPUT
       - name: save jobs + state
