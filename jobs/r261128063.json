@@ -1,0 +1,22 @@
+{
+ "id": "r261128063",
+ "title": "חידון לקבלן: מי אחראי?",
+ "lines": [
+  "חידון לקבלן! מי אחראי להרחיק אנשים מתחת למטען?",
+  "המנופאי? הקבלן? המשגיח?",
+  "תחשבו.",
+  "משגיח קרקע מטעם הקבלן – וכולם שומרים.",
+  "עובדים ביחד. אופק את טל מנופים."
+ ],
+ "photos": [
+  "assets/cities/in-nahariya-1f44.jpg",
+  "https://www.tal83.com/img/aerial-lift-rental-shoham.jpg",
+  "https://www.tal83.com/img/crane-signalman-safety-guidelines.jpg",
+  "https://www.tal83.com/img/working-at-height-safety-equipment-checklist.jpg"
+ ],
+ "lang": "he",
+ "voice": "he-IL-AvriNeural",
+ "rate": "+4%",
+ "presenter": true,
+ "kind": "quiz"
+}

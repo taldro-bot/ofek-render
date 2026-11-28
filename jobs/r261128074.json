@@ -1,0 +1,22 @@
+{
+ "id": "r261128074",
+ "title": "טיפ יומי: מרחק זהיר מקווי חשמל",
+ "lines": [
+  "טיפ יומי מאופק את טל.",
+  "מרחק זהיר מקווי חשמל.",
+  "תאונה היא מפגש בין הבלתי צפוי לבלתי מתוכנן.",
+  "מול קווי חשמל שומרים מקדמי ביטחון, עוצרים ומתאמים עם חברת החשמל.",
+  "טיפ ביום – שומר עליכם. אופק את טל מנופים."
+ ],
+ "photos": [
+  "assets/cities/ashkelon.jpg",
+  "https://www.tal83.com/img/crane-basket-safety-tip-power-lines.jpg",
+  "https://www.tal83.com/img/aerial-work-platforms-tree-trimming-field-story.jpg",
+  "https://www.tal83.com/img/manof-sal-guide-and-ordering.jpg"
+ ],
+ "lang": "he",
+ "voice": "he-IL-AvriNeural",
+ "rate": "+4%",
+ "presenter": true,
+ "kind": "tip"
+}

@@ -1,0 +1,22 @@
+{
+ "id": "am-r261128075",
+ "title": "ለውጭ ሠራተኞች በከፍታ ላይ የመሥራት ስልጠና",
+ "lines": [
+  "በከፍታ ላይ መሥራት ኦፊሴላዊ ስልጠና ይጠይቃል።",
+  "በእስራኤል የሠራተኛ ሚኒስቴር ደንብ መሠረት – ኮርስና የምስክር ወረቀት።",
+  "የደህንነት ቀበቶ፣ መሰላል፣ ጣሪያ፣ ማንሻዎችና ስካፎልዲንግ።",
+  "ንድፈ ሐሳብና ተግባር፣ በቀላል ቋንቋ።",
+  "ለመመዝገብ: ኦፌክ ኤት ታል፣ 050-9081114።"
+ ],
+ "photos": [
+  "assets/cities/tal-jlm-night4.jpg",
+  "https://www.tal83.com/img/cherry-picker-crane-rental-guide.jpg",
+  "https://www.tal83.com/img/working-at-height-safety-equipment-checklist.jpg",
+  "https://www.tal83.com/img/palm-trim.jpg"
+ ],
+ "lang": "am",
+ "voice": "am-ET-AmehaNeural",
+ "rate": "+4%",
+ "presenter": true,
+ "kind": "foreign"
+}

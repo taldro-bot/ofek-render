@@ -1,0 +1,22 @@
+{
+ "id": "r261128069",
+ "title": "קבלן, כמה זמן העבודה באמת?",
+ "lines": [
+  "קבלן, כמה זמן אתה מעריך?",
+  "שעתיים? ארבע? יום שלם?",
+  "תכנון נכון חוסך כסף ועצבים.",
+  "תכין את החומר מוכן לפני שהמנוף מגיע.",
+  "נתאם יחד. אופק את טל מנופים."
+ ],
+ "photos": [
+  "assets/cities/jlm-jaffa-gate.jpg",
+  "https://www.tal83.com/img/bucket-truck-services-nes-ziona.jpg",
+  "https://www.tal83.com/img/working-at-height-safety-equipment-checklist.jpg",
+  "https://www.tal83.com/img/bucket-truck-crane-hadera.jpg"
+ ],
+ "lang": "he",
+ "voice": "he-IL-AvriNeural",
+ "rate": "+4%",
+ "presenter": true,
+ "kind": "question"
+}

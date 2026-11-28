@@ -1,0 +1,22 @@
+{
+ "id": "r261128068",
+ "title": "לא זורקים מלמעלה!",
+ "lines": [
+  "מותר לזרוק חפצים מהגג?",
+  "לא! מעל שני מטר – אסור להשליך.",
+  "רק דרך שוקת סגורה עם אזור מגודר למטה.",
+  "או הורדה מבוקרת, גם עם כלי הרמה.",
+  "אופק את טל מנופים."
+ ],
+ "photos": [
+  "assets/cities/ai4-bama-kfar-saba.jpg",
+  "https://www.tal83.com/img/aerial-work-platform-rental-petah-tikva.jpg",
+  "https://www.tal83.com/img/bucket-crane-petah-tikva.jpg",
+  "https://www.tal83.com/img/working-at-height-course-petah-tikva.jpg"
+ ],
+ "lang": "he",
+ "voice": "he-IL-AvriNeural",
+ "rate": "+4%",
+ "presenter": true,
+ "kind": "regs"
+}

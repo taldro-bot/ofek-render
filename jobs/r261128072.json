@@ -1,0 +1,22 @@
+{
+ "id": "r261128072",
+ "title": "קבלן, יש אישור לחסימת נתיב?",
+ "lines": [
+  "קבלן, עובדים על כביש ראשי?",
+  "חסימת נתיב צריכה תיאום ואישור.",
+  "בלי זה – פקח עוצר את העבודה.",
+  "מתאמים מראש, ומתחילים בזמן.",
+  "צריך עזרה בתכנון? אופק את טל מנופים."
+ ],
+ "photos": [
+  "assets/cities/ashkelon.jpg",
+  "https://www.tal83.com/img/basket-crane-rental-price-factors.jpg",
+  "https://www.tal83.com/img/bucket-truck-crane-hadera.jpg",
+  "https://www.tal83.com/img/crane-signalman-safety-guidelines.jpg"
+ ],
+ "lang": "he",
+ "voice": "he-IL-AvriNeural",
+ "rate": "+4%",
+ "presenter": true,
+ "kind": "question"
+}

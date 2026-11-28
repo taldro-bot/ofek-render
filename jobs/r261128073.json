@@ -1,0 +1,22 @@
+{
+ "id": "r261128073",
+ "title": "חידון לקבלן: כמה חניות?",
+ "lines": [
+  "חידון לקבלן! כמה חניות צריך לשמור למנוף?",
+  "אחת? שתיים? שלוש?",
+  "כתבו בתגובות.",
+  "בדרך כלל שתיים עד שלוש, בגלל הרגליים התומכות.",
+  "תשמרו מראש. אופק את טל מנופים."
+ ],
+ "photos": [
+  "assets/cities/tal-ta-night3.jpg",
+  "https://www.tal83.com/img/working-at-height-course-petah-tikva.jpg",
+  "https://www.tal83.com/img/crane-signalman-safety-guidelines.jpg",
+  "https://www.tal83.com/img/risk-assessment-safety-tip-height-work.jpg"
+ ],
+ "lang": "he",
+ "voice": "he-IL-AvriNeural",
+ "rate": "+4%",
+ "presenter": true,
+ "kind": "quiz"
+}

@@ -1,0 +1,22 @@
+{
+ "id": "r261128077",
+ "title": "גג שטוח בלי מעקה",
+ "lines": [
+  "עובדים על גג שטוח בלי מעקה?",
+  "בלי ציוד מגן – רק במרחק של יותר משני מטרים מהשוליים.",
+  "את הרצועה של שני מטרים מהקצה מסמנים מראש.",
+  "עם שלט: אין מעבר – סכנת נפילה מגובה.",
+  "אופק את טל מנופים."
+ ],
+ "photos": [
+  "assets/cities/at-caesarea-harbour-fe84.jpg",
+  "https://www.tal83.com/img/working-at-height-safety-tip-ground-inspection-before-setup.jpg",
+  "https://www.tal83.com/img/crane-basket-safety-tip-power-lines.jpg",
+  "https://www.tal83.com/img/truck-street.jpg"
+ ],
+ "lang": "he",
+ "voice": "he-IL-AvriNeural",
+ "rate": "+4%",
+ "presenter": true,
+ "kind": "regs"
+}

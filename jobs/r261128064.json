@@ -1,0 +1,22 @@
+{
+ "id": "r261128064",
+ "title": "טיפ יומי: בדיקת מתזים וגלגלון כיבוי",
+ "lines": [
+  "טיפ יומי מאופק את טל.",
+  "בדיקת מתזים וגלגלון כיבוי.",
+  "מבצעים בקרה תקופתית לגלגלון הכיבוי, לארונות הציוד ולמתזים",
+  "כדי לוודא שהם תקינים ומוכנים לפעולה בכל עת.",
+  "טיפ ביום – שומר עליכם. אופק את טל מנופים."
+ ],
+ "photos": [
+  "assets/cities/in-zichron-yaakov-10f9.jpg",
+  "https://www.tal83.com/img/bucket-truck-crane-hadera.jpg",
+  "https://www.tal83.com/img/aerial-work-platform-rental-petah-tikva.jpg",
+  "https://www.tal83.com/img/sign-install.jpg"
+ ],
+ "lang": "he",
+ "voice": "he-IL-AvriNeural",
+ "rate": "+4%",
+ "presenter": true,
+ "kind": "tip"
+}
