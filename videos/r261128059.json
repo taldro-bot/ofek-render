@@ -1,0 +1,24 @@
+{
+ "id": "r261128059",
+ "title": "קבלן, הקרקע יציבה?",
+ "lines": [
+  "קבלן, איפה המנוף עומד?",
+  "דשא, חול או אדמה רכה – שוקעים.",
+  "צריך משטח יציב או פלטות.",
+  "בודקים לפני שפותחים רגליים.",
+  "עבודה בטוחה. אופק את טל מנופים."
+ ],
+ "photos": [
+  "assets/cities/ai2-place-89f4be0c-fcf6-4da2-94f6-c8badb6e5039.jpg",
+  "https://www.tal83.com/img/boom-towers.jpg",
+  "https://www.tal83.com/img/boom-lift-tree-pruning-safety-electrical-lines.jpg",
+  "https://www.tal83.com/img/working-at-height-safety-equipment-checklist.jpg"
+ ],
+ "lang": "he",
+ "voice": "he-IL-AvriNeural",
+ "rate": "+4%",
+ "presenter": true,
+ "kind": "question",
+ "audio_url": "https://drive.google.com/uc?export=download&id=11CfLR_dPWVKMnjEjugggZpvoOAnKcCY2",
+ "dub_voice": "Shalini"
+}
