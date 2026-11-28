@@ -11,6 +11,8 @@ ROOT = P.ROOT
 DIR = os.path.join(ROOT, 'media', 'hanukkah', 'blow')
 W, H, FPS, DUR = 1080, 1920, 30, 14.0
 T_IGN = 4.3     # ignition moment
+FIRE = True     # False → crane promo: metallic carabiner 'clink' instead of fire crackle
+END = None      # override end-card texts {lang: (title, name, line)}
 
 
 def crop(img, z, cx, cy):
@@ -63,7 +65,7 @@ def frame(I, t, lang):
         p = ramp_out((t - 9.0) / 5.0)
         fr = crop(I['C'], 1.45 - .45 * p, .48, .42 + .05 * p)
         fr = ImageEnhance.Brightness(fr).enhance(1 + .04 * math.sin(t * 6))
-    img = sparks(fr.convert('RGBA'), t) if 3.6 <= t < 9.0 else fr.convert('RGBA')
+    img = sparks(fr.convert('RGBA'), t) if (FIRE and 3.6 <= t < 9.0) else fr.convert('RGBA')
     if t < .6: img.alpha_composite(Image.new('RGBA', (W, H), (0, 0, 0, int(255 * (1 - t / .6)))))
     rtl = lang == 'he'; d = ImageDraw.Draw(img)
     if t > 11.2:
@@ -71,7 +73,7 @@ def frame(I, t, lang):
         sh = Image.new('RGBA', (W, H), (0, 0, 0, 0)); sd = ImageDraw.Draw(sh)
         for y in range(1150, H): sd.line([(0, y), (W, y)], fill=(0, 0, 0, int(min(210, (y - 1150) * .5) * a / 255)))
         img.alpha_composite(sh); d = ImageDraw.Draw(img)
-        e = P.END[lang]
+        e = (END or P.END)[lang]
         P.txt(d, (W / 2, 1420), e[0], 110, P.YEL, rtl, a)
         P.txt(d, (W / 2, 1545), e[1], 58, P.WHITE, rtl, a)
         P.txt(d, (W / 2, 1625), e[2], 38, P.WHITE, rtl, a)
@@ -101,8 +103,11 @@ def sound(path):
     f = 55 * np.exp(-k * .8) + 28
     out[m] += 1.6 * np.sin(2 * np.pi * np.cumsum(f) / sr) * np.exp(-k * 1.6)
     out[m] += .9 * noise[m] * np.exp(-k * 25)             # initial crack
-    # fire crackle after ignition
-    for _ in range(260):
+    if not FIRE:   # carabiner snap: two bright metallic clinks
+        for s0, f0 in ((T_IGN, 2400), (T_IGN + .09, 3100)):
+            m = (t >= s0) & (t < s0 + .5); k = t[m] - s0
+            out[m] += .8 * (np.sin(2 * np.pi * f0 * k) + .6 * np.sin(2 * np.pi * f0 * 2.7 * k)) * np.exp(-k * 14)
+    for _ in range(260 if FIRE else 0):
         s = rng.uniform(T_IGN, DUR - .3); i = int(s * sr); L = int(sr * .012)
         if i + L < n: out[i:i + L] += rng.uniform(.1, .45) * rng.standard_normal(L) * np.exp(-np.arange(L) / (L / 4))
     out[-sr:] *= np.linspace(1, 0, sr)
