@@ -1,0 +1,24 @@
+{
+ "id": "r261128058",
+ "title": "בדיקה יומית למתקן הרמה",
+ "lines": [
+  "לפני כל יום עבודה עם במה או סל הרמה:",
+  "המפעיל בודק צמיגים, כבלים, מעקות ושלטים.",
+  "בודק את מערכות ההפעלה וכפתורי החירום.",
+  "ואת דרך הגישה ומכשולים בשטח.",
+  "משהו חריג? לא מפעילים. אופק את טל מנופים."
+ ],
+ "photos": [
+  "assets/cities/tal-jlm-night2.jpg",
+  "https://www.tal83.com/img/truck-street.jpg",
+  "https://www.tal83.com/img/aerial-lift-rental-shoham.jpg",
+  "https://www.tal83.com/img/aerial-work-platform-rental-petah-tikva.jpg"
+ ],
+ "lang": "he",
+ "voice": "he-IL-AvriNeural",
+ "rate": "+4%",
+ "presenter": true,
+ "kind": "regs",
+ "audio_url": "https://drive.google.com/uc?export=download&id=17SFOWQdL9znxxr_EePQFmoAyb-DCoRaR",
+ "dub_voice": "Ishita"
+}
