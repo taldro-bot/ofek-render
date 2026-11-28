@@ -122,6 +122,9 @@ TXT = {
     'si': {'font': 'Noto Sans Sinhala', 'voice': 'si-LK-ThiliniNeural', 'brand': 'ඔෆෙක් ඇට් ටාල් ක්‍රේන්ස්', 'rtl': False,
            'kick': 'ඔෆෙක් ඇට් ටාල් ක්‍රේන්ස් වෙතින් අලුත් වීඩියෝවක්', 'q': 'ක්‍රේන් එකක් හෝ පුහුණුවක් ඕනෙද? අපි ඉන්නවා',
            's': 'දැන්ම අමතන්න හෝ වට්ස්ඇප් කරන්න'},
+    'am': {'font': 'Noto Sans Ethiopic', 'voice': 'am-ET-MekdesNeural', 'brand': 'ኦፌክ ኤት ታል ክሬንስ', 'rtl': False,   # 28.11 Tal: Amharic
+           'kick': 'ከኦፌክ ኤት ታል ክሬንስ አዲስ ቪዲዮ', 'q': 'የቅርጫት ክሬን ወይም ስልጠና ይፈልጋሉ? እኛ እዚህ ነን',
+           's': 'አሁኑኑ ይደውሉ ወይም በዋትስአፕ ይጻፉ'},
 }
 L = TXT['he']
 # 20.11 WOW: attention openers (Tal: "וואו, דבר כזה לא ראיתם, שמעתם מה קרה?") – rotated by job id
@@ -134,6 +137,7 @@ HOOKS = {
     'en': ["Wow! You've never seen this", 'Guess what happened on site?', 'Look what we did', 'This is how pros do it'],
     'hi': ['वाह! ऐसा आपने पहले नहीं देखा', 'देखिए हमने क्या किया', 'ऐसे होता है सही काम'],
     'si': ['වාව්! මෙහෙම දෙයක් ඔබ දැකලා නැහැ', 'අපි කළ දේ බලන්න', 'නිවැරදිව කරන්නේ මෙහෙමයි'],
+    'am': ['ዋው! እንደዚህ አይታችሁ አታውቁም', 'ያደረግነውን ተመልከቱ', 'በትክክል የሚሰራው እንዲህ ነው'],
 }
 SUBY = 1380
 MASCOT = os.path.join(ROOT, 'assets', 'mascot_round.png'); MH, MY = 470, 1160   # 21.11 round avatar, full hair

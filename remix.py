@@ -48,8 +48,9 @@ OTHER = {
     'fr': ('Grue partout en Israël', ["Aujourd'hui, nouveau chantier.", "On mesure la hauteur depuis le trottoir, pas depuis le mur.", "On vérifie les lignes électriques et la place des stabilisateurs.", "Un travail sûr, rapide et propre.", "Ofek et Tal Grues — on vient chez vous."], 'fr-FR-HenriNeural'),
     'hi': ('पूरे इज़राइल में क्रेन', ['आज हम एक नई साइट पर हैं।', 'ऊँचाई और दूरी फुटपाथ से नापते हैं, दीवार से नहीं।', 'बिजली के तार और सपोर्ट की जगह जाँचते हैं।', 'सुरक्षित, तेज़ और साफ़ काम।', 'ओफ़ेक एट ताल क्रेन्स — हम आपके पास आते हैं।'], 'hi-IN-MadhurNeural'),
     'si': ('ඊශ්‍රායලය පුරා ක්‍රේන්', ['අද අපි අලුත් වැඩබිමක.', 'උස සහ දුර මනින්නේ පදික වේදිකාවේ සිට, බිත්තියෙන් නොවේ.', 'විදුලි රැහැන් සහ ආධාරක ඉඩ පරීක්ෂා කරමු.', 'ආරක්ෂිත, ඉක්මන් සහ පිරිසිදු වැඩ.', 'ඔෆෙක් ඇට් ටාල් ක්‍රේන්ස් — අපි ඔබ වෙත එන්නෙමු.'], 'si-LK-SameeraNeural'),
+    'am': ('በመላው እስራኤል ክሬን', ['ዛሬ አዲስ የሥራ ቦታ ላይ ነን።', 'ቁመቱንና ርቀቱን የምንለካው ከእግረኛ መንገዱ ነው፣ ከግድግዳው አይደለም።', 'የኤሌክትሪክ ሽቦዎችንና የድጋፍ ቦታውን እንፈትሻለን።', 'ደህንነቱ የተጠበቀ፣ ፈጣንና ንጹህ ሥራ።', 'ኦፌክ ኤት ታል ክሬንስ — ወደ እናንተ እንመጣለን።'], 'am-ET-AmehaNeural'),
 }
-LANG_CYCLE = ['he', 'he', 'ar', 'he', 'ru', 'he', 'en', 'he', 'fr', 'he', 'hi', 'he', 'si']
+LANG_CYCLE = ['he', 'he', 'ar', 'he', 'ru', 'he', 'en', 'he', 'fr', 'he', 'hi', 'he', 'si', 'he', 'am']   # 28.11 + Amharic
 
 
 def main():
