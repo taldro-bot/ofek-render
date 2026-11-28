@@ -140,6 +140,17 @@ HOOKS = {
     'am': ['ዋው! እንደዚህ አይታችሁ አታውቁም', 'ያደረግነውን ተመልከቱ', 'በትክክል የሚሰራው እንዲህ ነው'],
 }
 SUBY = 1380
+# 28.11 Tal: spoken phone at the end ("טל – מחכה לשיחה או הודעה"), male voice = Tal (never Hila)
+OUTRO = {
+    'he': ('תתקשרו לטל: אפס חמש אפס, תשע אפס שמונה, אחת אחת אחת ארבע. מחכה לשיחה או הודעה!', 'he-IL-AvriNeural'),
+    'ar': ('اتصلوا بطال: 050 908 1114. بانتظار مكالمتكم أو رسالتكم!', 'ar-SA-HamedNeural'),
+    'ru': ('Звоните Талю: 050 908 11 14. Жду звонка или сообщения!', 'ru-RU-DmitryNeural'),
+    'en': ('Call Tal: zero five zero, nine zero eight, one one one four. Waiting for your call or message!', 'en-US-GuyNeural'),
+    'fr': ("Appelez Tal : 050 908 11 14. J'attends votre appel ou votre message !", 'fr-FR-HenriNeural'),
+    'hi': ('ताल को कॉल करें: 050 908 1114. आपके कॉल या मैसेज का इंतज़ार है!', 'hi-IN-MadhurNeural'),
+    'si': ('ටාල්ට අමතන්න: 050 908 1114. ඔබේ ඇමතුම හෝ පණිවිඩය බලාපොරොත්තුවෙන්!', 'si-LK-SameeraNeural'),
+    'am': ('ታልን ይደውሉ: 050 908 1114። ጥሪዎን ወይም መልዕክትዎን እጠብቃለሁ!', 'am-ET-AmehaNeural'),
+}
 MASCOT = os.path.join(ROOT, 'assets', 'mascot_round.png'); MH, MY = 470, 1160   # 21.11 round avatar, full hair
 DISC = ''  # optional disclaimer shown at the start (job['disclaimer'])
 
@@ -272,6 +283,13 @@ def main(job_path):
             times.append((t, t + d - 0.1)); t += d
         body = t + 0.5
     END = 4.0
+    outro = None
+    if not job.get('nooutro'):
+        ot, ov = OUTRO.get(job.get('lang', 'he'), OUTRO['he'])
+        od_ = os.path.join(tmp, 'outro'); os.makedirs(od_, exist_ok=True)
+        o = tts([ot], ov, od_, '+5%')
+        if o and o[0][0]:
+            outro = o[0][0]; END = max(END, o[0][1] + 0.8)
     total = body + END
 
     # photos spread across body
@@ -315,6 +333,12 @@ def main(job_path):
         run(['ffmpeg', '-y', '-loglevel', 'error'] + inputs + ['-filter_complex', fc, '-map', '[out]', narr])
     else:
         run(['ffmpeg', '-y', '-loglevel', 'error', '-f', 'lavfi', '-i', 'anullsrc=r=44100:cl=stereo', '-t', '%.2f' % total, narr])
+    if outro:   # 28.11: phone number spoken over the end card
+        n2 = os.path.join(tmp, 'narr2.wav')
+        run(['ffmpeg', '-y', '-loglevel', 'error', '-i', narr, '-i', outro, '-filter_complex',
+             '[1:a]adelay=%d|%d[o];[0:a][o]amix=inputs=2:normalize=0:duration=first[x]' % (body * 1000 + 200, body * 1000 + 200),
+             '-map', '[x]', '-ar', '44100', '-ac', '2', n2])
+        narr = n2
     # music (quiet, under the voice) + whoosh on every transition
     music = os.path.join(ROOT, job.get('music', 'assets/music/upbeat1.wav'))
     sfx = os.path.join(ROOT, 'assets', 'sfx', 'whoosh.wav')
