@@ -1,0 +1,24 @@
+name: hanukkah-pro
+on: workflow_dispatch
+permissions:
+  contents: write
+jobs:
+  film:
+    runs-on: ubuntu-latest
+    timeout-minutes: 40
+    steps:
+      - uses: actions/checkout@v4
+      - name: deps
+        run: sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg >/dev/null && pip install -q edge-tts pillow
+      - name: render
+        run: |
+          mkdir -p media/hanukkah/pro/out
+          for l in he en ru fr; do python hanukkah_pro.py $l media/hanukkah/pro/out/hanukkah-pro-$l.mp4 || echo FAIL $l; done
+      - name: commit
+        if: always()
+        run: |
+          git config user.name taldro-bot
+          git config user.email taldro-bot@users.noreply.github.com
+          git add media/hanukkah/pro/out
+          git commit -m "hanukkah pro film (4 langs) [skip ci]" || exit 0
+          git pull --rebase && git push
