@@ -1,0 +1,22 @@
+{
+ "id": "r261128078",
+ "title": "נפלת? חייבים לחלץ מהר",
+ "lines": [
+  "מה קורה אחרי שהרתמה בלמה נפילה?",
+  "החוק דורש לחלץ את העובד מהר, לפני נזק בלתי הפיך.",
+  "בחילוץ עצמי, עובד נוסף על הקרקע, או ציוד חילוץ במקום.",
+  "וציוד שבלם נפילה – יוצא משימוש לבדיקה.",
+  "אופק את טל מנופים."
+ ],
+ "photos": [
+  "assets/cities/at-yarkon-park-00c5.jpg",
+  "https://www.tal83.com/img/bucket-truck-services-nes-ziona.jpg",
+  "https://www.tal83.com/img/basket-crane-rental-price-factors.jpg",
+  "https://www.tal83.com/img/crane-hand-signals-guide.jpg"
+ ],
+ "lang": "he",
+ "voice": "he-IL-AvriNeural",
+ "rate": "+4%",
+ "presenter": true,
+ "kind": "regs"
+}
