@@ -17,7 +17,7 @@ SHOTS = [  # (start, end, image, move)
 DUR = 17.0
 VOICE = {'he': 'he-IL-AvriNeural', 'en': 'en-US-GuyNeural', 'ru': 'ru-RU-DmitryNeural', 'fr': 'fr-FR-HenriNeural'}
 NARR = {
- 'he': 'לפני יותר מאלפיים שנה, נמצא בבית המקדש פך שמן קטן אחד, שהספיק ליום אחד בלבד. אבל קרה נס – השמן דלק שמונה ימים. חג חנוכה שמח.',
+ 'he': 'לפני יותר מאלפיים שנה, נמצא בבית המקדש פך שמן קטן אחד, שהספיק ליום אחד בלבד. אבל קרה נס – השמן דָּלַק שמונה ימים. חג חנוכה שמח.',
  'en': 'Over two thousand years ago, one small jar of pure oil was found in the Temple – enough for just one day. But a miracle happened: it burned for eight days. Happy Hanukkah.',
  'ru': 'Более двух тысяч лет назад в Храме нашли один маленький кувшин чистого масла – всего на один день. Но случилось чудо: оно горело восемь дней. Счастливой Хануки.',
  'fr': "Il y a plus de deux mille ans, on trouva au Temple une seule petite fiole d'huile pure – pour un seul jour. Mais un miracle eut lieu : elle brûla huit jours. Joyeux Hanoukka.",
