@@ -57,7 +57,7 @@ def main():
             if only and key not in only: continue
             src = os.path.join(SRC, 'hanukkah-%s.mp4' % key)
             mp3 = os.path.join(OUT, 'v-%s.mp3' % key)
-            if os.path.exists(os.path.join(OUT, 'hanukkah-%s.mp4' % key)): continue
+            if os.path.exists(os.path.join(OUT, 'hanukkah-%s.mp4' % key)) and os.environ.get('KEEP'): continue
             ok = False
             for v in [VOICE[lang], VOICE[lang], FALLBACK.get(lang, VOICE[lang])]:
                 try:
@@ -67,7 +67,7 @@ def main():
             if not ok: print('SKIP', key); continue
             out = os.path.join(OUT, 'hanukkah-%s.mp4' % key)
             subprocess.run(['ffmpeg', '-y', '-loglevel', 'error', '-i', src, '-i', mp3, '-filter_complex',
-                            '[0:a]volume=0.35[m];[1:a]adelay=800|800,volume=1.6[v];[m][v]amix=inputs=2:duration=first:normalize=0[a]',
+                            '[0:a]volume=0.12,lowpass=f=2500[m];[1:a]adelay=800|800,volume=1.6[v];[m][v]amix=inputs=2:duration=first:normalize=0[a]',
                             '-map', '0:v', '-map', '[a]', '-c:v', 'copy', '-c:a', 'aac', out], check=True)
             os.remove(mp3)
             print(out)
