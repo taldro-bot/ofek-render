@@ -1,0 +1,22 @@
+{
+ "id": "fr-r261128065",
+ "title": "Formation travail en hauteur pour ouvriers",
+ "lines": [
+  "Le travail en hauteur exige une formation officielle.",
+  "Selon le ministère du Travail – cours et certificat.",
+  "Harnais, échelles, toits, nacelles et échafaudages.",
+  "Théorie et pratique, en langage simple.",
+  "Réservez : Ofek et Tal, 050-9081114."
+ ],
+ "photos": [
+  "assets/cities/tlv-kerem.jpg",
+  "https://www.tal83.com/img/cherry-picker-crane-rental-guide.jpg",
+  "https://www.tal83.com/img/bucket-crane-rental-yehud.jpg",
+  "https://www.tal83.com/img/truck-street.jpg"
+ ],
+ "lang": "fr",
+ "voice": "fr-FR-HenriNeural",
+ "rate": "+4%",
+ "presenter": true,
+ "kind": "foreign"
+}
