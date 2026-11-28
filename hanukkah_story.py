@@ -6,6 +6,7 @@ ROOT = os.path.dirname(os.path.abspath(__file__))
 SRC = os.path.join(ROOT, 'media', 'hanukkah', 'cities')
 OUT = os.path.join(ROOT, 'media', 'hanukkah', 'narrated')
 VOICE = {'he': 'he-IL-AvriNeural', 'en': 'en-US-GuyNeural', 'ru': 'ru-RU-DmitryNeural', 'fr': 'fr-FR-HenriNeural'}
+FALLBACK = {'ru': 'ru-RU-SvetlanaNeural', 'fr': 'fr-FR-DeniseNeural', 'en': 'en-US-AriaNeural'}
 STORY = {
  'he': ['לפני יותר מאלפיים שנה, היוונים טימאו את בית המקדש בירושלים.',
         'המכבים, מעטים מול רבים, ניצחו וחזרו לבית המקדש.',
@@ -44,7 +45,7 @@ STORY = {
 
 async def tts(text, voice, path):
     import edge_tts
-    await edge_tts.Communicate(text, voice, rate='-8%').save(path)
+    await edge_tts.Communicate(text, voice).save(path)
 
 
 def main():
@@ -56,7 +57,14 @@ def main():
             if only and key not in only: continue
             src = os.path.join(SRC, 'hanukkah-%s.mp4' % key)
             mp3 = os.path.join(OUT, 'v-%s.mp3' % key)
-            asyncio.run(tts(lines[n - 1], VOICE[lang], mp3))
+            if os.path.exists(os.path.join(OUT, 'hanukkah-%s.mp4' % key)): continue
+            ok = False
+            for v in [VOICE[lang], VOICE[lang], FALLBACK.get(lang, VOICE[lang])]:
+                try:
+                    asyncio.run(tts(lines[n - 1], v, mp3)); ok = True; break
+                except Exception as e:
+                    print('tts retry', key, v, e); import time; time.sleep(5)
+            if not ok: print('SKIP', key); continue
             out = os.path.join(OUT, 'hanukkah-%s.mp4' % key)
             subprocess.run(['ffmpeg', '-y', '-loglevel', 'error', '-i', src, '-i', mp3, '-filter_complex',
                             '[0:a]volume=0.35[m];[1:a]adelay=800|800,volume=1.6[v];[m][v]amix=inputs=2:duration=first:normalize=0[a]',
