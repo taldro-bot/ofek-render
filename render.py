@@ -142,7 +142,7 @@ HOOKS = {
 SUBY = 1380
 # 28.11 Tal: spoken phone at the end ("טל – מחכה לשיחה או הודעה"), male voice = Tal (never Hila)
 OUTRO = {
-    'he': ('תתקשרו לטל: אפס חמש אפס, תשע אפס שמונה, אחת אחת אחת ארבע. מחכה לשיחה או הודעה!', 'he-IL-AvriNeural'),
+    'he': ('אופק את טל מנופים. חברה לעבודות גובה, שירותי מנוף, ומדריך לעבודה בגובה. טלפון: אֶפֶס חָמֵשׁ אֶפֶס, תֵּשַׁע אֶפֶס שְׁמוֹנֶה, אַחַת אַחַת אַחַת אַרְבַּע. מחכה לשיחה או הודעה!', 'he-IL-AvriNeural'),   # 28.11 Tal's exact words
     'ar': ('اتصلوا بطال: 050 908 1114. بانتظار مكالمتكم أو رسالتكم!', 'ar-SA-HamedNeural'),
     'ru': ('Звоните Талю: 050 908 11 14. Жду звонка или сообщения!', 'ru-RU-DmitryNeural'),
     'en': ('Call Tal: zero five zero, nine zero eight, one one one four. Waiting for your call or message!', 'en-US-GuyNeural'),
