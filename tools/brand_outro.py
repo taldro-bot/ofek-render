@@ -25,13 +25,14 @@ async def say(path):
 def main(src, dst):
     asyncio.run(say('/tmp/outro.mp3'))
     D, O = dur(src), dur('/tmp/outro.mp3')
-    ext = O + 0.8   # freeze the last frame while Tal's words play
+    start = max(0.0, D - 8.0)          # Tal's words start over the last 8 s (the end card), not after it
+    ext = max(0.0, start + O + 0.8 - D)  # freeze the last frame only for what's left
     total = D + ext
     fc = ('[0:v]tpad=stop_mode=clone:stop_duration=%.2f,scale=1080:1920[v0];'
-          '[2:v]format=rgba[b];[v0][b]overlay=0:H-h-110[v];'
+          '[2:v]format=rgba[b];[v0][b]overlay=0:H-h-110:enable=\'lt(t,%.2f)\'[v];'
           '[0:a]apad,atrim=0:%.2f,volume=0.55[a0];'
           '[1:a]adelay=%d|%d,apad,atrim=0:%.2f[a1];'
-          '[a0][a1]amix=inputs=2:normalize=0[a]') % (ext, total, int(D * 1000) + 300, int(D * 1000) + 300, total)
+          '[a0][a1]amix=inputs=2:normalize=0[a]') % (ext, start, total, int(start * 1000) + 300, int(start * 1000) + 300, total)
     subprocess.check_call(['ffmpeg', '-y', '-v', 'error', '-i', src, '-i', '/tmp/outro.mp3', '-loop', '1', '-i', BAR,
                            '-filter_complex', fc, '-map', '[v]', '-map', '[a]', '-t', '%.2f' % total,
                            '-c:v', 'libx264', '-preset', 'veryfast', '-crf', '20', '-c:a', 'aac', '-b:a', '160k', '-movflags', '+faststart', dst])
