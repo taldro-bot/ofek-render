@@ -1,0 +1,24 @@
+{
+ "id": "r261128053",
+ "title": "חידון לקבלן: חוט חשמל",
+ "lines": [
+  "חידון לקבלן! חוט חשמל מעל ההנפה. מה עושים?",
+  "ממשיכים בזהירות? או עוצרים?",
+  "כתבו בתגובות.",
+  "עוצרים, מודדים מרחק ביטחון, ומתאמים עם חברת החשמל.",
+  "בטיחות קודם. אופק את טל מנופים."
+ ],
+ "photos": [
+  "assets/cities/jerusalem-street-crane-operation-cddb.jpg",
+  "https://www.tal83.com/img/safety-tip-height-training-anchor-point.jpg",
+  "https://www.tal83.com/img/safety-tip-working-at-height-basket-harness.jpg",
+  "https://www.tal83.com/img/working-at-height-safety-tip-ground-inspection-before-setup.jpg"
+ ],
+ "lang": "he",
+ "voice": "he-IL-AvriNeural",
+ "rate": "+4%",
+ "presenter": true,
+ "kind": "quiz",
+ "audio_url": "https://drive.google.com/uc?export=download&id=1_pduYQz8fbq5q0X3Q-iurbmqpq40Q2eU",
+ "dub_voice": "Brooke"
+}
