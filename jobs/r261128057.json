@@ -1,0 +1,22 @@
+{
+ "id": "r261128057",
+ "title": "תמיד אדם נוסף למטה",
+ "lines": [
+  "יודעים מה החוק אומר על העובד שלמטה?",
+  "בזמן עבודה בגובה, תמיד צריך אדם בגיר נוסף על הקרקע.",
+  "הוא שומר על קשר עין עם מי שלמעלה.",
+  "עוזר, ומרחיק אנשים מאזור הסכנה.",
+  "אופק את טל מנופים – עובדים לפי התקנות."
+ ],
+ "photos": [
+  "assets/cities/haifa-construction-crane-lift.jpg",
+  "https://www.tal83.com/img/sign-install.jpg",
+  "https://www.tal83.com/img/crane-signalman-safety-guidelines.jpg",
+  "https://www.tal83.com/img/bucket-truck-services-nes-ziona.jpg"
+ ],
+ "lang": "he",
+ "voice": "he-IL-AvriNeural",
+ "rate": "+4%",
+ "presenter": true,
+ "kind": "regs"
+}

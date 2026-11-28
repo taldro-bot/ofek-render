@@ -1,0 +1,21 @@
+{
+ "id": "fr-r261128060",
+ "title": "Grue partout en Israël",
+ "lines": [
+  "Aujourd'hui, nouveau chantier.",
+  "On mesure la hauteur depuis le trottoir, pas depuis le mur.",
+  "On vérifie les lignes électriques et la place des stabilisateurs.",
+  "Un travail sûr, rapide et propre.",
+  "Ofek et Tal Grues — on vient chez vous."
+ ],
+ "photos": [
+  "assets/cities/haifa-crane-photo-generation-20e2.jpg",
+  "https://www.tal83.com/img/ground-spotter-height-safety-tip.jpg",
+  "https://www.tal83.com/img/risk-assessment-safety-tip-height-work.jpg",
+  "https://www.tal83.com/img/working-at-height-safety-tip-ground-inspection-before-setup.jpg"
+ ],
+ "lang": "fr",
+ "voice": "fr-FR-HenriNeural",
+ "rate": "+4%",
+ "presenter": true
+}

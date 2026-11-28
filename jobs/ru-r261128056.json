@@ -1,0 +1,21 @@
+{
+ "id": "ru-r261128056",
+ "title": "Автовышка по всему Израилю",
+ "lines": [
+  "Сегодня мы на новом объекте.",
+  "Высоту и вылет меряем от тротуара, а не от стены.",
+  "Проверяем провода и место для опор.",
+  "Безопасно, быстро и аккуратно.",
+  "Офек и Таль — приедем к вам."
+ ],
+ "photos": [
+  "assets/cities/ai3-dead-sea.jpg",
+  "https://www.tal83.com/img/bucket-truck-services-nes-ziona.jpg",
+  "https://www.tal83.com/img/crane-hand-signals-guide.jpg",
+  "https://www.tal83.com/img/manof-sal-guide-and-ordering.jpg"
+ ],
+ "lang": "ru",
+ "voice": "ru-RU-DmitryNeural",
+ "rate": "+4%",
+ "presenter": true
+}

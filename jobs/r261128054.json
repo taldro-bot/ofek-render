@@ -1,0 +1,23 @@
+{
+ "id": "r261128054",
+ "title": "טיפ יומי: שמירת מסמכי תשלום ושיקום",
+ "lines": [
+  "טיפ יומי מאופק את טל.",
+  "שמירת מסמכי תשלום ושיקום.",
+  "בצעתם תיקון חירום או החלפתם פריט שניזוק?",
+  "אספו כל חשבונית וקבלה לתיקייה אחת",
+  "כדי לאפשר לשמאי להעריך את הנזק במדויק.",
+  "טיפ ביום – שומר עליכם. אופק את טל מנופים."
+ ],
+ "photos": [
+  "assets/cities/ai2-place-17c10432-ed7e-4995-8375-768621f58f12.jpg",
+  "https://www.tal83.com/img/safety-tip-height-training-anchor-point.jpg",
+  "https://www.tal83.com/img/crane-hand-signals-guide.jpg",
+  "https://www.tal83.com/img/manof-sal-guide-and-ordering.jpg"
+ ],
+ "lang": "he",
+ "voice": "he-IL-AvriNeural",
+ "rate": "+4%",
+ "presenter": true,
+ "kind": "tip"
+}
