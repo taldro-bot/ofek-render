@@ -1,0 +1,22 @@
+{
+ "id": "si-r261128055",
+ "title": "විදේශ සේවකයින් සඳහා උස් ස්ථානවල වැඩ පුහුණුව",
+ "lines": [
+  "උස් ස්ථානවල වැඩ සඳහා නිල පුහුණුවක් අවශ්‍යයි.",
+  "ඊශ්‍රායල කම්කරු අමාත්‍යාංශයේ නීති – පාඨමාලාව සහ සහතිකය.",
+  "ආරක්ෂක පටිය, ඉණිමං, වහල, සහ පලංචි.",
+  "න්‍යාය සහ ප්‍රායෝගික, සරල භාෂාවෙන්.",
+  "අමතන්න: ඔෆෙක් ඇට් ටාල්, 050-9081114."
+ ],
+ "photos": [
+  "assets/cities/ai3-dimona.jpg",
+  "https://www.tal83.com/img/bucket-truck-crane-hadera.jpg",
+  "https://www.tal83.com/img/bucket-crane-petah-tikva.jpg",
+  "https://www.tal83.com/img/manof-sal-guide-and-ordering.jpg"
+ ],
+ "lang": "si",
+ "voice": "si-LK-SameeraNeural",
+ "rate": "+4%",
+ "presenter": true,
+ "kind": "foreign"
+}
